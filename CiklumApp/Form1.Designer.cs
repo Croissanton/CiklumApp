@@ -62,50 +62,50 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(274, 187);
+            this.dataGridView1.Location = new System.Drawing.Point(318, 207);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(756, 606);
+            this.dataGridView1.Size = new System.Drawing.Size(518, 356);
             this.dataGridView1.TabIndex = 2;
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.CalendarDimensions = new System.Drawing.Size(3, 4);
-            this.monthCalendar1.Location = new System.Drawing.Point(1146, 184);
+            this.monthCalendar1.CalendarDimensions = new System.Drawing.Size(2, 2);
+            this.monthCalendar1.Location = new System.Drawing.Point(922, 239);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 3;
             // 
             // bHome
             // 
-            this.bHome.Location = new System.Drawing.Point(25, 186);
+            this.bHome.Location = new System.Drawing.Point(68, 187);
             this.bHome.Name = "bHome";
-            this.bHome.Size = new System.Drawing.Size(201, 82);
+            this.bHome.Size = new System.Drawing.Size(149, 60);
             this.bHome.TabIndex = 4;
             this.bHome.Text = "HOME";
             this.bHome.UseVisualStyleBackColor = true;
             // 
             // bEjercicios
             // 
-            this.bEjercicios.Location = new System.Drawing.Point(25, 333);
+            this.bEjercicios.Location = new System.Drawing.Point(68, 295);
             this.bEjercicios.Name = "bEjercicios";
-            this.bEjercicios.Size = new System.Drawing.Size(201, 82);
+            this.bEjercicios.Size = new System.Drawing.Size(149, 58);
             this.bEjercicios.TabIndex = 5;
             this.bEjercicios.Text = "EJERCICIOS";
             this.bEjercicios.UseVisualStyleBackColor = true;
             // 
             // bClientes
             // 
-            this.bClientes.Location = new System.Drawing.Point(25, 499);
+            this.bClientes.Location = new System.Drawing.Point(68, 408);
             this.bClientes.Name = "bClientes";
-            this.bClientes.Size = new System.Drawing.Size(201, 82);
+            this.bClientes.Size = new System.Drawing.Size(149, 55);
             this.bClientes.TabIndex = 6;
             this.bClientes.Text = "CLIENTES";
             this.bClientes.UseVisualStyleBackColor = true;
             // 
             // bSesiones
             // 
-            this.bSesiones.Location = new System.Drawing.Point(25, 649);
+            this.bSesiones.Location = new System.Drawing.Point(68, 522);
             this.bSesiones.Name = "bSesiones";
-            this.bSesiones.Size = new System.Drawing.Size(201, 82);
+            this.bSesiones.Size = new System.Drawing.Size(149, 59);
             this.bSesiones.TabIndex = 7;
             this.bSesiones.Text = "SESIONES";
             this.bSesiones.UseVisualStyleBackColor = true;
@@ -114,7 +114,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1780, 973);
+            this.ClientSize = new System.Drawing.Size(1390, 741);
             this.Controls.Add(this.bSesiones);
             this.Controls.Add(this.bClientes);
             this.Controls.Add(this.bEjercicios);
