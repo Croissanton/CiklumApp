@@ -7,3 +7,14 @@ C:\Users\Usuario\source\repos\CiklumApp\CiklumApp\obj\Debug\CiklumApp.csproj.Gen
 C:\Users\Usuario\source\repos\CiklumApp\CiklumApp\obj\Debug\CiklumApp.csproj.CoreCompileInputs.cache
 C:\Users\Usuario\source\repos\CiklumApp\CiklumApp\obj\Debug\CiklumApp.exe
 C:\Users\Usuario\source\repos\CiklumApp\CiklumApp\obj\Debug\CiklumApp.pdb
+G:\My Drive\clase\año3\ir\GIT\CiklumApp\CiklumApp\bin\Debug\CiklumApp.exe.config
+G:\My Drive\clase\año3\ir\GIT\CiklumApp\CiklumApp\bin\Debug\CiklumApp.exe
+G:\My Drive\clase\año3\ir\GIT\CiklumApp\CiklumApp\bin\Debug\CiklumApp.pdb
+G:\My Drive\clase\año3\ir\GIT\CiklumApp\CiklumApp\obj\Debug\CiklumApp.csproj.AssemblyReference.cache
+G:\My Drive\clase\año3\ir\GIT\CiklumApp\CiklumApp\obj\Debug\CiklumApp.Form1.resources
+G:\My Drive\clase\año3\ir\GIT\CiklumApp\CiklumApp\obj\Debug\CiklumApp.Login.resources
+G:\My Drive\clase\año3\ir\GIT\CiklumApp\CiklumApp\obj\Debug\CiklumApp.Properties.Resources.resources
+G:\My Drive\clase\año3\ir\GIT\CiklumApp\CiklumApp\obj\Debug\CiklumApp.csproj.GenerateResource.cache
+G:\My Drive\clase\año3\ir\GIT\CiklumApp\CiklumApp\obj\Debug\CiklumApp.csproj.CoreCompileInputs.cache
+G:\My Drive\clase\año3\ir\GIT\CiklumApp\CiklumApp\obj\Debug\CiklumApp.exe
+G:\My Drive\clase\año3\ir\GIT\CiklumApp\CiklumApp\obj\Debug\CiklumApp.pdb

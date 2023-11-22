@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CiklumApp
 {
-    public partial class Ejercicios : Form
+    public partial class Confirmacion : Form
     {
-        public Ejercicios()
+        public Confirmacion()
         {
             InitializeComponent();
         }
