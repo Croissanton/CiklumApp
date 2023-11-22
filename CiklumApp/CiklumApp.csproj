@@ -46,11 +46,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente.Designer.cs">
+      <DependentUpon>Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clientes.Designer.cs">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Confirmacion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Confirmacion.Designer.cs">
       <DependentUpon>Confirmacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dieta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dieta.Designer.cs">
+      <DependentUpon>Dieta.cs</DependentUpon>
     </Compile>
     <Compile Include="Ejercicios.cs">
       <SubType>Form</SubType>
@@ -72,8 +90,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rutina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rutina.Designer.cs">
+      <DependentUpon>Rutina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sesion.Designer.cs">
+      <DependentUpon>Sesion.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Cliente.resx">
+      <DependentUpon>Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clientes.resx">
+      <DependentUpon>Clientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Confirmacion.resx">
       <DependentUpon>Confirmacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dieta.resx">
+      <DependentUpon>Dieta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ejercicios.resx">
       <DependentUpon>Ejercicios.cs</DependentUpon>
@@ -93,6 +132,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Rutina.resx">
+      <DependentUpon>Rutina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sesion.resx">
+      <DependentUpon>Sesion.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
