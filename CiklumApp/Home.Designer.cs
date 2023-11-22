@@ -36,6 +36,11 @@ namespace CiklumApp
             this.bClientes = new System.Windows.Forms.Button();
             this.bSesiones = new System.Windows.Forms.Button();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ENTRENADOR = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID_CLIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FECHA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HORA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,6 +67,12 @@ namespace CiklumApp
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
+            this.ENTRENADOR,
+            this.ID_CLIENTE,
+            this.FECHA,
+            this.HORA});
             this.dataGridView1.Location = new System.Drawing.Point(346, 207);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(518, 356);
@@ -108,9 +119,34 @@ namespace CiklumApp
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(1002, 207);
+            this.monthCalendar1.Location = new System.Drawing.Point(1032, 285);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 8;
+            // 
+            // ID
+            // 
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            // 
+            // ENTRENADOR
+            // 
+            this.ENTRENADOR.HeaderText = "ENTRENADOR";
+            this.ENTRENADOR.Name = "ENTRENADOR";
+            // 
+            // ID_CLIENTE
+            // 
+            this.ID_CLIENTE.HeaderText = "ID_CLIENTE";
+            this.ID_CLIENTE.Name = "ID_CLIENTE";
+            // 
+            // FECHA
+            // 
+            this.FECHA.HeaderText = "FECHA";
+            this.FECHA.Name = "FECHA";
+            // 
+            // HORA
+            // 
+            this.HORA.HeaderText = "HORA";
+            this.HORA.Name = "HORA";
             // 
             // Home
             // 
@@ -143,6 +179,11 @@ namespace CiklumApp
         private System.Windows.Forms.Button bClientes;
         private System.Windows.Forms.Button bSesiones;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ENTRENADOR;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID_CLIENTE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FECHA;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HORA;
     }
 }
 
