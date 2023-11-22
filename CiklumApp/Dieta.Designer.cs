@@ -35,6 +35,12 @@
             this.bClientes = new System.Windows.Forms.Button();
             this.bEjercicios = new System.Windows.Forms.Button();
             this.bHome = new System.Windows.Forms.Button();
+            this.Desayuno = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MediaMañana = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Comida = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Merienda = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cena = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Calorías = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,6 +67,13 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Desayuno,
+            this.MediaMañana,
+            this.Comida,
+            this.Merienda,
+            this.Cena,
+            this.Calorías});
             this.dataGridView1.Location = new System.Drawing.Point(355, 195);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(544, 420);
@@ -102,6 +115,36 @@
             this.bHome.Text = "HOME";
             this.bHome.UseVisualStyleBackColor = true;
             // 
+            // Desayuno
+            // 
+            this.Desayuno.HeaderText = "Desayuno";
+            this.Desayuno.Name = "Desayuno";
+            // 
+            // MediaMañana
+            // 
+            this.MediaMañana.HeaderText = "MediaMañana";
+            this.MediaMañana.Name = "MediaMañana";
+            // 
+            // Comida
+            // 
+            this.Comida.HeaderText = "Comida";
+            this.Comida.Name = "Comida";
+            // 
+            // Merienda
+            // 
+            this.Merienda.HeaderText = "Merienda";
+            this.Merienda.Name = "Merienda";
+            // 
+            // Cena
+            // 
+            this.Cena.HeaderText = "Cena";
+            this.Cena.Name = "Cena";
+            // 
+            // Calorías
+            // 
+            this.Calorías.HeaderText = "Calorías";
+            this.Calorías.Name = "Calorías";
+            // 
             // Dieta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -131,5 +174,11 @@
         private System.Windows.Forms.Button bClientes;
         private System.Windows.Forms.Button bEjercicios;
         private System.Windows.Forms.Button bHome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Desayuno;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MediaMañana;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Comida;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Merienda;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cena;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Calorías;
     }
 }

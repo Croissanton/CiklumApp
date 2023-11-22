@@ -33,6 +33,12 @@
             this.bEjercicios = new System.Windows.Forms.Button();
             this.bHome = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Duración = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Descripción = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Vídeo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Privacidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -80,10 +86,47 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Nombre,
+            this.Tipo,
+            this.Duración,
+            this.Descripción,
+            this.Vídeo,
+            this.Privacidad});
             this.dataGridView1.Location = new System.Drawing.Point(332, 186);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(544, 420);
+            this.dataGridView1.Size = new System.Drawing.Size(644, 420);
             this.dataGridView1.TabIndex = 12;
+            // 
+            // Nombre
+            // 
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            // 
+            // Tipo
+            // 
+            this.Tipo.HeaderText = "Tipo";
+            this.Tipo.Name = "Tipo";
+            // 
+            // Duración
+            // 
+            this.Duración.HeaderText = "Duración";
+            this.Duración.Name = "Duración";
+            // 
+            // Descripción
+            // 
+            this.Descripción.HeaderText = "Descripción";
+            this.Descripción.Name = "Descripción";
+            // 
+            // Vídeo
+            // 
+            this.Vídeo.HeaderText = "Vídeo";
+            this.Vídeo.Name = "Vídeo";
+            // 
+            // Privacidad
+            // 
+            this.Privacidad.HeaderText = "Privacidad";
+            this.Privacidad.Name = "Privacidad";
             // 
             // label1
             // 
@@ -134,5 +177,11 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Duración;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Descripción;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Vídeo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Privacidad;
     }
 }

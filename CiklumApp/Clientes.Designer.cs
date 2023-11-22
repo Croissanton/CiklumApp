@@ -96,7 +96,7 @@
             // 
             // bPerfil
             // 
-            this.bPerfil.Location = new System.Drawing.Point(815, 182);
+            this.bPerfil.Location = new System.Drawing.Point(807, 191);
             this.bPerfil.Name = "bPerfil";
             this.bPerfil.Size = new System.Drawing.Size(98, 23);
             this.bPerfil.TabIndex = 40;
