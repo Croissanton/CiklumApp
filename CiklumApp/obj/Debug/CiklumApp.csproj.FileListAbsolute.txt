@@ -1,0 +1,9 @@
+C:\Users\Usuario\source\repos\CiklumApp\CiklumApp\bin\Debug\CiklumApp.exe.config
+C:\Users\Usuario\source\repos\CiklumApp\CiklumApp\bin\Debug\CiklumApp.exe
+C:\Users\Usuario\source\repos\CiklumApp\CiklumApp\bin\Debug\CiklumApp.pdb
+C:\Users\Usuario\source\repos\CiklumApp\CiklumApp\obj\Debug\CiklumApp.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\CiklumApp\CiklumApp\obj\Debug\CiklumApp.Properties.Resources.resources
+C:\Users\Usuario\source\repos\CiklumApp\CiklumApp\obj\Debug\CiklumApp.csproj.GenerateResource.cache
+C:\Users\Usuario\source\repos\CiklumApp\CiklumApp\obj\Debug\CiklumApp.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\CiklumApp\CiklumApp\obj\Debug\CiklumApp.exe
+C:\Users\Usuario\source\repos\CiklumApp\CiklumApp\obj\Debug\CiklumApp.pdb
