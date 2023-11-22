@@ -16,5 +16,26 @@ namespace CiklumApp
         {
             InitializeComponent();
         }
+
+        private void bHome_Click(object sender, EventArgs e)
+        {
+            var home = new Home();
+            this.Hide();
+            home.Show();
+        }
+
+        private void bEjercicios_Click(object sender, EventArgs e)
+        {
+            var ejercicios = new Ejercicios();
+            this.Hide();
+            ejercicios.Show();
+        }
+
+        private void bSesiones_Click(object sender, EventArgs e)
+        {
+            var sesiones = new Sesion();
+            this.Hide();
+            sesiones.Show();
+        }
     }
 }

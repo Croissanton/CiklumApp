@@ -16,5 +16,15 @@ namespace CiklumApp
         {
             InitializeComponent();
         }
+
+        private void bCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void bAceptar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -33,8 +33,6 @@
             this.bEjercicios = new System.Windows.Forms.Button();
             this.bHome = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.bAnadirEjercicio = new System.Windows.Forms.Button();
-            this.bEliminarEjercicio = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -48,6 +46,7 @@
             this.bSesiones.TabIndex = 11;
             this.bSesiones.Text = "SESIONES";
             this.bSesiones.UseVisualStyleBackColor = true;
+            this.bSesiones.Click += new System.EventHandler(this.bSesiones_Click);
             // 
             // bClientes
             // 
@@ -57,6 +56,7 @@
             this.bClientes.TabIndex = 10;
             this.bClientes.Text = "CLIENTES";
             this.bClientes.UseVisualStyleBackColor = true;
+            this.bClientes.Click += new System.EventHandler(this.bClientes_Click);
             // 
             // bEjercicios
             // 
@@ -75,6 +75,7 @@
             this.bHome.TabIndex = 8;
             this.bHome.Text = "HOME";
             this.bHome.UseVisualStyleBackColor = true;
+            this.bHome.Click += new System.EventHandler(this.bHome_Click);
             // 
             // dataGridView1
             // 
@@ -83,24 +84,6 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(544, 420);
             this.dataGridView1.TabIndex = 12;
-            // 
-            // bAnadirEjercicio
-            // 
-            this.bAnadirEjercicio.Location = new System.Drawing.Point(893, 200);
-            this.bAnadirEjercicio.Name = "bAnadirEjercicio";
-            this.bAnadirEjercicio.Size = new System.Drawing.Size(98, 23);
-            this.bAnadirEjercicio.TabIndex = 13;
-            this.bAnadirEjercicio.Text = "Añadir Ejercicio";
-            this.bAnadirEjercicio.UseVisualStyleBackColor = true;
-            // 
-            // bEliminarEjercicio
-            // 
-            this.bEliminarEjercicio.Location = new System.Drawing.Point(893, 242);
-            this.bEliminarEjercicio.Name = "bEliminarEjercicio";
-            this.bEliminarEjercicio.Size = new System.Drawing.Size(98, 23);
-            this.bEliminarEjercicio.TabIndex = 14;
-            this.bEliminarEjercicio.Text = "Eliminar Ejercicio";
-            this.bEliminarEjercicio.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -129,8 +112,6 @@
             this.ClientSize = new System.Drawing.Size(1140, 643);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.bEliminarEjercicio);
-            this.Controls.Add(this.bAnadirEjercicio);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.bSesiones);
             this.Controls.Add(this.bClientes);
@@ -151,8 +132,6 @@
         private System.Windows.Forms.Button bEjercicios;
         private System.Windows.Forms.Button bHome;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button bAnadirEjercicio;
-        private System.Windows.Forms.Button bEliminarEjercicio;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
     }

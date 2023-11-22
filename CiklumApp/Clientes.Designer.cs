@@ -34,6 +34,7 @@
             this.bClientes = new System.Windows.Forms.Button();
             this.bEjercicios = new System.Windows.Forms.Button();
             this.bHome = new System.Windows.Forms.Button();
+            this.bPerfil = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbClientes
@@ -62,6 +63,7 @@
             this.bSesiones.TabIndex = 38;
             this.bSesiones.Text = "SESIONES";
             this.bSesiones.UseVisualStyleBackColor = true;
+            this.bSesiones.Click += new System.EventHandler(this.bSesiones_Click);
             // 
             // bClientes
             // 
@@ -80,6 +82,7 @@
             this.bEjercicios.TabIndex = 36;
             this.bEjercicios.Text = "EJERCICIOS";
             this.bEjercicios.UseVisualStyleBackColor = true;
+            this.bEjercicios.Click += new System.EventHandler(this.bEjercicios_Click);
             // 
             // bHome
             // 
@@ -89,12 +92,23 @@
             this.bHome.TabIndex = 35;
             this.bHome.Text = "HOME";
             this.bHome.UseVisualStyleBackColor = true;
+            this.bHome.Click += new System.EventHandler(this.bHome_Click);
+            // 
+            // bPerfil
+            // 
+            this.bPerfil.Location = new System.Drawing.Point(815, 182);
+            this.bPerfil.Name = "bPerfil";
+            this.bPerfil.Size = new System.Drawing.Size(98, 23);
+            this.bPerfil.TabIndex = 40;
+            this.bPerfil.Text = "Ir al perfil";
+            this.bPerfil.UseVisualStyleBackColor = true;
             // 
             // Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1119, 673);
+            this.Controls.Add(this.bPerfil);
             this.Controls.Add(this.bSesiones);
             this.Controls.Add(this.bClientes);
             this.Controls.Add(this.bEjercicios);
@@ -116,5 +130,6 @@
         private System.Windows.Forms.Button bClientes;
         private System.Windows.Forms.Button bEjercicios;
         private System.Windows.Forms.Button bHome;
+        private System.Windows.Forms.Button bPerfil;
     }
 }

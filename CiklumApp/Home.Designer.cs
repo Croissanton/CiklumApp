@@ -31,11 +31,11 @@ namespace CiklumApp
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.bHome = new System.Windows.Forms.Button();
             this.bEjercicios = new System.Windows.Forms.Button();
             this.bClientes = new System.Windows.Forms.Button();
             this.bSesiones = new System.Windows.Forms.Button();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,13 +66,6 @@ namespace CiklumApp
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(518, 356);
             this.dataGridView1.TabIndex = 2;
-            // 
-            // monthCalendar1
-            // 
-            this.monthCalendar1.CalendarDimensions = new System.Drawing.Size(2, 2);
-            this.monthCalendar1.Location = new System.Drawing.Point(922, 239);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 3;
             // 
             // bHome
             // 
@@ -113,16 +106,22 @@ namespace CiklumApp
             this.bSesiones.UseVisualStyleBackColor = true;
             this.bSesiones.Click += new System.EventHandler(this.bSesiones_Click);
             // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.Location = new System.Drawing.Point(1002, 207);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 8;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1390, 741);
+            this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.bSesiones);
             this.Controls.Add(this.bClientes);
             this.Controls.Add(this.bEjercicios);
             this.Controls.Add(this.bHome);
-            this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -139,11 +138,11 @@ namespace CiklumApp
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.Button bHome;
         private System.Windows.Forms.Button bEjercicios;
         private System.Windows.Forms.Button bClientes;
         private System.Windows.Forms.Button bSesiones;
+        private System.Windows.Forms.MonthCalendar monthCalendar1;
     }
 }
 

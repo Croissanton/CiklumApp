@@ -16,5 +16,31 @@ namespace CiklumApp
         {
             InitializeComponent();
         }
+
+        private void bHome_Click(object sender, EventArgs e)
+        {
+            var home = new Home();
+            this.Hide();
+            home.Show();
+        }
+
+        private void bClientes_Click(object sender, EventArgs e)
+        {
+            var clientes = new Clientes();
+            this.Hide();
+            clientes.Show();
+        }
+
+        private void bSesiones_Click(object sender, EventArgs e)
+        {
+            var sesiones = new Sesion();
+            this.Hide();
+            sesiones.Show();
+        }
+
+        private void bindingSource1_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
