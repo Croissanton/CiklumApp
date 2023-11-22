@@ -91,6 +91,7 @@ namespace CiklumApp
             this.bEjercicios.TabIndex = 5;
             this.bEjercicios.Text = "EJERCICIOS";
             this.bEjercicios.UseVisualStyleBackColor = true;
+            this.bEjercicios.Click += new System.EventHandler(this.bEjercicios_Click);
             // 
             // bClientes
             // 
@@ -100,6 +101,7 @@ namespace CiklumApp
             this.bClientes.TabIndex = 6;
             this.bClientes.Text = "CLIENTES";
             this.bClientes.UseVisualStyleBackColor = true;
+            this.bClientes.Click += new System.EventHandler(this.bClientes_Click);
             // 
             // bSesiones
             // 
@@ -109,6 +111,7 @@ namespace CiklumApp
             this.bSesiones.TabIndex = 7;
             this.bSesiones.Text = "SESIONES";
             this.bSesiones.UseVisualStyleBackColor = true;
+            this.bSesiones.Click += new System.EventHandler(this.bSesiones_Click);
             // 
             // Home
             // 

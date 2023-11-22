@@ -75,6 +75,7 @@
             this.bSignin.TabIndex = 4;
             this.bSignin.Text = "Sign in";
             this.bSignin.UseVisualStyleBackColor = true;
+            this.bSignin.Click += new System.EventHandler(this.bSignin_Click);
             // 
             // Login
             // 
