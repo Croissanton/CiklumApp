@@ -1,6 +1,6 @@
 namespace CiklumApp
 {
-    partial class Form1
+    partial class Home
     {
         /// <summary>
         /// Variable del diseñador necesaria.
