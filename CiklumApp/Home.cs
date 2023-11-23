@@ -37,5 +37,15 @@ namespace CiklumApp
             this.Hide();
             sesiones.Show();
         }
+
+        private void bSalir_Click(object sender, EventArgs e)
+        {
+            var exit = MessageBox.Show("¿Está seguro que desea salir?", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (exit == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
     }
 }

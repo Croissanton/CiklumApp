@@ -31,16 +31,17 @@ namespace CiklumApp
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.bHome = new System.Windows.Forms.Button();
-            this.bEjercicios = new System.Windows.Forms.Button();
-            this.bClientes = new System.Windows.Forms.Button();
-            this.bSesiones = new System.Windows.Forms.Button();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ENTRENADOR = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ID_CLIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FECHA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HORA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bHome = new System.Windows.Forms.Button();
+            this.bEjercicios = new System.Windows.Forms.Button();
+            this.bClientes = new System.Windows.Forms.Button();
+            this.bSesiones = new System.Windows.Forms.Button();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.bSalir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,6 +78,31 @@ namespace CiklumApp
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(518, 356);
             this.dataGridView1.TabIndex = 2;
+            // 
+            // ID
+            // 
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            // 
+            // ENTRENADOR
+            // 
+            this.ENTRENADOR.HeaderText = "ENTRENADOR";
+            this.ENTRENADOR.Name = "ENTRENADOR";
+            // 
+            // ID_CLIENTE
+            // 
+            this.ID_CLIENTE.HeaderText = "ID_CLIENTE";
+            this.ID_CLIENTE.Name = "ID_CLIENTE";
+            // 
+            // FECHA
+            // 
+            this.FECHA.HeaderText = "FECHA";
+            this.FECHA.Name = "FECHA";
+            // 
+            // HORA
+            // 
+            this.HORA.HeaderText = "HORA";
+            this.HORA.Name = "HORA";
             // 
             // bHome
             // 
@@ -119,40 +145,26 @@ namespace CiklumApp
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(1032, 285);
+            this.monthCalendar1.Location = new System.Drawing.Point(1033, 207);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 8;
             // 
-            // ID
+            // bSalir
             // 
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            // 
-            // ENTRENADOR
-            // 
-            this.ENTRENADOR.HeaderText = "ENTRENADOR";
-            this.ENTRENADOR.Name = "ENTRENADOR";
-            // 
-            // ID_CLIENTE
-            // 
-            this.ID_CLIENTE.HeaderText = "ID_CLIENTE";
-            this.ID_CLIENTE.Name = "ID_CLIENTE";
-            // 
-            // FECHA
-            // 
-            this.FECHA.HeaderText = "FECHA";
-            this.FECHA.Name = "FECHA";
-            // 
-            // HORA
-            // 
-            this.HORA.HeaderText = "HORA";
-            this.HORA.Name = "HORA";
+            this.bSalir.Location = new System.Drawing.Point(1073, 456);
+            this.bSalir.Name = "bSalir";
+            this.bSalir.Size = new System.Drawing.Size(149, 60);
+            this.bSalir.TabIndex = 9;
+            this.bSalir.Text = "SALIR";
+            this.bSalir.UseVisualStyleBackColor = true;
+            this.bSalir.Click += new System.EventHandler(this.bSalir_Click);
             // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1390, 741);
+            this.Controls.Add(this.bSalir);
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.bSesiones);
             this.Controls.Add(this.bClientes);
@@ -184,6 +196,7 @@ namespace CiklumApp
         private System.Windows.Forms.DataGridViewTextBoxColumn ID_CLIENTE;
         private System.Windows.Forms.DataGridViewTextBoxColumn FECHA;
         private System.Windows.Forms.DataGridViewTextBoxColumn HORA;
+        private System.Windows.Forms.Button bSalir;
     }
 }
 
