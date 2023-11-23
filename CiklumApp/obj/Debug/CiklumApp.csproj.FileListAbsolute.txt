@@ -25,3 +25,30 @@ G:\My Drive\clase\año3\ir\GIT\CiklumApp\CiklumApp\obj\Debug\CiklumApp.Ejercicio
 G:\My Drive\clase\año3\ir\GIT\CiklumApp\CiklumApp\obj\Debug\CiklumApp.Home.resources
 G:\My Drive\clase\año3\ir\GIT\CiklumApp\CiklumApp\obj\Debug\CiklumApp.Rutina.resources
 G:\My Drive\clase\año3\ir\GIT\CiklumApp\CiklumApp\obj\Debug\CiklumApp.Sesion.resources
+C:\Users\nuxte\OneDrive\Dokumenty\Ing Req GIT\CiklumApp\CiklumApp\bin\Debug\CiklumApp.exe.config
+C:\Users\nuxte\OneDrive\Dokumenty\Ing Req GIT\CiklumApp\CiklumApp\bin\Debug\CiklumApp.exe
+C:\Users\nuxte\OneDrive\Dokumenty\Ing Req GIT\CiklumApp\CiklumApp\bin\Debug\CiklumApp.pdb
+C:\Users\nuxte\OneDrive\Dokumenty\Ing Req GIT\CiklumApp\CiklumApp\bin\Debug\EntityFramework.dll
+C:\Users\nuxte\OneDrive\Dokumenty\Ing Req GIT\CiklumApp\CiklumApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\nuxte\OneDrive\Dokumenty\Ing Req GIT\CiklumApp\CiklumApp\bin\Debug\System.Data.SQLite.dll
+C:\Users\nuxte\OneDrive\Dokumenty\Ing Req GIT\CiklumApp\CiklumApp\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\nuxte\OneDrive\Dokumenty\Ing Req GIT\CiklumApp\CiklumApp\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\nuxte\OneDrive\Dokumenty\Ing Req GIT\CiklumApp\CiklumApp\bin\Debug\EntityFramework.xml
+C:\Users\nuxte\OneDrive\Dokumenty\Ing Req GIT\CiklumApp\CiklumApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\nuxte\OneDrive\Dokumenty\Ing Req GIT\CiklumApp\CiklumApp\bin\Debug\System.Data.SQLite.xml
+C:\Users\nuxte\OneDrive\Dokumenty\Ing Req GIT\CiklumApp\CiklumApp\obj\Debug\CiklumApp.csproj.AssemblyReference.cache
+C:\Users\nuxte\OneDrive\Dokumenty\Ing Req GIT\CiklumApp\CiklumApp\obj\Debug\CiklumApp.lCliente.resources
+C:\Users\nuxte\OneDrive\Dokumenty\Ing Req GIT\CiklumApp\CiklumApp\obj\Debug\CiklumApp.Clientes.resources
+C:\Users\nuxte\OneDrive\Dokumenty\Ing Req GIT\CiklumApp\CiklumApp\obj\Debug\CiklumApp.Confirmacion.resources
+C:\Users\nuxte\OneDrive\Dokumenty\Ing Req GIT\CiklumApp\CiklumApp\obj\Debug\CiklumApp.Dieta.resources
+C:\Users\nuxte\OneDrive\Dokumenty\Ing Req GIT\CiklumApp\CiklumApp\obj\Debug\CiklumApp.Ejercicios.resources
+C:\Users\nuxte\OneDrive\Dokumenty\Ing Req GIT\CiklumApp\CiklumApp\obj\Debug\CiklumApp.Home.resources
+C:\Users\nuxte\OneDrive\Dokumenty\Ing Req GIT\CiklumApp\CiklumApp\obj\Debug\CiklumApp.Login.resources
+C:\Users\nuxte\OneDrive\Dokumenty\Ing Req GIT\CiklumApp\CiklumApp\obj\Debug\CiklumApp.Properties.Resources.resources
+C:\Users\nuxte\OneDrive\Dokumenty\Ing Req GIT\CiklumApp\CiklumApp\obj\Debug\CiklumApp.Rutina.resources
+C:\Users\nuxte\OneDrive\Dokumenty\Ing Req GIT\CiklumApp\CiklumApp\obj\Debug\CiklumApp.Sesion.resources
+C:\Users\nuxte\OneDrive\Dokumenty\Ing Req GIT\CiklumApp\CiklumApp\obj\Debug\CiklumApp.csproj.GenerateResource.cache
+C:\Users\nuxte\OneDrive\Dokumenty\Ing Req GIT\CiklumApp\CiklumApp\obj\Debug\CiklumApp.csproj.CoreCompileInputs.cache
+C:\Users\nuxte\OneDrive\Dokumenty\Ing Req GIT\CiklumApp\CiklumApp\obj\Debug\CiklumApp.csproj.CopyComplete
+C:\Users\nuxte\OneDrive\Dokumenty\Ing Req GIT\CiklumApp\CiklumApp\obj\Debug\CiklumApp.exe
+C:\Users\nuxte\OneDrive\Dokumenty\Ing Req GIT\CiklumApp\CiklumApp\obj\Debug\CiklumApp.pdb
