@@ -20,41 +20,23 @@ namespace CiklumApp
 
         private bool checklogin(string user, string pass)
         {
-            /*
-            string databasePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ciklumdb.db");
-            string connectionString = $"Data Source={databasePath};Version=3;";
-            */
-/*
-
-            string ds = Path.Combine(Directory.GetCurrentDirectory(), "..", "..","..");
-
-            using (SQLiteConnection con = new SQLiteConnection("Data Source="+ds+"\\ciklumdb.db;Version=3;"))
-            {
-                con.Open();
-                using (SQLiteCommand cmd = new SQLiteCommand("SELECT * FROM USUARIO WHERE USERNAME = @user AND PASSWORD = @pass", con))
-                {
-                    cmd.Parameters.AddWithValue("@user", user);
-                    cmd.Parameters.AddWithValue("@pass", pass);
-                    using (SQLiteDataReader reader = cmd.ExecuteReader())
-                    {
-                        if (reader.Read())
-                        {
-                            return true;
-                        }
-                        else
-                        {
-                            return false;
-                        }
-                    }
-                }
-                con.Close();
-            }*/
+            /*var consulta = new Consulta();
+            var list = consulta.Select("SELECT * FROM users WHERE username = '" + user + "' AND password = '" + pass + "'");*/
+            var list = new List<object[]>();
             return true;
+            if (list.Count > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         private void bSignin_Click(object sender, EventArgs e)
         {
-            if (checklogin(tbUsername.Text,tbPassword.Text))
+            if (checklogin(tbUsername.Text, tbPassword.Text))
             {
                 this.Hide();
                 var home = new Home();
@@ -68,3 +50,4 @@ namespace CiklumApp
         }
     }
 }
+

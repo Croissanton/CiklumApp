@@ -55,6 +55,7 @@ namespace CiklumApp
             var command = con.GetConnection().CreateCommand();
             command.CommandText = consulta;
             command.ExecuteNonQuery();
+            con.GetConnection().Close();
         }
 
         public void Delete(string consulta)
@@ -64,6 +65,7 @@ namespace CiklumApp
             var command = con.GetConnection().CreateCommand();
             command.CommandText = consulta;
             command.ExecuteNonQuery();
+            con.GetConnection().Close();
         }
 
         public void Insert(string consulta)
@@ -73,8 +75,7 @@ namespace CiklumApp
             var command = con.GetConnection().CreateCommand();
             command.CommandText = consulta;
             command.ExecuteNonQuery();
-
-
+            con.GetConnection().Close();
         }
 
     }
