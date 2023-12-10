@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SQLite;
 using System.IO;
 
 
@@ -41,8 +40,8 @@ namespace CiklumApp
 
 
         //TODO: ninguna de las implementaciones de loadCitas() funciona <3
-        private void loadCitas()
-        {
+        private void loadCitas() { }
+        /*{
 
             string path = Path.Combine(Directory.GetCurrentDirectory(), "..", "..", "..");
             string connectionString = "Data Source=" + path + "\\ciklumdb.db;Version=3;";
@@ -64,7 +63,7 @@ namespace CiklumApp
                     citasGridView.DataSource = dataTable;
                 }
             }
-        }
+        }*/
 
         public Home()
         {

@@ -1,4 +1,4 @@
-﻿using MySql.Data.MySql;
+﻿/*using MySql.Data.MySql;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
@@ -65,3 +65,4 @@ namespace CiklumApp
 
     }
 }
+*/
