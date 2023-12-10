@@ -1,0 +1,6 @@
+
+*.exe
+
+*.cache
+
+.vs/CiklumApp/v17/.suo
