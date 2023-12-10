@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Data.SQLite;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -25,7 +24,7 @@ namespace CiklumApp
             string databasePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ciklumdb.db");
             string connectionString = $"Data Source={databasePath};Version=3;";
             */
-
+/*
 
             string ds = Path.Combine(Directory.GetCurrentDirectory(), "..", "..","..");
 
@@ -49,7 +48,8 @@ namespace CiklumApp
                     }
                 }
                 con.Close();
-            }
+            }*/
+            return true;
         }
 
         private void bSignin_Click(object sender, EventArgs e)
