@@ -34,9 +34,9 @@
             this.bEjercicios = new System.Windows.Forms.Button();
             this.bHome = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ID_SESION = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ID_RUTINA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreEjercicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Repeticiones = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Series = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,9 +44,9 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
-            this.ID_SESION,
-            this.ID_RUTINA});
+            this.NombreEjercicio,
+            this.Repeticiones,
+            this.Series});
             this.dataGridView1.Location = new System.Drawing.Point(367, 215);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(544, 420);
@@ -101,20 +101,20 @@
             this.label1.TabIndex = 22;
             this.label1.Text = "SESIONES";
             // 
-            // ID
+            // NombreEjercicio
             // 
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
+            this.NombreEjercicio.HeaderText = "Nombre Ejercicio";
+            this.NombreEjercicio.Name = "NombreEjercicio";
             // 
-            // ID_SESION
+            // Repeticiones
             // 
-            this.ID_SESION.HeaderText = "ID_SESION";
-            this.ID_SESION.Name = "ID_SESION";
+            this.Repeticiones.HeaderText = "Repeticiones";
+            this.Repeticiones.Name = "Repeticiones";
             // 
-            // ID_RUTINA
+            // Series
             // 
-            this.ID_RUTINA.HeaderText = "ID_RUTINA";
-            this.ID_RUTINA.Name = "ID_RUTINA";
+            this.Series.HeaderText = "Series";
+            this.Series.Name = "Series";
             // 
             // Sesion
             // 
@@ -142,8 +142,8 @@
         private System.Windows.Forms.Button bEjercicios;
         private System.Windows.Forms.Button bHome;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID_SESION;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID_RUTINA;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NombreEjercicio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Repeticiones;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Series;
     }
 }
