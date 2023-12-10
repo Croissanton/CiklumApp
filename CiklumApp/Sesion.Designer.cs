@@ -29,14 +29,17 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Repeticiones = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Series = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bSesiones = new System.Windows.Forms.Button();
             this.bClientes = new System.Windows.Forms.Button();
             this.bEjercicios = new System.Windows.Forms.Button();
             this.bHome = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ID_SESION = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ID_RUTINA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,28 +47,53 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ID,
-            this.ID_SESION,
-            this.ID_RUTINA});
-            this.dataGridView1.Location = new System.Drawing.Point(367, 215);
+            this.Nombre,
+            this.Repeticiones,
+            this.Series});
+            this.dataGridView1.Location = new System.Drawing.Point(489, 265);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(544, 420);
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(768, 370);
             this.dataGridView1.TabIndex = 19;
+            // 
+            // Nombre
+            // 
+            this.Nombre.HeaderText = "Nombre del ejercicio";
+            this.Nombre.MinimumWidth = 6;
+            this.Nombre.Name = "Nombre";
+            this.Nombre.Width = 125;
+            // 
+            // Repeticiones
+            // 
+            this.Repeticiones.HeaderText = "Repeticiones/tiempo";
+            this.Repeticiones.MinimumWidth = 6;
+            this.Repeticiones.Name = "Repeticiones";
+            this.Repeticiones.Width = 125;
+            // 
+            // Series
+            // 
+            this.Series.HeaderText = "Series";
+            this.Series.MinimumWidth = 6;
+            this.Series.Name = "Series";
+            this.Series.Width = 125;
             // 
             // bSesiones
             // 
-            this.bSesiones.Location = new System.Drawing.Point(112, 571);
+            this.bSesiones.Location = new System.Drawing.Point(149, 703);
+            this.bSesiones.Margin = new System.Windows.Forms.Padding(4);
             this.bSesiones.Name = "bSesiones";
-            this.bSesiones.Size = new System.Drawing.Size(156, 43);
+            this.bSesiones.Size = new System.Drawing.Size(208, 53);
             this.bSesiones.TabIndex = 18;
             this.bSesiones.Text = "SESIONES";
             this.bSesiones.UseVisualStyleBackColor = true;
             // 
             // bClientes
             // 
-            this.bClientes.Location = new System.Drawing.Point(112, 455);
+            this.bClientes.Location = new System.Drawing.Point(149, 560);
+            this.bClientes.Margin = new System.Windows.Forms.Padding(4);
             this.bClientes.Name = "bClientes";
-            this.bClientes.Size = new System.Drawing.Size(156, 43);
+            this.bClientes.Size = new System.Drawing.Size(208, 53);
             this.bClientes.TabIndex = 17;
             this.bClientes.Text = "CLIENTES";
             this.bClientes.UseVisualStyleBackColor = true;
@@ -73,9 +101,10 @@
             // 
             // bEjercicios
             // 
-            this.bEjercicios.Location = new System.Drawing.Point(112, 335);
+            this.bEjercicios.Location = new System.Drawing.Point(149, 412);
+            this.bEjercicios.Margin = new System.Windows.Forms.Padding(4);
             this.bEjercicios.Name = "bEjercicios";
-            this.bEjercicios.Size = new System.Drawing.Size(156, 43);
+            this.bEjercicios.Size = new System.Drawing.Size(208, 53);
             this.bEjercicios.TabIndex = 16;
             this.bEjercicios.Text = "EJERCICIOS";
             this.bEjercicios.UseVisualStyleBackColor = true;
@@ -83,9 +112,10 @@
             // 
             // bHome
             // 
-            this.bHome.Location = new System.Drawing.Point(112, 229);
+            this.bHome.Location = new System.Drawing.Point(149, 282);
+            this.bHome.Margin = new System.Windows.Forms.Padding(4);
             this.bHome.Name = "bHome";
-            this.bHome.Size = new System.Drawing.Size(156, 43);
+            this.bHome.Size = new System.Drawing.Size(208, 53);
             this.bHome.TabIndex = 15;
             this.bHome.Text = "HOME";
             this.bHome.UseVisualStyleBackColor = true;
@@ -95,40 +125,61 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40.25F);
-            this.label1.Location = new System.Drawing.Point(463, 40);
+            this.label1.Location = new System.Drawing.Point(617, 49);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(303, 63);
+            this.label1.Size = new System.Drawing.Size(289, 78);
             this.label1.TabIndex = 22;
-            this.label1.Text = "SESIONES";
+            this.label1.Text = "SESION";
             // 
-            // ID
+            // listBox1
             // 
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Items.AddRange(new object[] {
+            "Sesion1",
+            "Sesion2",
+            "Sesion3"});
+            this.listBox1.Location = new System.Drawing.Point(1328, 265);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(248, 372);
+            this.listBox1.TabIndex = 23;
             // 
-            // ID_SESION
+            // button1
             // 
-            this.ID_SESION.HeaderText = "ID_SESION";
-            this.ID_SESION.Name = "ID_SESION";
+            this.button1.Location = new System.Drawing.Point(559, 703);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(122, 36);
+            this.button1.TabIndex = 24;
+            this.button1.Text = "Añadir";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // ID_RUTINA
+            // button2
             // 
-            this.ID_RUTINA.HeaderText = "ID_RUTINA";
-            this.ID_RUTINA.Name = "ID_RUTINA";
+            this.button2.Location = new System.Drawing.Point(1050, 703);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(123, 36);
+            this.button2.TabIndex = 25;
+            this.button2.Text = "Borrar";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // Sesion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1191, 684);
+            this.ClientSize = new System.Drawing.Size(1588, 842);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.bSesiones);
             this.Controls.Add(this.bClientes);
             this.Controls.Add(this.bEjercicios);
             this.Controls.Add(this.bHome);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Sesion";
-            this.Text = "Sesion";
+            this.Text = "z";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -142,8 +193,11 @@
         private System.Windows.Forms.Button bEjercicios;
         private System.Windows.Forms.Button bHome;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID_SESION;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID_RUTINA;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Repeticiones;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Series;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
