@@ -141,6 +141,24 @@
     <Compile Include="Ejercicios.Designer.cs">
       <DependentUpon>Ejercicios.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModificarEjercicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarEjercicio.Designer.cs">
+      <DependentUpon>ModificarEjercicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarSesion.Designer.cs">
+      <DependentUpon>ModificarSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarDieta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarDieta.Designer.cs">
+      <DependentUpon>ModificarDieta.cs</DependentUpon>
+    </Compile>
     <Compile Include="ModificarRutina.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,6 +206,12 @@
     <EmbeddedResource Include="Ejercicios.resx">
       <DependentUpon>Ejercicios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ModificarDieta.resx">
+      <DependentUpon>ModificarDieta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarEjercicio.resx">
+      <DependentUpon>ModificarEjercicio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ModificarRutina.resx">
       <DependentUpon>ModificarRutina.cs</DependentUpon>
     </EmbeddedResource>
@@ -196,6 +220,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarSesion.resx">
+      <DependentUpon>ModificarSesion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
