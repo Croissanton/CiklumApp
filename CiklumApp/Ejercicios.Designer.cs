@@ -41,6 +41,7 @@
             this.Privacidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.bAñadirEjercicio = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -148,11 +149,22 @@
             this.label2.TabIndex = 16;
             this.label2.Text = "Lista de ejercicios disponibles:";
             // 
+            // bAñadirEjercicio
+            // 
+            this.bAñadirEjercicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.bAñadirEjercicio.Location = new System.Drawing.Point(1000, 200);
+            this.bAñadirEjercicio.Name = "bAñadirEjercicio";
+            this.bAñadirEjercicio.Size = new System.Drawing.Size(36, 36);
+            this.bAñadirEjercicio.TabIndex = 17;
+            this.bAñadirEjercicio.Text = "+";
+            this.bAñadirEjercicio.UseVisualStyleBackColor = true;
+            // 
             // Ejercicios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1140, 643);
+            this.Controls.Add(this.bAñadirEjercicio);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
@@ -183,5 +195,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Descripción;
         private System.Windows.Forms.DataGridViewTextBoxColumn Vídeo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Privacidad;
+        private System.Windows.Forms.Button bAñadirEjercicio;
     }
 }
