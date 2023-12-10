@@ -35,8 +35,8 @@
             this.bHome = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.Sesion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Dieta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID_CLIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -44,8 +44,8 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Sesion,
-            this.Dieta});
+            this.ID,
+            this.ID_CLIENTE});
             this.dataGridView1.Location = new System.Drawing.Point(365, 219);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(544, 420);
@@ -107,15 +107,15 @@
             this.label2.TabIndex = 30;
             this.label2.Text = "Rutina del cliente:";
             // 
-            // Sesion
+            // ID
             // 
-            this.Sesion.HeaderText = "Sesion";
-            this.Sesion.Name = "Sesion";
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
             // 
-            // Dieta
+            // ID_CLIENTE
             // 
-            this.Dieta.HeaderText = "Dieta";
-            this.Dieta.Name = "Dieta";
+            this.ID_CLIENTE.HeaderText = "ID_CLIENTE";
+            this.ID_CLIENTE.Name = "ID_CLIENTE";
             // 
             // Rutina
             // 
@@ -145,7 +145,7 @@
         private System.Windows.Forms.Button bHome;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Sesion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Dieta;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID_CLIENTE;
     }
 }

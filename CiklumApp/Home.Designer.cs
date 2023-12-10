@@ -42,7 +42,6 @@ namespace CiklumApp
             this.bSesiones = new System.Windows.Forms.Button();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.bSalir = new System.Windows.Forms.Button();
-            this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.citasGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,9 +49,10 @@ namespace CiklumApp
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40.25F);
-            this.label1.Location = new System.Drawing.Point(452, 39);
+            this.label1.Location = new System.Drawing.Point(603, 48);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(360, 63);
+            this.label1.Size = new System.Drawing.Size(451, 78);
             this.label1.TabIndex = 0;
             this.label1.Text = "BIENVENIDO";
             // 
@@ -60,9 +60,10 @@ namespace CiklumApp
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.label2.Location = new System.Drawing.Point(548, 126);
+            this.label2.Location = new System.Drawing.Point(731, 155);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(132, 31);
+            this.label2.Size = new System.Drawing.Size(162, 39);
             this.label2.TabIndex = 1;
             this.label2.Text = "Tus citas:";
             // 
@@ -74,12 +75,12 @@ namespace CiklumApp
             this.ENTRENADOR,
             this.ID_CLIENTE,
             this.FECHA,
-            this.HORA,
-            this.Estado});
-            this.citasGridView.Location = new System.Drawing.Point(243, 207);
+            this.HORA});
+            this.citasGridView.Location = new System.Drawing.Point(461, 255);
+            this.citasGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.citasGridView.Name = "citasGridView";
             this.citasGridView.RowHeadersWidth = 51;
-            this.citasGridView.Size = new System.Drawing.Size(778, 356);
+            this.citasGridView.Size = new System.Drawing.Size(691, 438);
             this.citasGridView.TabIndex = 2;
             // 
             // ID
@@ -119,18 +120,20 @@ namespace CiklumApp
             // 
             // bHome
             // 
-            this.bHome.Location = new System.Drawing.Point(68, 187);
+            this.bHome.Location = new System.Drawing.Point(91, 230);
+            this.bHome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bHome.Name = "bHome";
-            this.bHome.Size = new System.Drawing.Size(149, 60);
+            this.bHome.Size = new System.Drawing.Size(199, 74);
             this.bHome.TabIndex = 4;
             this.bHome.Text = "HOME";
             this.bHome.UseVisualStyleBackColor = true;
             // 
             // bEjercicios
             // 
-            this.bEjercicios.Location = new System.Drawing.Point(68, 295);
+            this.bEjercicios.Location = new System.Drawing.Point(91, 363);
+            this.bEjercicios.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bEjercicios.Name = "bEjercicios";
-            this.bEjercicios.Size = new System.Drawing.Size(149, 58);
+            this.bEjercicios.Size = new System.Drawing.Size(199, 71);
             this.bEjercicios.TabIndex = 5;
             this.bEjercicios.Text = "EJERCICIOS";
             this.bEjercicios.UseVisualStyleBackColor = true;
@@ -138,9 +141,10 @@ namespace CiklumApp
             // 
             // bClientes
             // 
-            this.bClientes.Location = new System.Drawing.Point(68, 408);
+            this.bClientes.Location = new System.Drawing.Point(91, 502);
+            this.bClientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bClientes.Name = "bClientes";
-            this.bClientes.Size = new System.Drawing.Size(149, 55);
+            this.bClientes.Size = new System.Drawing.Size(199, 68);
             this.bClientes.TabIndex = 6;
             this.bClientes.Text = "CLIENTES";
             this.bClientes.UseVisualStyleBackColor = true;
@@ -148,9 +152,10 @@ namespace CiklumApp
             // 
             // bSesiones
             // 
-            this.bSesiones.Location = new System.Drawing.Point(68, 522);
+            this.bSesiones.Location = new System.Drawing.Point(91, 642);
+            this.bSesiones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bSesiones.Name = "bSesiones";
-            this.bSesiones.Size = new System.Drawing.Size(149, 59);
+            this.bSesiones.Size = new System.Drawing.Size(199, 73);
             this.bSesiones.TabIndex = 7;
             this.bSesiones.Text = "SESIONES";
             this.bSesiones.UseVisualStyleBackColor = true;
@@ -158,30 +163,27 @@ namespace CiklumApp
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(1033, 207);
+            this.monthCalendar1.Location = new System.Drawing.Point(1377, 255);
+            this.monthCalendar1.Margin = new System.Windows.Forms.Padding(12, 11, 12, 11);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 8;
             // 
             // bSalir
             // 
-            this.bSalir.Location = new System.Drawing.Point(1073, 456);
+            this.bSalir.Location = new System.Drawing.Point(1431, 561);
+            this.bSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bSalir.Name = "bSalir";
-            this.bSalir.Size = new System.Drawing.Size(149, 60);
+            this.bSalir.Size = new System.Drawing.Size(199, 74);
             this.bSalir.TabIndex = 9;
             this.bSalir.Text = "SALIR";
             this.bSalir.UseVisualStyleBackColor = true;
             this.bSalir.Click += new System.EventHandler(this.bSalir_Click);
             // 
-            // Estado
-            // 
-            this.Estado.HeaderText = "Estado";
-            this.Estado.Name = "Estado";
-            // 
             // Home
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1390, 741);
+            this.ClientSize = new System.Drawing.Size(1853, 912);
             this.Controls.Add(this.bSalir);
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.bSesiones);
@@ -191,6 +193,7 @@ namespace CiklumApp
             this.Controls.Add(this.citasGridView);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Home";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.citasGridView)).EndInit();
@@ -215,7 +218,6 @@ namespace CiklumApp
         private System.Windows.Forms.DataGridViewTextBoxColumn FECHA;
         private System.Windows.Forms.DataGridViewTextBoxColumn HORA;
         private System.Windows.Forms.Button bSalir;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
     }
 }
 
