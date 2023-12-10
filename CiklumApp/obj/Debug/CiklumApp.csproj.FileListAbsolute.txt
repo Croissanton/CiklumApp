@@ -125,3 +125,7 @@ C:\Users\nuxte\OneDrive\Dokumenty\Ing Req GIT\CiklumApp\CiklumApp\bin\Debug\Syst
 C:\Users\nuxte\OneDrive\Dokumenty\Ing Req GIT\CiklumApp\CiklumApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\nuxte\OneDrive\Dokumenty\Ing Req GIT\CiklumApp\CiklumApp\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\Usuario\source\repos\CiklumApp\CiklumApp\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\Usuario\source\repos\CiklumApp\CiklumApp\obj\Debug\CiklumApp.ModificarDieta.resources
+C:\Users\Usuario\source\repos\CiklumApp\CiklumApp\obj\Debug\CiklumApp.ModificarEjercicio.resources
+C:\Users\Usuario\source\repos\CiklumApp\CiklumApp\obj\Debug\CiklumApp.ModificarRutina.resources
+C:\Users\Usuario\source\repos\CiklumApp\CiklumApp\obj\Debug\CiklumApp.ModificarSesion.resources

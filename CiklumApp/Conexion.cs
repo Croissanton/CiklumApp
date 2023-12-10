@@ -9,13 +9,13 @@ namespace CiklumApp
     internal class Conexion
     {
 
-        protected string server = "server";
+        protected string server = "database-2.cugyzf4vivsu.eu-central-1.rds.amazonaws.com";
 
-        protected string database = "database";
+        protected string database = "grupo10DB";
 
-        protected string user = "user";
+        protected string user = "grupo10";
 
-        protected string password = "password";
+        protected string password = "6A9WnAAEaNcuYQfe";
 
     }
 
