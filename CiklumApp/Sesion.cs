@@ -40,10 +40,8 @@ namespace CiklumApp
             foreach (var item in list)
             {
                 string nombre = (string)item[1];
-                int repeticiones = (int)item[2];
-                int series = (int)item[3];
 
-                dgvSesion.Rows.Add(nombre, repeticiones, series);
+                dgvSesiones.Rows.Add(Convert.ToInt32(item[0]), nombre);
             }
             dgvSesion.ClearSelection();
             dgvSesiones.ClearSelection();
@@ -94,7 +92,10 @@ namespace CiklumApp
 
         private void dgvSesiones_Click(object sender, EventArgs e)
         {
-            this.sesion_id = Convert.ToInt32(dgvSesiones.SelectedRows[0].Cells[0].Value);
+            if (dgvSesiones.SelectedRows.Count > 0)
+            {
+                this.sesion_id = Convert.ToInt32(dgvSesiones.SelectedRows[0].Cells[0].Value);
+            }
         }
     }
 }

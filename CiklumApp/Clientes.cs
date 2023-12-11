@@ -72,9 +72,10 @@ namespace CiklumApp
 
         private void dgvClientes_Click(object sender, EventArgs e)
         {
-
-                //Get cliente id
+            if (dgvClientes.SelectedRows.Count > 0)
+            {
                 cliente_id = Convert.ToInt32(dgvClientes.SelectedRows[0].Cells[0].Value);
+            }
         }
     }
 }
