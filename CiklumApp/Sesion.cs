@@ -11,6 +11,14 @@ namespace CiklumApp
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
         }
+
+        public Sesion(int sesion_id)
+        {
+            InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
+            this.sesion_id = sesion_id;
+        }
+
         private void bHome_Click(object sender, EventArgs e)
         {
             var home = new Home();
@@ -44,6 +52,11 @@ namespace CiklumApp
                 dgvSesiones.Rows.Add(Convert.ToInt32(item[0]), nombre);
             };
             dgvSesiones.ClearSelection();
+            if (sesion_id != -1)
+            {
+                dgvSesiones.Rows[sesion_id - 1].Selected = true;
+                dgvSesiones_Click(sender, e);
+            }
         }
 
         private void bAñadir_Click(object sender, EventArgs e)

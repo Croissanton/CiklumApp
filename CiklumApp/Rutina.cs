@@ -65,7 +65,7 @@ namespace CiklumApp
         private void Rutina_Load(object sender, EventArgs e)
         {
             var consulta = new Consulta();
-            var list = consulta.Select("SELECT * FROM RUTINA WHERE ID_RUTINA = " + id_rutina)[0];
+            var list = consulta.Select("SELECT * FROM RUTINA WHERE ID = " + id_rutina)[0];
 
             if ((string)list[1] != null) 
             { 
@@ -162,7 +162,7 @@ namespace CiklumApp
 
         private void modificarRutina_FormClosed(object sender, FormClosedEventArgs e)
         {
-            var rutina = new Rutina();
+            var rutina = new Rutina(id_rutina);
             this.Close();
             rutina.Show();
         }

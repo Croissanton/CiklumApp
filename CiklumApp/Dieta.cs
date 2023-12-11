@@ -62,19 +62,18 @@ namespace CiklumApp
         private void Dieta_Load(object sender, EventArgs e)
         {
             var consulta = new Consulta();
-            var list = consulta.Select("SELECT * FROM DIETA");
+            var list = consulta.Select("SELECT * FROM DIETA WHERE ID = " + id_dieta);
 
             foreach (var item in list)
             {
-                int id = (int)item[0];
-                //string nombre = (string)item[1];
-                //int id_usuario = (int)item[2];
-                string desayuno = (string)item[3];
-                string mediamanana = (string)item[4];
-                string almuerzo = (string)item[5];
-                string merienda = (string)item[6];
-                string cena = (string)item[7];
-                string calorias = (string)item[8];
+                int id = Convert.ToInt32(item[0]);
+                string nombre = (string)item[1];
+                string desayuno = (string)item[2];
+                string mediamanana = (string)item[3];
+                string almuerzo = (string)item[4];
+                string merienda = (string)item[5];
+                string cena = (string)item[6];
+                int calorias = Convert.ToInt32(item[7]);
 
                 dgvDieta.Rows.Add(id, desayuno, mediamanana, almuerzo, merienda, cena, calorias);
             }

@@ -73,6 +73,7 @@ namespace CiklumApp
 
         private void bRutina_Click(object sender, EventArgs e)
         {
+            id_runita = Convert.ToInt32(dgvRutinas.SelectedRows[0].Cells[0].Value);
             var r = new Rutina(id_runita);
             this.Close();
             r.Show();
