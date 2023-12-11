@@ -15,6 +15,7 @@ namespace CiklumApp
         public lCliente(int cliente_id)
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void lCliente_Load(object sender, EventArgs e)

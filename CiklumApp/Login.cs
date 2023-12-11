@@ -16,6 +16,7 @@ namespace CiklumApp
         public Login()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private bool checklogin(string user, string pass)
