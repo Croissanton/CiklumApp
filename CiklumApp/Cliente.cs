@@ -25,6 +25,7 @@ namespace CiklumApp
             var consulta = new Consulta();
             var list = consulta.Select("SELECT NOMBRE, APELLIDOS FROM CLIENTE WHERE ID_USUARIO = " + cliente_id + ";");
             this.label2.Text = (string)list[0][0] + " " + (string)list[0][1];
+            
         }
 
         private void bSesion_Click(object sender, EventArgs e)
@@ -61,7 +62,6 @@ namespace CiklumApp
             this.Close();
             sesiones.Show();
         }
-
         private void bRutina_Click(object sender, EventArgs e)
         {
 
