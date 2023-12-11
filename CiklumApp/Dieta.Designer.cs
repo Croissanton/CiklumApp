@@ -30,7 +30,7 @@
         {
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvDieta = new System.Windows.Forms.DataGridView();
             this.Desayuno = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MediaMañana = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Comida = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,10 +41,9 @@
             this.bClientes = new System.Windows.Forms.Button();
             this.bEjercicios = new System.Windows.Forms.Button();
             this.bHome = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.bBorrar = new System.Windows.Forms.Button();
+            this.bAñadir = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDieta)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -69,22 +68,23 @@
             this.label1.TabIndex = 36;
             this.label1.Text = "DIETA";
             // 
-            // dataGridView1
+            // dgvDieta
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvDieta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDieta.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Desayuno,
             this.MediaMañana,
             this.Comida,
             this.Merienda,
             this.Cena,
             this.Calorías});
-            this.dataGridView1.Location = new System.Drawing.Point(473, 240);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(803, 409);
-            this.dataGridView1.TabIndex = 35;
+            this.dgvDieta.Location = new System.Drawing.Point(473, 240);
+            this.dgvDieta.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvDieta.Name = "dgvDieta";
+            this.dgvDieta.RowHeadersWidth = 51;
+            this.dgvDieta.Size = new System.Drawing.Size(803, 409);
+            this.dgvDieta.TabIndex = 35;
+            this.dgvDieta.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick);
             // 
             // Desayuno
             // 
@@ -131,7 +131,7 @@
             // bSesiones
             // 
             this.bSesiones.Location = new System.Drawing.Point(195, 682);
-            this.bSesiones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bSesiones.Margin = new System.Windows.Forms.Padding(4);
             this.bSesiones.Name = "bSesiones";
             this.bSesiones.Size = new System.Drawing.Size(208, 53);
             this.bSesiones.TabIndex = 34;
@@ -141,7 +141,7 @@
             // bClientes
             // 
             this.bClientes.Location = new System.Drawing.Point(195, 539);
-            this.bClientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bClientes.Margin = new System.Windows.Forms.Padding(4);
             this.bClientes.Name = "bClientes";
             this.bClientes.Size = new System.Drawing.Size(208, 53);
             this.bClientes.TabIndex = 33;
@@ -151,7 +151,7 @@
             // bEjercicios
             // 
             this.bEjercicios.Location = new System.Drawing.Point(195, 391);
-            this.bEjercicios.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bEjercicios.Margin = new System.Windows.Forms.Padding(4);
             this.bEjercicios.Name = "bEjercicios";
             this.bEjercicios.Size = new System.Drawing.Size(208, 53);
             this.bEjercicios.TabIndex = 32;
@@ -161,59 +161,51 @@
             // bHome
             // 
             this.bHome.Location = new System.Drawing.Point(195, 261);
-            this.bHome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bHome.Margin = new System.Windows.Forms.Padding(4);
             this.bHome.Name = "bHome";
             this.bHome.Size = new System.Drawing.Size(208, 53);
             this.bHome.TabIndex = 31;
             this.bHome.Text = "HOME";
             this.bHome.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // bBorrar
             // 
-            this.button3.Location = new System.Drawing.Point(881, 682);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(175, 53);
-            this.button3.TabIndex = 40;
-            this.button3.Text = "Modificar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.bBorrar.Location = new System.Drawing.Point(677, 681);
+            this.bBorrar.Name = "bBorrar";
+            this.bBorrar.Size = new System.Drawing.Size(175, 53);
+            this.bBorrar.TabIndex = 39;
+            this.bBorrar.Text = "Borrar";
+            this.bBorrar.UseVisualStyleBackColor = true;
+            this.bBorrar.Click += new System.EventHandler(this.bBorrar_Click);
             // 
-            // button2
+            // bAñadir
             // 
-            this.button2.Location = new System.Drawing.Point(677, 681);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(175, 53);
-            this.button2.TabIndex = 39;
-            this.button2.Text = "Borrar";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(473, 681);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(166, 54);
-            this.button1.TabIndex = 38;
-            this.button1.Text = "Añadir";
-            this.button1.UseVisualStyleBackColor = true;
+            this.bAñadir.Location = new System.Drawing.Point(473, 681);
+            this.bAñadir.Name = "bAñadir";
+            this.bAñadir.Size = new System.Drawing.Size(166, 54);
+            this.bAñadir.TabIndex = 38;
+            this.bAñadir.Text = "Añadir";
+            this.bAñadir.UseVisualStyleBackColor = true;
+            this.bAñadir.Click += new System.EventHandler(this.bAñadir_Click);
             // 
             // Dieta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1525, 816);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.bBorrar);
+            this.Controls.Add(this.bAñadir);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvDieta);
             this.Controls.Add(this.bSesiones);
             this.Controls.Add(this.bClientes);
             this.Controls.Add(this.bEjercicios);
             this.Controls.Add(this.bHome);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Dieta";
             this.Text = "Dieta";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDieta)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -223,7 +215,7 @@
 
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvDieta;
         private System.Windows.Forms.Button bSesiones;
         private System.Windows.Forms.Button bClientes;
         private System.Windows.Forms.Button bEjercicios;
@@ -234,8 +226,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Merienda;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cena;
         private System.Windows.Forms.DataGridViewTextBoxColumn Calorías;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button bBorrar;
+        private System.Windows.Forms.Button bAñadir;
     }
 }

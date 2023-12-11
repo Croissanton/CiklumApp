@@ -52,13 +52,13 @@ namespace CiklumApp
         {
             this.lbClientes.Items.Clear();
             var consulta = new Consulta();
-            Console.WriteLine(Login.ID);
             var list = consulta.Select("SELECT DISTINCT C.ID, C.NOMBRE, C.APELLIDOS FROM CLIENTE C " +
                 "JOIN CLIENTE_ENTRENADOR C_E ON C.ID_USUARIO = C_E.ID_CLIENTE " +
                 "WHERE C_E.ID_ENTRENADOR = " + Login.ID + ";");
+            Console.WriteLine(list.Count);
             foreach (var item in list)
             {
-                this.lbClientes.Items.Add((string) item[1] + " " + (string)item[2]);
+                this.lbClientes.Items.Add((string)item[1] + " " + (string)item[2]);
                 this.lbClientes.ValueMember = item[0].ToString();
             }
         }
