@@ -63,7 +63,11 @@ namespace CiklumApp
             sesiones.Show();
         }
 
+<<<<<<< HEAD
         private void dgvSesion_Click(object sender, EventArgs e)
+=======
+        private void bRutina_Click(object sender, EventArgs e)
+>>>>>>> 8081244289039936ca1aa29e2715c2378806072e
         {
 
         }

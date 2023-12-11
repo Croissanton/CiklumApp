@@ -118,5 +118,33 @@ namespace CiklumApp
                 dgvSesion.ClearSelection();
             }
         }
+
+        private void añadirSesion_Click(object sender, EventArgs e)
+        {
+            AñadirSesion añadirSesion = new AñadirSesion();
+            añadirSesion.Show();
+            añadirSesion.FormClosed += new FormClosedEventHandler(añadirSesion_FormClosed);
+        }
+
+        private void borrarSesion_Click(object sender, EventArgs e)
+        {
+                if (dgvSesiones.SelectedRows.Count > 0)
+                {
+                    sesion_id = Convert.ToInt32(dgvSesiones.SelectedRows[0].Cells[0].Value.ToString());
+                    var consulta = new Consulta();
+                    consulta.Delete("DELETE FROM SESION WHERE ID = '" + sesion_id + "'");
+
+                    var ses = new Sesion();
+                    this.Hide();
+                    ses.Show();
+                }
+        }
+
+        private void añadirSesion_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            var a = new AñadirSesion();
+            this.Close();
+            a.Show();
+        }
     }
 }
