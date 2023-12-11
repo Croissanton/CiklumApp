@@ -1,13 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Data.Entity.Infrastructure.Design.Executor;
 
 namespace CiklumApp
 {
@@ -20,9 +12,10 @@ namespace CiklumApp
         }
 
 
-        public ModificarDieta(string desayuno, string media, string almuerzo, string merienda, string cena, string calorias)
+        public ModificarDieta(string nombre, string desayuno, string media, string almuerzo, string merienda, string cena, string calorias)
         {
             InitializeComponent();
+            tbNombre.Text = nombre;
             tbDes.Text = desayuno;
             tbMed.Text = media;
             tbComida.Text = almuerzo;
@@ -47,6 +40,7 @@ namespace CiklumApp
 
             try
             {
+                string nombre = tbNombre.Text;
                 string desayuno = tbDes.Text;
                 string media = tbMed.Text;
                 string almuerzo = tbComida.Text;
@@ -58,7 +52,7 @@ namespace CiklumApp
 
                 if (update)
                 {
-                    consulta.Update("UPDATE DIETA SET DESAYUNO='" + desayuno + 
+                    consulta.Update("UPDATE DIETA SET NOMBRE = '" + nombre + "', DESAYUNO='" + desayuno + 
                         "', MEDIAMANANA='" + media + "', COMIDA='" + almuerzo + 
                         "',MERIENDA='" + merienda + "',CENA='" + cena + "',CALORIAS=" + calorias);
                     /*consulta.Update("UPDATE EJERCICIO SET NOMBRE = '" + nombre + "', TIPO = '" + tipo + "', DURACION = " + duracion +
@@ -67,8 +61,8 @@ namespace CiklumApp
                 }
                 else
                 {
-                    consulta.Insert("INSERT INTO DIETA (DESAYUNO, MEDIAMANANA, COMIDA, MERIENDA, CENA, CALORIAS) " +
-                                               "VALUES ('" + desayuno + "', '" + media + "', '" + almuerzo + "', '" + merienda + "', '" + cena + "', " + calorias + ")");
+                    consulta.Insert("INSERT INTO DIETA (NOMBRE, DESAYUNO, MEDIAMANANA, COMIDA, MERIENDA, CENA, CALORIAS) " +
+                                               "VALUES ('" + nombre + "','" + desayuno + "', '" + media + "', '" + almuerzo + "', '" + merienda + "', '" + cena + "', " + calorias + ")");
                     /*consulta.Insert("INSERT INTO EJERCICIO (NOMBRE, TIPO, DURACION, DESCRIPCION, VIDEO_URL, PRIVACIDAD) " +
                         "VALUES ('" + nombre + "', '" + tipo + "', " + duracion + ", '" + descripcion + "', '" + enlace + "', '" + privado + "')");*/
                 }
