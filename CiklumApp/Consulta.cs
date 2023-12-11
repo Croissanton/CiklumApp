@@ -40,8 +40,11 @@ namespace CiklumApp
 
             while (reader.Read())
             {
-                list.Add(reader.Cast<object>().ToArray());
+                object[] values = new object[reader.FieldCount];
+                reader.GetValues(values);
+                list.Add(values);
             }
+
             con.GetConnection().Close();
             return list;
 

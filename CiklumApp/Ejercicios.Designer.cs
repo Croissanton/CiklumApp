@@ -32,7 +32,7 @@
             this.bClientes = new System.Windows.Forms.Button();
             this.bEjercicios = new System.Windows.Forms.Button();
             this.bHome = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvEjercicios = new System.Windows.Forms.DataGridView();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Duración = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,18 +41,16 @@
             this.Privacidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.bAñadir = new System.Windows.Forms.Button();
+            this.bBorrar = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEjercicios)).BeginInit();
             this.SuspendLayout();
             // 
             // bSesiones
             // 
-            this.bSesiones.Location = new System.Drawing.Point(103, 667);
-            this.bSesiones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bSesiones.Location = new System.Drawing.Point(77, 542);
             this.bSesiones.Name = "bSesiones";
-            this.bSesiones.Size = new System.Drawing.Size(208, 53);
+            this.bSesiones.Size = new System.Drawing.Size(156, 43);
             this.bSesiones.TabIndex = 11;
             this.bSesiones.Text = "SESIONES";
             this.bSesiones.UseVisualStyleBackColor = true;
@@ -60,10 +58,9 @@
             // 
             // bClientes
             // 
-            this.bClientes.Location = new System.Drawing.Point(103, 524);
-            this.bClientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bClientes.Location = new System.Drawing.Point(77, 426);
             this.bClientes.Name = "bClientes";
-            this.bClientes.Size = new System.Drawing.Size(208, 53);
+            this.bClientes.Size = new System.Drawing.Size(156, 43);
             this.bClientes.TabIndex = 10;
             this.bClientes.Text = "CLIENTES";
             this.bClientes.UseVisualStyleBackColor = true;
@@ -71,41 +68,39 @@
             // 
             // bEjercicios
             // 
-            this.bEjercicios.Location = new System.Drawing.Point(103, 377);
-            this.bEjercicios.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bEjercicios.Location = new System.Drawing.Point(77, 306);
             this.bEjercicios.Name = "bEjercicios";
-            this.bEjercicios.Size = new System.Drawing.Size(208, 53);
+            this.bEjercicios.Size = new System.Drawing.Size(156, 43);
             this.bEjercicios.TabIndex = 9;
             this.bEjercicios.Text = "EJERCICIOS";
             this.bEjercicios.UseVisualStyleBackColor = true;
             // 
             // bHome
             // 
-            this.bHome.Location = new System.Drawing.Point(103, 246);
-            this.bHome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bHome.Location = new System.Drawing.Point(77, 200);
             this.bHome.Name = "bHome";
-            this.bHome.Size = new System.Drawing.Size(208, 53);
+            this.bHome.Size = new System.Drawing.Size(156, 43);
             this.bHome.TabIndex = 8;
             this.bHome.Text = "HOME";
             this.bHome.UseVisualStyleBackColor = true;
             this.bHome.Click += new System.EventHandler(this.bHome_Click);
             // 
-            // dataGridView1
+            // dgvEjercicios
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvEjercicios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEjercicios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Nombre,
             this.Tipo,
             this.Duración,
             this.Descripción,
             this.Vídeo,
             this.Privacidad});
-            this.dataGridView1.Location = new System.Drawing.Point(443, 229);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(859, 302);
-            this.dataGridView1.TabIndex = 12;
+            this.dgvEjercicios.Location = new System.Drawing.Point(323, 184);
+            this.dgvEjercicios.Name = "dgvEjercicios";
+            this.dgvEjercicios.RowHeadersWidth = 51;
+            this.dgvEjercicios.Size = new System.Drawing.Size(644, 245);
+            this.dgvEjercicios.TabIndex = 12;
+            this.dgvEjercicios.DoubleClick += new System.EventHandler(this.dgvEjercicios_DoubleClick);
             // 
             // Nombre
             // 
@@ -153,10 +148,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40.25F);
-            this.label1.Location = new System.Drawing.Point(553, 44);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(415, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(440, 78);
+            this.label1.Size = new System.Drawing.Size(351, 63);
             this.label1.TabIndex = 15;
             this.label1.Text = "EJERCICIOS";
             // 
@@ -164,59 +158,52 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.label2.Location = new System.Drawing.Point(531, 151);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(398, 123);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(478, 39);
+            this.label2.Size = new System.Drawing.Size(381, 31);
             this.label2.TabIndex = 16;
             this.label2.Text = "Lista de ejercicios disponibles:";
             // 
-            // button1
+            // bAñadir
             // 
-            this.button1.Location = new System.Drawing.Point(443, 571);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(166, 54);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "Añadir";
-            this.button1.UseVisualStyleBackColor = true;
+            this.bAñadir.Location = new System.Drawing.Point(332, 464);
+            this.bAñadir.Margin = new System.Windows.Forms.Padding(2);
+            this.bAñadir.Name = "bAñadir";
+            this.bAñadir.Size = new System.Drawing.Size(124, 44);
+            this.bAñadir.TabIndex = 17;
+            this.bAñadir.Text = "Añadir";
+            this.bAñadir.UseVisualStyleBackColor = true;
+            this.bAñadir.Click += new System.EventHandler(this.bAñadir_Click);
             // 
-            // button2
+            // bBorrar
             // 
-            this.button2.Location = new System.Drawing.Point(647, 571);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(175, 53);
-            this.button2.TabIndex = 18;
-            this.button2.Text = "Borrar";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(851, 572);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(175, 53);
-            this.button3.TabIndex = 19;
-            this.button3.Text = "Modificar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.bBorrar.Location = new System.Drawing.Point(485, 464);
+            this.bBorrar.Margin = new System.Windows.Forms.Padding(2);
+            this.bBorrar.Name = "bBorrar";
+            this.bBorrar.Size = new System.Drawing.Size(131, 43);
+            this.bBorrar.TabIndex = 18;
+            this.bBorrar.Text = "Borrar";
+            this.bBorrar.UseVisualStyleBackColor = true;
+            this.bBorrar.Click += new System.EventHandler(this.bBorrar_Click);
             // 
             // Ejercicios
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1520, 791);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1140, 643);
+            this.Controls.Add(this.bBorrar);
+            this.Controls.Add(this.bAñadir);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvEjercicios);
             this.Controls.Add(this.bSesiones);
             this.Controls.Add(this.bClientes);
             this.Controls.Add(this.bEjercicios);
             this.Controls.Add(this.bHome);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Ejercicios";
             this.Text = "Ejercicios";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Ejercicios_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEjercicios)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -228,7 +215,7 @@
         private System.Windows.Forms.Button bClientes;
         private System.Windows.Forms.Button bEjercicios;
         private System.Windows.Forms.Button bHome;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvEjercicios;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
@@ -237,8 +224,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Descripción;
         private System.Windows.Forms.DataGridViewTextBoxColumn Vídeo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Privacidad;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button bAñadir;
+        private System.Windows.Forms.Button bBorrar;
     }
 }
