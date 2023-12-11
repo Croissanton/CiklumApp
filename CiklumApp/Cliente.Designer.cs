@@ -157,6 +157,7 @@
             this.dgvSesion.Name = "dgvSesion";
             this.dgvSesion.Size = new System.Drawing.Size(386, 315);
             this.dgvSesion.TabIndex = 50;
+            this.dgvSesion.Click += new System.EventHandler(this.dgvSesion_Click);
             // 
             // ID
             // 
@@ -180,6 +181,7 @@
             this.dgvRutinas.Name = "dgvRutinas";
             this.dgvRutinas.Size = new System.Drawing.Size(398, 314);
             this.dgvRutinas.TabIndex = 51;
+            this.dgvRutinas.Click += new System.EventHandler(this.dgvRutinas_Click);
             // 
             // RutID
             // 
