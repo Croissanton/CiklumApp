@@ -60,6 +60,7 @@
             // 
             // bSesiones
             // 
+            this.bSesiones.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bSesiones.Location = new System.Drawing.Point(110, 575);
             this.bSesiones.Name = "bSesiones";
             this.bSesiones.Size = new System.Drawing.Size(156, 43);
@@ -70,6 +71,7 @@
             // 
             // bClientes
             // 
+            this.bClientes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bClientes.Location = new System.Drawing.Point(110, 459);
             this.bClientes.Name = "bClientes";
             this.bClientes.Size = new System.Drawing.Size(156, 43);
@@ -80,6 +82,7 @@
             // 
             // bEjercicios
             // 
+            this.bEjercicios.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bEjercicios.Location = new System.Drawing.Point(110, 339);
             this.bEjercicios.Name = "bEjercicios";
             this.bEjercicios.Size = new System.Drawing.Size(156, 43);
@@ -90,6 +93,7 @@
             // 
             // bHome
             // 
+            this.bHome.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bHome.Location = new System.Drawing.Point(110, 233);
             this.bHome.Name = "bHome";
             this.bHome.Size = new System.Drawing.Size(156, 43);
@@ -100,6 +104,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40.25F);
             this.label1.Location = new System.Drawing.Point(505, 26);
@@ -110,6 +115,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.label2.Location = new System.Drawing.Point(499, 138);
@@ -120,8 +126,9 @@
             // 
             // bModificar
             // 
+            this.bModificar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bModificar.Location = new System.Drawing.Point(527, 475);
-            this.bModificar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bModificar.Margin = new System.Windows.Forms.Padding(2);
             this.bModificar.Name = "bModificar";
             this.bModificar.Size = new System.Drawing.Size(120, 49);
             this.bModificar.TabIndex = 33;
@@ -131,6 +138,7 @@
             // 
             // bSesionLunes
             // 
+            this.bSesionLunes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bSesionLunes.Location = new System.Drawing.Point(342, 260);
             this.bSesionLunes.Name = "bSesionLunes";
             this.bSesionLunes.Size = new System.Drawing.Size(75, 26);
@@ -140,6 +148,7 @@
             // 
             // bDietaLunes
             // 
+            this.bDietaLunes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bDietaLunes.Location = new System.Drawing.Point(342, 289);
             this.bDietaLunes.Name = "bDietaLunes";
             this.bDietaLunes.Size = new System.Drawing.Size(75, 26);
@@ -149,6 +158,7 @@
             // 
             // bSesionMartes
             // 
+            this.bSesionMartes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bSesionMartes.Location = new System.Drawing.Point(436, 260);
             this.bSesionMartes.Name = "bSesionMartes";
             this.bSesionMartes.Size = new System.Drawing.Size(75, 26);
@@ -158,6 +168,7 @@
             // 
             // bDietaMartes
             // 
+            this.bDietaMartes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bDietaMartes.Location = new System.Drawing.Point(436, 289);
             this.bDietaMartes.Name = "bDietaMartes";
             this.bDietaMartes.Size = new System.Drawing.Size(75, 26);
@@ -167,6 +178,7 @@
             // 
             // bSesionMiercoles
             // 
+            this.bSesionMiercoles.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bSesionMiercoles.Location = new System.Drawing.Point(528, 260);
             this.bSesionMiercoles.Name = "bSesionMiercoles";
             this.bSesionMiercoles.Size = new System.Drawing.Size(75, 26);
@@ -176,6 +188,7 @@
             // 
             // bDietaMiercoles
             // 
+            this.bDietaMiercoles.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bDietaMiercoles.Location = new System.Drawing.Point(528, 289);
             this.bDietaMiercoles.Name = "bDietaMiercoles";
             this.bDietaMiercoles.Size = new System.Drawing.Size(75, 26);
@@ -185,6 +198,7 @@
             // 
             // bSesionJueves
             // 
+            this.bSesionJueves.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bSesionJueves.Location = new System.Drawing.Point(614, 260);
             this.bSesionJueves.Name = "bSesionJueves";
             this.bSesionJueves.Size = new System.Drawing.Size(75, 26);
@@ -194,6 +208,7 @@
             // 
             // bDietaJueves
             // 
+            this.bDietaJueves.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bDietaJueves.Location = new System.Drawing.Point(614, 289);
             this.bDietaJueves.Name = "bDietaJueves";
             this.bDietaJueves.Size = new System.Drawing.Size(75, 26);
@@ -203,6 +218,7 @@
             // 
             // bSesionViernes
             // 
+            this.bSesionViernes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bSesionViernes.Location = new System.Drawing.Point(704, 260);
             this.bSesionViernes.Name = "bSesionViernes";
             this.bSesionViernes.Size = new System.Drawing.Size(75, 26);
@@ -212,6 +228,7 @@
             // 
             // bDietaViernes
             // 
+            this.bDietaViernes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bDietaViernes.Location = new System.Drawing.Point(704, 289);
             this.bDietaViernes.Name = "bDietaViernes";
             this.bDietaViernes.Size = new System.Drawing.Size(75, 26);
@@ -221,6 +238,7 @@
             // 
             // bSesionSabado
             // 
+            this.bSesionSabado.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bSesionSabado.Location = new System.Drawing.Point(793, 260);
             this.bSesionSabado.Name = "bSesionSabado";
             this.bSesionSabado.Size = new System.Drawing.Size(75, 26);
@@ -230,6 +248,7 @@
             // 
             // bDietaSabado
             // 
+            this.bDietaSabado.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bDietaSabado.Location = new System.Drawing.Point(793, 289);
             this.bDietaSabado.Name = "bDietaSabado";
             this.bDietaSabado.Size = new System.Drawing.Size(75, 26);
@@ -239,6 +258,7 @@
             // 
             // bSesionDomingo
             // 
+            this.bSesionDomingo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bSesionDomingo.Location = new System.Drawing.Point(884, 260);
             this.bSesionDomingo.Name = "bSesionDomingo";
             this.bSesionDomingo.Size = new System.Drawing.Size(75, 26);
@@ -248,6 +268,7 @@
             // 
             // bDietaDomingo
             // 
+            this.bDietaDomingo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bDietaDomingo.Location = new System.Drawing.Point(884, 289);
             this.bDietaDomingo.Name = "bDietaDomingo";
             this.bDietaDomingo.Size = new System.Drawing.Size(75, 26);
@@ -257,6 +278,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(362, 233);
             this.label3.Name = "label3";
@@ -266,6 +288,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(452, 233);
             this.label4.Name = "label4";
@@ -275,6 +298,7 @@
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(539, 233);
             this.label5.Name = "label5";
@@ -284,6 +308,7 @@
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(630, 233);
             this.label6.Name = "label6";
@@ -293,6 +318,7 @@
             // 
             // label7
             // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(717, 233);
             this.label7.Name = "label7";
@@ -302,6 +328,7 @@
             // 
             // label8
             // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(808, 233);
             this.label8.Name = "label8";
@@ -311,6 +338,7 @@
             // 
             // label9
             // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(898, 233);
             this.label9.Name = "label9";

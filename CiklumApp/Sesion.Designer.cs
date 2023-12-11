@@ -1,4 +1,4 @@
-﻿namespace CiklumApp
+namespace CiklumApp
 {
     partial class Sesion
     {
@@ -50,6 +50,8 @@
             // 
             // dgvSesion
             // 
+            this.dgvSesion.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dgvSesion.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvSesion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSesion.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Nombre,
@@ -68,26 +70,23 @@
             this.Nombre.HeaderText = "Nombre del ejercicio";
             this.Nombre.MinimumWidth = 6;
             this.Nombre.Name = "Nombre";
-            this.Nombre.Width = 125;
             // 
             // Repeticiones
             // 
             this.Repeticiones.HeaderText = "Repeticiones/tiempo";
             this.Repeticiones.MinimumWidth = 6;
             this.Repeticiones.Name = "Repeticiones";
-            this.Repeticiones.Width = 125;
             // 
             // Series
             // 
             this.Series.HeaderText = "Series";
             this.Series.MinimumWidth = 6;
             this.Series.Name = "Series";
-            this.Series.Width = 125;
             // 
             // bSesiones
             // 
-            this.bSesiones.Location = new System.Drawing.Point(149, 703);
-            this.bSesiones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bSesiones.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bSesiones.Location = new System.Drawing.Point(112, 571);
             this.bSesiones.Name = "bSesiones";
             this.bSesiones.Size = new System.Drawing.Size(208, 53);
             this.bSesiones.TabIndex = 18;
@@ -96,8 +95,8 @@
             // 
             // bClientes
             // 
-            this.bClientes.Location = new System.Drawing.Point(149, 560);
-            this.bClientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bClientes.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bClientes.Location = new System.Drawing.Point(112, 455);
             this.bClientes.Name = "bClientes";
             this.bClientes.Size = new System.Drawing.Size(208, 53);
             this.bClientes.TabIndex = 17;
@@ -107,8 +106,8 @@
             // 
             // bEjercicios
             // 
-            this.bEjercicios.Location = new System.Drawing.Point(149, 412);
-            this.bEjercicios.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bEjercicios.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bEjercicios.Location = new System.Drawing.Point(112, 335);
             this.bEjercicios.Name = "bEjercicios";
             this.bEjercicios.Size = new System.Drawing.Size(208, 53);
             this.bEjercicios.TabIndex = 16;
@@ -118,8 +117,8 @@
             // 
             // bHome
             // 
-            this.bHome.Location = new System.Drawing.Point(149, 282);
-            this.bHome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bHome.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bHome.Location = new System.Drawing.Point(112, 229);
             this.bHome.Name = "bHome";
             this.bHome.Size = new System.Drawing.Size(208, 53);
             this.bHome.TabIndex = 15;
@@ -129,6 +128,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40.25F);
             this.label1.Location = new System.Drawing.Point(617, 49);
@@ -140,8 +140,9 @@
             // 
             // bBorrar
             // 
-            this.bBorrar.Location = new System.Drawing.Point(693, 670);
-            this.bBorrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bBorrar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bBorrar.Location = new System.Drawing.Point(520, 544);
+            this.bBorrar.Margin = new System.Windows.Forms.Padding(2);
             this.bBorrar.Name = "bBorrar";
             this.bBorrar.Size = new System.Drawing.Size(175, 53);
             this.bBorrar.TabIndex = 28;
@@ -151,8 +152,9 @@
             // 
             // bAñadir
             // 
-            this.bAñadir.Location = new System.Drawing.Point(489, 670);
-            this.bAñadir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bAñadir.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bAñadir.Location = new System.Drawing.Point(367, 544);
+            this.bAñadir.Margin = new System.Windows.Forms.Padding(2);
             this.bAñadir.Name = "bAñadir";
             this.bAñadir.Size = new System.Drawing.Size(165, 54);
             this.bAñadir.TabIndex = 27;
@@ -162,6 +164,8 @@
             // 
             // dgvSesiones
             // 
+            this.dgvSesiones.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dgvSesiones.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvSesiones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSesiones.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,

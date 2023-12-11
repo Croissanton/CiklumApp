@@ -43,6 +43,7 @@
             // 
             // lbSesiones
             // 
+            this.lbSesiones.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbSesiones.FormattingEnabled = true;
             this.lbSesiones.Location = new System.Drawing.Point(218, 223);
             this.lbSesiones.Name = "lbSesiones";
@@ -51,6 +52,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.label1.Location = new System.Drawing.Point(282, 161);
@@ -61,6 +63,7 @@
             // 
             // lbRutina
             // 
+            this.lbRutina.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbRutina.FormattingEnabled = true;
             this.lbRutina.Location = new System.Drawing.Point(677, 223);
             this.lbRutina.Name = "lbRutina";
@@ -69,6 +72,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.label3.Location = new System.Drawing.Point(763, 161);
@@ -79,6 +83,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 40.25F);
             this.label2.Location = new System.Drawing.Point(254, 44);
@@ -89,6 +94,7 @@
             // 
             // bSesiones
             // 
+            this.bSesiones.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bSesiones.Location = new System.Drawing.Point(33, 528);
             this.bSesiones.Name = "bSesiones";
             this.bSesiones.Size = new System.Drawing.Size(156, 43);
@@ -99,6 +105,7 @@
             // 
             // bClientes
             // 
+            this.bClientes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bClientes.Location = new System.Drawing.Point(33, 412);
             this.bClientes.Name = "bClientes";
             this.bClientes.Size = new System.Drawing.Size(156, 43);
@@ -109,6 +116,7 @@
             // 
             // bEjercicios
             // 
+            this.bEjercicios.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bEjercicios.Location = new System.Drawing.Point(33, 292);
             this.bEjercicios.Name = "bEjercicios";
             this.bEjercicios.Size = new System.Drawing.Size(156, 43);
@@ -119,6 +127,7 @@
             // 
             // bHome
             // 
+            this.bHome.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bHome.Location = new System.Drawing.Point(33, 186);
             this.bHome.Name = "bHome";
             this.bHome.Size = new System.Drawing.Size(156, 43);
@@ -129,15 +138,18 @@
             // 
             // bRutina
             // 
+            this.bRutina.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bRutina.Location = new System.Drawing.Point(808, 556);
             this.bRutina.Name = "bRutina";
             this.bRutina.Size = new System.Drawing.Size(156, 43);
             this.bRutina.TabIndex = 48;
             this.bRutina.Text = "Ver Rutina";
             this.bRutina.UseVisualStyleBackColor = true;
+            this.bRutina.Click += new System.EventHandler(this.bRutina_Click);
             // 
             // bSesion
             // 
+            this.bSesion.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bSesion.Location = new System.Drawing.Point(356, 556);
             this.bSesion.Name = "bSesion";
             this.bSesion.Size = new System.Drawing.Size(156, 43);

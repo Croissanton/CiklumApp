@@ -61,5 +61,10 @@ namespace CiklumApp
             this.Close();
             sesiones.Show();
         }
+
+        private void bRutina_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

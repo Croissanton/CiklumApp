@@ -37,6 +37,7 @@
             // 
             // lUsername
             // 
+            this.lUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lUsername.AutoSize = true;
             this.lUsername.Location = new System.Drawing.Point(345, 120);
             this.lUsername.Name = "lUsername";
@@ -46,6 +47,7 @@
             // 
             // lPassword
             // 
+            this.lPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lPassword.AutoSize = true;
             this.lPassword.Location = new System.Drawing.Point(345, 186);
             this.lPassword.Name = "lPassword";
@@ -55,6 +57,7 @@
             // 
             // tbUsername
             // 
+            this.tbUsername.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tbUsername.Location = new System.Drawing.Point(290, 150);
             this.tbUsername.Name = "tbUsername";
             this.tbUsername.Size = new System.Drawing.Size(177, 20);
@@ -62,6 +65,7 @@
             // 
             // tbPassword
             // 
+            this.tbPassword.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.tbPassword.Location = new System.Drawing.Point(290, 217);
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.Size = new System.Drawing.Size(177, 20);
@@ -69,6 +73,7 @@
             // 
             // bSignin
             // 
+            this.bSignin.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bSignin.Location = new System.Drawing.Point(326, 281);
             this.bSignin.Name = "bSignin";
             this.bSignin.Size = new System.Drawing.Size(89, 38);

@@ -41,26 +41,23 @@ namespace CiklumApp
 
         private void Rutina_Load(object sender, EventArgs e)
         {
-            var consulta = new Consulta();
-            var list = consulta.Select("SELECT * FROM RUTINA");
+            /*var consulta = new Consulta();
+            var list = consulta.Select("SELECT * FROM RUTINA WHERE ");
 
-            foreach (var item in list)
-            {
-                string SesionLunes = (string)item[1];
-                string DietaLunes = (string)item[2];
-                string SesionMartes = (string)item[3];
-                string DietaMartes = (string)item[4];
-                string SesionMiercoles = (string)item[5];
-                string DietaMiercoles = (string)item[6];
-                string SesionJueves = (string)item[7];
-                string DietaJueves = (string)item[8];
-                string SesionViernes = (string)item[9];
-                string DietaViernes = (string)item[10];
-                string SesionSabado = (string)item[11];
-                string DietaSabado = (string)item[12];
-                string SesionDomingo = (string)item[13];
-                string DietaDomingo = (string)item[14];
-            }
+            if ((string)item[1] != null) { bSesionLunes.Enabled = false; }
+            if ((string)item[2] != null) { bDietaLunes.Enabled = false; }
+            if ((string)item[3] != null) { bSesionMartes.Enabled = false; }
+            if ((string)item[4] != null) { bDietaMartes.Enabled = false; }
+            if ((string)item[5] != null) { bSesionMiercoles.Enabled = false; }
+            if ((string)item[6] != null) { bDietaMiercoles.Enabled = false; }
+            if ((string)item[7] != null) { bSesionJueves.Enabled = false; }
+            if ((string)item[8] != null) { bDietaJueves.Enabled = false; }
+            if ((string)item[9] != null) { bSesionViernes.Enabled = false; }
+            if ((string)item[10] != null) { bDietaViernes.Enabled = false; }
+            if ((string)item[11] != null) { bSesionSabado.Enabled = false; }
+            if ((string)item[12] != null) { bDietaSabado.Enabled = false; }
+            if ((string)item[13] != null) { bSesionDomingo.Enabled = false; }
+            if ((string)item[14] != null) { bDietaDomingo.Enabled = false; }*/
         }
 
         private void bModificar_Click(object sender, EventArgs e)

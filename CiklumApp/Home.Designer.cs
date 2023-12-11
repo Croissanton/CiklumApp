@@ -45,6 +45,7 @@ namespace CiklumApp
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40.25F);
             this.label1.Location = new System.Drawing.Point(452, 39);
@@ -55,6 +56,7 @@ namespace CiklumApp
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.label2.Location = new System.Drawing.Point(548, 126);
@@ -65,6 +67,7 @@ namespace CiklumApp
             // 
             // citasGridView
             // 
+            this.citasGridView.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.citasGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.citasGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Fecha,
@@ -93,6 +96,7 @@ namespace CiklumApp
             // 
             // bHome
             // 
+            this.bHome.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bHome.Location = new System.Drawing.Point(68, 187);
             this.bHome.Name = "bHome";
             this.bHome.Size = new System.Drawing.Size(149, 60);
@@ -102,6 +106,7 @@ namespace CiklumApp
             // 
             // bEjercicios
             // 
+            this.bEjercicios.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bEjercicios.Location = new System.Drawing.Point(68, 295);
             this.bEjercicios.Name = "bEjercicios";
             this.bEjercicios.Size = new System.Drawing.Size(149, 58);
@@ -112,6 +117,7 @@ namespace CiklumApp
             // 
             // bClientes
             // 
+            this.bClientes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bClientes.Location = new System.Drawing.Point(68, 408);
             this.bClientes.Name = "bClientes";
             this.bClientes.Size = new System.Drawing.Size(149, 55);
@@ -122,6 +128,7 @@ namespace CiklumApp
             // 
             // bSesiones
             // 
+            this.bSesiones.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bSesiones.Location = new System.Drawing.Point(68, 522);
             this.bSesiones.Name = "bSesiones";
             this.bSesiones.Size = new System.Drawing.Size(149, 59);
@@ -132,12 +139,14 @@ namespace CiklumApp
             // 
             // monthCalendar1
             // 
+            this.monthCalendar1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.monthCalendar1.Location = new System.Drawing.Point(1033, 207);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 8;
             // 
             // bSalir
             // 
+            this.bSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.bSalir.Location = new System.Drawing.Point(1073, 456);
             this.bSalir.Name = "bSalir";
             this.bSalir.Size = new System.Drawing.Size(149, 60);
