@@ -18,25 +18,25 @@ namespace CiklumApp
             InitializeComponent();
         }
 
-        public ModificarRutina(string sesionLunes, string dietaLunes, string sesionMartes, string dietaMartes, string sesionMiercoles, 
-            string dietaMiercoles, string sesionJueves, string dietaJueves, string sesionViernes, string dietaViernes, string sesionSabado,
-            string dietaSabado, string sesionDomingo, string dietaDomingo)
+        public ModificarRutina(int sesionLunes, int dietaLunes, int sesionMartes, int dietaMartes, int sesionMiercoles,
+            int dietaMiercoles, int sesionJueves, int dietaJueves, int sesionViernes, int dietaViernes, int sesionSabado,
+            int dietaSabado, int sesionDomingo, int dietaDomingo)
         {
             InitializeComponent();
-            tbSesionLunes.Text = sesionLunes;
-            tbDietaLunes.Text = dietaLunes;
-            tbSesionMartes.Text = sesionMartes;
-            tbDietaMartes.Text = dietaMartes;
-            tbSesionMiercoles.Text = sesionMiercoles;
-            tbDietaMiercoles.Text = dietaMiercoles;
-            tbSesionJueves.Text = sesionJueves;
-            tbDietaJueves.Text = dietaJueves;
-            tbSesionViernes.Text = sesionViernes;
-            tbDietaViernes.Text = dietaViernes;
-            tbSesionSabado.Text = sesionSabado;
-            tbDietaSabado.Text = dietaSabado;
-            tbSesionDomingo.Text = sesionDomingo;
-            tbDietaDomingo.Text = dietaDomingo;
+            tbSesionLunes.Text = sesionLunes.ToString();
+            tbDietaLunes.Text = dietaLunes.ToString();
+            tbSesionMartes.Text = sesionMartes.ToString();
+            tbDietaMartes.Text = dietaMartes.ToString();
+            tbSesionMiercoles.Text = sesionMiercoles.ToString();
+            tbDietaMiercoles.Text = dietaMiercoles.ToString();
+            tbSesionJueves.Text = sesionJueves.ToString();
+            tbDietaJueves.Text = dietaJueves.ToString();
+            tbSesionViernes.Text = sesionViernes.ToString();
+            tbDietaViernes.Text = dietaViernes.ToString();
+            tbSesionSabado.Text = sesionSabado.ToString();
+            tbDietaSabado.Text = dietaSabado.ToString();
+            tbSesionDomingo.Text = sesionDomingo.ToString();
+            tbDietaDomingo.Text = dietaDomingo.ToString();
 
             update = true;
         }

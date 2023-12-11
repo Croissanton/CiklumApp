@@ -145,6 +145,7 @@
             this.bSesionLunes.TabIndex = 34;
             this.bSesionLunes.Text = "Sesion";
             this.bSesionLunes.UseVisualStyleBackColor = true;
+            this.bSesionLunes.Click += new System.EventHandler(this.bSesionLunes_Click);
             // 
             // bDietaLunes
             // 
@@ -155,6 +156,7 @@
             this.bDietaLunes.TabIndex = 35;
             this.bDietaLunes.Text = "Dieta";
             this.bDietaLunes.UseVisualStyleBackColor = true;
+            this.bDietaLunes.Click += new System.EventHandler(this.bDietaLunes_Click);
             // 
             // bSesionMartes
             // 
@@ -165,6 +167,7 @@
             this.bSesionMartes.TabIndex = 36;
             this.bSesionMartes.Text = "Sesion";
             this.bSesionMartes.UseVisualStyleBackColor = true;
+            this.bSesionMartes.Click += new System.EventHandler(this.bSesionMartes_Click);
             // 
             // bDietaMartes
             // 
@@ -175,6 +178,7 @@
             this.bDietaMartes.TabIndex = 37;
             this.bDietaMartes.Text = "Dieta";
             this.bDietaMartes.UseVisualStyleBackColor = true;
+            this.bDietaMartes.Click += new System.EventHandler(this.bDietaMartes_Click);
             // 
             // bSesionMiercoles
             // 
@@ -185,6 +189,7 @@
             this.bSesionMiercoles.TabIndex = 38;
             this.bSesionMiercoles.Text = "Sesion";
             this.bSesionMiercoles.UseVisualStyleBackColor = true;
+            this.bSesionMiercoles.Click += new System.EventHandler(this.bSesionMiercoles_Click);
             // 
             // bDietaMiercoles
             // 
@@ -195,6 +200,7 @@
             this.bDietaMiercoles.TabIndex = 39;
             this.bDietaMiercoles.Text = "Dieta";
             this.bDietaMiercoles.UseVisualStyleBackColor = true;
+            this.bDietaMiercoles.Click += new System.EventHandler(this.bDietaMiercoles_Click);
             // 
             // bSesionJueves
             // 
@@ -205,6 +211,7 @@
             this.bSesionJueves.TabIndex = 40;
             this.bSesionJueves.Text = "Sesion";
             this.bSesionJueves.UseVisualStyleBackColor = true;
+            this.bSesionJueves.Click += new System.EventHandler(this.bSesionJueves_Click);
             // 
             // bDietaJueves
             // 
@@ -215,6 +222,7 @@
             this.bDietaJueves.TabIndex = 41;
             this.bDietaJueves.Text = "Dieta";
             this.bDietaJueves.UseVisualStyleBackColor = true;
+            this.bDietaJueves.Click += new System.EventHandler(this.bDietaJueves_Click);
             // 
             // bSesionViernes
             // 
@@ -225,6 +233,7 @@
             this.bSesionViernes.TabIndex = 42;
             this.bSesionViernes.Text = "Sesion";
             this.bSesionViernes.UseVisualStyleBackColor = true;
+            this.bSesionViernes.Click += new System.EventHandler(this.bSesionViernes_Click);
             // 
             // bDietaViernes
             // 
@@ -235,6 +244,7 @@
             this.bDietaViernes.TabIndex = 43;
             this.bDietaViernes.Text = "Dieta";
             this.bDietaViernes.UseVisualStyleBackColor = true;
+            this.bDietaViernes.Click += new System.EventHandler(this.bDietaViernes_Click);
             // 
             // bSesionSabado
             // 
@@ -245,6 +255,7 @@
             this.bSesionSabado.TabIndex = 44;
             this.bSesionSabado.Text = "Sesion";
             this.bSesionSabado.UseVisualStyleBackColor = true;
+            this.bSesionSabado.Click += new System.EventHandler(this.bSesionSabado_Click);
             // 
             // bDietaSabado
             // 
@@ -255,6 +266,7 @@
             this.bDietaSabado.TabIndex = 45;
             this.bDietaSabado.Text = "Dieta";
             this.bDietaSabado.UseVisualStyleBackColor = true;
+            this.bDietaSabado.Click += new System.EventHandler(this.bDietaSabado_Click);
             // 
             // bSesionDomingo
             // 
@@ -265,6 +277,7 @@
             this.bSesionDomingo.TabIndex = 46;
             this.bSesionDomingo.Text = "Sesion";
             this.bSesionDomingo.UseVisualStyleBackColor = true;
+            this.bSesionDomingo.Click += new System.EventHandler(this.bSesionDomingo_Click);
             // 
             // bDietaDomingo
             // 
@@ -275,6 +288,7 @@
             this.bDietaDomingo.TabIndex = 47;
             this.bDietaDomingo.Text = "Dieta";
             this.bDietaDomingo.UseVisualStyleBackColor = true;
+            this.bDietaDomingo.Click += new System.EventHandler(this.bDietaDomingo_Click);
             // 
             // label3
             // 

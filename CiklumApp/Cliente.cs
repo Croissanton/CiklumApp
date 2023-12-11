@@ -12,7 +12,8 @@ namespace CiklumApp
 {
     public partial class lCliente : Form
     {
-        int cliente_id;
+        int cliente_id = -1;
+        int id_runita = -1;
         public lCliente(int cliente_id)
         {
             this.cliente_id = cliente_id;
@@ -26,6 +27,13 @@ namespace CiklumApp
             var list = consulta.Select("SELECT NOMBRE, APELLIDOS FROM CLIENTE WHERE ID_USUARIO = " + cliente_id + ";");
             this.label2.Text = (string)list[0][0] + " " + (string)list[0][1];
             
+            var list2 = consulta.Select("SELECT ID_RUTINA FROM RUTINA_CLIENTE WHERE ID_CLIENTE = " + cliente_id + ";");
+            foreach (var item in list2)
+            {
+                int id_rutina = Convert.ToInt32(item[0]);
+                string nombre_rutina = "RUTINA: " + id_rutina.ToString();
+                this.dgvRutinas.Rows.Add(id_rutina, nombre_rutina);
+            }
         }
 
         private void bSesion_Click(object sender, EventArgs e)
@@ -62,9 +70,12 @@ namespace CiklumApp
             this.Close();
             sesiones.Show();
         }
+
         private void bRutina_Click(object sender, EventArgs e)
         {
-
+            var r = new Rutina(id_runita);
+            this.Close();
+            r.Show();
         }
     }
 }
