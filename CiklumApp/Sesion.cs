@@ -42,8 +42,7 @@ namespace CiklumApp
                 string nombre = (string)item[1];
 
                 dgvSesiones.Rows.Add(Convert.ToInt32(item[0]), nombre);
-            }
-            dgvSesion.ClearSelection();
+            };
             dgvSesiones.ClearSelection();
         }
 
@@ -60,7 +59,15 @@ namespace CiklumApp
             {
                 string nombre = dgvSesion.SelectedRows[0].Cells[0].Value.ToString();
                 var consulta = new Consulta();
-                consulta.Delete("DELETE FROM SESION WHERE NOMBRE = '" + nombre + "'");
+                var list = consulta.Select("SELECT * FROM EJERCICIO WHERE NOMBRE = '" + nombre + "'");
+              if (list.Count == 0)
+                {
+                    MessageBox.Show("No existe un ejercicio con ese nombre.");
+                    return;
+                }
+              int ejercicio_id = Convert.ToInt32(list[0][0]);
+                consulta.Delete("DELETE FROM EJERCICIO_SESION " +
+                                       "WHERE ID_SESION = " + sesion_id + " AND ID_EJERCICIO = " + ejercicio_id + "");
 
                 var sesion = new Sesion();
                 this.Hide();
@@ -94,7 +101,21 @@ namespace CiklumApp
         {
             if (dgvSesiones.SelectedRows.Count > 0)
             {
+                dgvSesion.Rows.Clear();
                 this.sesion_id = Convert.ToInt32(dgvSesiones.SelectedRows[0].Cells[0].Value);
+                var consulta = new Consulta();
+                var list = consulta.Select("SELECT E.NOMBRE, ES.REPETICIONES, ES.SERIES FROM EJERCICIO E " +
+                                       "JOIN EJERCICIO_SESION ES ON E.ID = ES.ID_EJERCICIO " +
+                                                          "WHERE ES.ID_SESION = " + sesion_id + ";");
+                foreach (var item in list)
+                {
+                    string nombre = (string)item[0];
+                    int repeticiones = Convert.ToInt32(item[1]);
+                    int series = Convert.ToInt32(item[2]);
+
+                    dgvSesion.Rows.Add(nombre, repeticiones, series);
+                };
+                dgvSesion.ClearSelection();
             }
         }
     }

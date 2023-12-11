@@ -40,8 +40,8 @@
             this.bBorrar = new System.Windows.Forms.Button();
             this.bAñadir = new System.Windows.Forms.Button();
             this.dgvSesiones = new System.Windows.Forms.DataGridView();
-            this.NombreSesion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NombreSesion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSesion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSesiones)).BeginInit();
             this.SuspendLayout();
@@ -156,24 +156,24 @@
             // 
             this.dgvSesiones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSesiones.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.NombreSesion,
-            this.ID});
+            this.ID,
+            this.NombreSesion});
             this.dgvSesiones.Location = new System.Drawing.Point(985, 219);
             this.dgvSesiones.Name = "dgvSesiones";
             this.dgvSesiones.Size = new System.Drawing.Size(194, 296);
             this.dgvSesiones.TabIndex = 29;
             this.dgvSesiones.Click += new System.EventHandler(this.dgvSesiones_Click);
             // 
-            // NombreSesion
-            // 
-            this.NombreSesion.HeaderText = "Sesion";
-            this.NombreSesion.Name = "NombreSesion";
-            // 
             // ID
             // 
             this.ID.HeaderText = "ID";
             this.ID.Name = "ID";
             this.ID.Visible = false;
+            // 
+            // NombreSesion
+            // 
+            this.NombreSesion.HeaderText = "Sesion";
+            this.NombreSesion.Name = "NombreSesion";
             // 
             // Sesion
             // 
@@ -212,7 +212,7 @@
         private System.Windows.Forms.Button bBorrar;
         private System.Windows.Forms.Button bAñadir;
         private System.Windows.Forms.DataGridView dgvSesiones;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NombreSesion;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NombreSesion;
     }
 }
