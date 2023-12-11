@@ -135,6 +135,7 @@
             this.bRutina.TabIndex = 48;
             this.bRutina.Text = "Ver Rutina";
             this.bRutina.UseVisualStyleBackColor = true;
+            this.bRutina.Click += new System.EventHandler(this.bRutina_Click);
             // 
             // bSesion
             // 

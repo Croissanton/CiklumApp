@@ -84,7 +84,7 @@
             // tbSesionLunes
             // 
             this.tbSesionLunes.Location = new System.Drawing.Point(125, 23);
-            this.tbSesionLunes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbSesionLunes.Margin = new System.Windows.Forms.Padding(2);
             this.tbSesionLunes.Name = "tbSesionLunes";
             this.tbSesionLunes.Size = new System.Drawing.Size(117, 20);
             this.tbSesionLunes.TabIndex = 2;
@@ -92,7 +92,7 @@
             // tbDietaLunes
             // 
             this.tbDietaLunes.Location = new System.Drawing.Point(125, 50);
-            this.tbDietaLunes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbDietaLunes.Margin = new System.Windows.Forms.Padding(2);
             this.tbDietaLunes.Name = "tbDietaLunes";
             this.tbDietaLunes.Size = new System.Drawing.Size(117, 20);
             this.tbDietaLunes.TabIndex = 3;
@@ -100,7 +100,7 @@
             // tbDietaMartes
             // 
             this.tbDietaMartes.Location = new System.Drawing.Point(125, 122);
-            this.tbDietaMartes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbDietaMartes.Margin = new System.Windows.Forms.Padding(2);
             this.tbDietaMartes.Name = "tbDietaMartes";
             this.tbDietaMartes.Size = new System.Drawing.Size(117, 20);
             this.tbDietaMartes.TabIndex = 7;
@@ -108,7 +108,7 @@
             // tbSesionMartes
             // 
             this.tbSesionMartes.Location = new System.Drawing.Point(125, 94);
-            this.tbSesionMartes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbSesionMartes.Margin = new System.Windows.Forms.Padding(2);
             this.tbSesionMartes.Name = "tbSesionMartes";
             this.tbSesionMartes.Size = new System.Drawing.Size(117, 20);
             this.tbSesionMartes.TabIndex = 6;
@@ -136,7 +136,7 @@
             // tbDietaMiercoles
             // 
             this.tbDietaMiercoles.Location = new System.Drawing.Point(125, 202);
-            this.tbDietaMiercoles.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbDietaMiercoles.Margin = new System.Windows.Forms.Padding(2);
             this.tbDietaMiercoles.Name = "tbDietaMiercoles";
             this.tbDietaMiercoles.Size = new System.Drawing.Size(117, 20);
             this.tbDietaMiercoles.TabIndex = 11;
@@ -144,7 +144,7 @@
             // tbSesionMiercoles
             // 
             this.tbSesionMiercoles.Location = new System.Drawing.Point(125, 174);
-            this.tbSesionMiercoles.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbSesionMiercoles.Margin = new System.Windows.Forms.Padding(2);
             this.tbSesionMiercoles.Name = "tbSesionMiercoles";
             this.tbSesionMiercoles.Size = new System.Drawing.Size(117, 20);
             this.tbSesionMiercoles.TabIndex = 10;
@@ -172,7 +172,7 @@
             // tbDietaJueves
             // 
             this.tbDietaJueves.Location = new System.Drawing.Point(125, 288);
-            this.tbDietaJueves.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbDietaJueves.Margin = new System.Windows.Forms.Padding(2);
             this.tbDietaJueves.Name = "tbDietaJueves";
             this.tbDietaJueves.Size = new System.Drawing.Size(117, 20);
             this.tbDietaJueves.TabIndex = 15;
@@ -180,7 +180,7 @@
             // tbSesionJueves
             // 
             this.tbSesionJueves.Location = new System.Drawing.Point(125, 261);
-            this.tbSesionJueves.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbSesionJueves.Margin = new System.Windows.Forms.Padding(2);
             this.tbSesionJueves.Name = "tbSesionJueves";
             this.tbSesionJueves.Size = new System.Drawing.Size(117, 20);
             this.tbSesionJueves.TabIndex = 14;
@@ -208,7 +208,7 @@
             // tbDietaViernes
             // 
             this.tbDietaViernes.Location = new System.Drawing.Point(401, 88);
-            this.tbDietaViernes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbDietaViernes.Margin = new System.Windows.Forms.Padding(2);
             this.tbDietaViernes.Name = "tbDietaViernes";
             this.tbDietaViernes.Size = new System.Drawing.Size(117, 20);
             this.tbDietaViernes.TabIndex = 19;
@@ -216,7 +216,7 @@
             // tbSesionViernes
             // 
             this.tbSesionViernes.Location = new System.Drawing.Point(401, 60);
-            this.tbSesionViernes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbSesionViernes.Margin = new System.Windows.Forms.Padding(2);
             this.tbSesionViernes.Name = "tbSesionViernes";
             this.tbSesionViernes.Size = new System.Drawing.Size(117, 20);
             this.tbSesionViernes.TabIndex = 18;
@@ -244,7 +244,7 @@
             // tbDietaSabado
             // 
             this.tbDietaSabado.Location = new System.Drawing.Point(401, 170);
-            this.tbDietaSabado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbDietaSabado.Margin = new System.Windows.Forms.Padding(2);
             this.tbDietaSabado.Name = "tbDietaSabado";
             this.tbDietaSabado.Size = new System.Drawing.Size(117, 20);
             this.tbDietaSabado.TabIndex = 23;
@@ -252,7 +252,7 @@
             // tbSesionSabado
             // 
             this.tbSesionSabado.Location = new System.Drawing.Point(401, 142);
-            this.tbSesionSabado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbSesionSabado.Margin = new System.Windows.Forms.Padding(2);
             this.tbSesionSabado.Name = "tbSesionSabado";
             this.tbSesionSabado.Size = new System.Drawing.Size(117, 20);
             this.tbSesionSabado.TabIndex = 22;
@@ -280,7 +280,7 @@
             // tbDietaDomingo
             // 
             this.tbDietaDomingo.Location = new System.Drawing.Point(401, 261);
-            this.tbDietaDomingo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbDietaDomingo.Margin = new System.Windows.Forms.Padding(2);
             this.tbDietaDomingo.Name = "tbDietaDomingo";
             this.tbDietaDomingo.Size = new System.Drawing.Size(117, 20);
             this.tbDietaDomingo.TabIndex = 27;
@@ -288,7 +288,7 @@
             // tbSesionDomingo
             // 
             this.tbSesionDomingo.Location = new System.Drawing.Point(401, 233);
-            this.tbSesionDomingo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbSesionDomingo.Margin = new System.Windows.Forms.Padding(2);
             this.tbSesionDomingo.Name = "tbSesionDomingo";
             this.tbSesionDomingo.Size = new System.Drawing.Size(117, 20);
             this.tbSesionDomingo.TabIndex = 26;
@@ -316,22 +316,24 @@
             // bCancelar
             // 
             this.bCancelar.Location = new System.Drawing.Point(454, 313);
-            this.bCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bCancelar.Margin = new System.Windows.Forms.Padding(2);
             this.bCancelar.Name = "bCancelar";
             this.bCancelar.Size = new System.Drawing.Size(63, 28);
             this.bCancelar.TabIndex = 29;
             this.bCancelar.Text = "Cancelar";
             this.bCancelar.UseVisualStyleBackColor = true;
+            this.bCancelar.Click += new System.EventHandler(this.bCancelar_Click);
             // 
             // bAplicar
             // 
             this.bAplicar.Location = new System.Drawing.Point(379, 313);
-            this.bAplicar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bAplicar.Margin = new System.Windows.Forms.Padding(2);
             this.bAplicar.Name = "bAplicar";
             this.bAplicar.Size = new System.Drawing.Size(63, 28);
             this.bAplicar.TabIndex = 28;
             this.bAplicar.Text = "Aplicar";
             this.bAplicar.UseVisualStyleBackColor = true;
+            this.bAplicar.Click += new System.EventHandler(this.bAplicar_Click);
             // 
             // ModificarRutina
             // 
@@ -368,7 +370,7 @@
             this.Controls.Add(this.tbSesionLunes);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ModificarRutina";
             this.Text = "Form1";
             this.ResumeLayout(false);
