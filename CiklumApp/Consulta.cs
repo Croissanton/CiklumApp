@@ -42,6 +42,7 @@ namespace CiklumApp
             {
                 list.Add(reader.Cast<object>().ToArray());
             }
+            con.GetConnection().Close();
             return list;
 
         }

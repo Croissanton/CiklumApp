@@ -21,7 +21,7 @@ namespace CiklumApp
         private bool checklogin(string user, string pass)
         {
             var consulta = new Consulta();
-            var list = consulta.Select("SELECT * FROM users WHERE username = '" + user + "' AND password = '" + pass + "'");
+            var list = consulta.Select("SELECT * FROM USUARIOS WHERE username = '" + user + "' AND password = '" + pass + "'");
             if (list.Count > 0)
             {
                 return true;
