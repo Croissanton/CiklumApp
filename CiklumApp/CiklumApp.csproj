@@ -141,6 +141,12 @@
     <Compile Include="Ejercicios.Designer.cs">
       <DependentUpon>Ejercicios.cs</DependentUpon>
     </Compile>
+    <Compile Include="AñadirSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AñadirSesion.Designer.cs">
+      <DependentUpon>AñadirSesion.cs</DependentUpon>
+    </Compile>
     <Compile Include="ModificarEjercicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -205,6 +211,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Ejercicios.resx">
       <DependentUpon>Ejercicios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AñadirSesion.resx">
+      <DependentUpon>AñadirSesion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ModificarDieta.resx">
       <DependentUpon>ModificarDieta.cs</DependentUpon>
