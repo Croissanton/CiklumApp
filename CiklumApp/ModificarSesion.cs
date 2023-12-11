@@ -38,8 +38,8 @@ namespace CiklumApp
                 return;
             }
 
-            try
-            {
+/*            try
+            {*/
                 string nombre = tbNombre.Text;
                 int repeticiones = int.Parse(tbRepeticiones.Text);
                 int series = int.Parse(tbSeries.Text);
@@ -51,7 +51,7 @@ namespace CiklumApp
                     MessageBox.Show("No existe un ejercicio con ese nombre.");
                     return;
                 }
-                int id_ejercicio = (int)list[0][0];
+                int id_ejercicio = Convert.ToInt32(list[0][0]);
                 
 
                 if (update)
@@ -63,12 +63,12 @@ namespace CiklumApp
                 {
                     consulta.Insert("INSERT INTO EJERCICIO_SESION (ID_SESION, ID_EJERCICIO, REPETICIONES, SERIES) VALUES (" + sesion_id + ", " + id_ejercicio + ", " + repeticiones + ", " + series + ")");
                 }
-            }
-            catch (Exception)
+/*            }*/
+/*            catch (Exception)
             {
                 MessageBox.Show("Número de repeticiones o sesiones incorrecto.");
                 return;
-            }
+            }*/
 
             this.Close();
         }

@@ -48,6 +48,7 @@
             // 
             // bSesiones
             // 
+            this.bSesiones.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bSesiones.Location = new System.Drawing.Point(77, 542);
             this.bSesiones.Name = "bSesiones";
             this.bSesiones.Size = new System.Drawing.Size(156, 43);
@@ -58,6 +59,7 @@
             // 
             // bClientes
             // 
+            this.bClientes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bClientes.Location = new System.Drawing.Point(77, 426);
             this.bClientes.Name = "bClientes";
             this.bClientes.Size = new System.Drawing.Size(156, 43);
@@ -68,6 +70,7 @@
             // 
             // bEjercicios
             // 
+            this.bEjercicios.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bEjercicios.Location = new System.Drawing.Point(77, 306);
             this.bEjercicios.Name = "bEjercicios";
             this.bEjercicios.Size = new System.Drawing.Size(156, 43);
@@ -77,6 +80,7 @@
             // 
             // bHome
             // 
+            this.bHome.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bHome.Location = new System.Drawing.Point(77, 200);
             this.bHome.Name = "bHome";
             this.bHome.Size = new System.Drawing.Size(156, 43);
@@ -87,6 +91,7 @@
             // 
             // dgvEjercicios
             // 
+            this.dgvEjercicios.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgvEjercicios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvEjercicios.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Nombre,
@@ -146,6 +151,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40.25F);
             this.label1.Location = new System.Drawing.Point(415, 36);
@@ -156,6 +162,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
             this.label2.Location = new System.Drawing.Point(398, 123);
@@ -166,6 +173,7 @@
             // 
             // bAñadir
             // 
+            this.bAñadir.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bAñadir.Location = new System.Drawing.Point(332, 464);
             this.bAñadir.Margin = new System.Windows.Forms.Padding(2);
             this.bAñadir.Name = "bAñadir";
@@ -177,6 +185,7 @@
             // 
             // bBorrar
             // 
+            this.bBorrar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bBorrar.Location = new System.Drawing.Point(485, 464);
             this.bBorrar.Margin = new System.Windows.Forms.Padding(2);
             this.bBorrar.Name = "bBorrar";

@@ -43,6 +43,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40.25F);
             this.label1.Location = new System.Drawing.Point(425, 56);
@@ -53,6 +54,7 @@
             // 
             // bSesiones
             // 
+            this.bSesiones.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bSesiones.Location = new System.Drawing.Point(82, 485);
             this.bSesiones.Name = "bSesiones";
             this.bSesiones.Size = new System.Drawing.Size(156, 43);
@@ -63,6 +65,7 @@
             // 
             // bClientes
             // 
+            this.bClientes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bClientes.Location = new System.Drawing.Point(82, 369);
             this.bClientes.Name = "bClientes";
             this.bClientes.Size = new System.Drawing.Size(156, 43);
@@ -72,6 +75,7 @@
             // 
             // bEjercicios
             // 
+            this.bEjercicios.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bEjercicios.Location = new System.Drawing.Point(82, 249);
             this.bEjercicios.Name = "bEjercicios";
             this.bEjercicios.Size = new System.Drawing.Size(156, 43);
@@ -82,6 +86,7 @@
             // 
             // bHome
             // 
+            this.bHome.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bHome.Location = new System.Drawing.Point(82, 143);
             this.bHome.Name = "bHome";
             this.bHome.Size = new System.Drawing.Size(156, 43);
@@ -92,6 +97,7 @@
             // 
             // bPerfil
             // 
+            this.bPerfil.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bPerfil.Location = new System.Drawing.Point(807, 191);
             this.bPerfil.Name = "bPerfil";
             this.bPerfil.Size = new System.Drawing.Size(98, 23);
@@ -102,6 +108,8 @@
             // 
             // dgvClientes
             // 
+            this.dgvClientes.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dgvClientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
