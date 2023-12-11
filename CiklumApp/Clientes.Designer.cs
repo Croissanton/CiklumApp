@@ -103,6 +103,7 @@
             this.bPerfil.TabIndex = 40;
             this.bPerfil.Text = "Ir al perfil";
             this.bPerfil.UseVisualStyleBackColor = true;
+            this.bPerfil.Click += new System.EventHandler(this.bPerfil_Click);
             // 
             // Clientes
             // 

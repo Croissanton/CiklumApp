@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CiklumApp
@@ -15,6 +8,7 @@ namespace CiklumApp
         public Sesion()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
         }
         private void bHome_Click(object sender, EventArgs e)
         {
@@ -35,6 +29,64 @@ namespace CiklumApp
             var clientes = new Clientes();
             this.Hide();
             clientes.Show();
+        }
+
+        private void Sesion_Load_1(object sender, EventArgs e)
+        {
+            var consulta = new Consulta();
+            var list = consulta.Select("SELECT * FROM SESION");
+
+            foreach (var item in list)
+            {
+                string nombre = (string)item[1];
+                int repeticiones = (int)item[2];
+                int series = (int)item[3];
+
+                dgvSesion.Rows.Add(nombre, repeticiones, series);
+            }
+        }
+
+        private void bAñadir_Click(object sender, EventArgs e)
+        {
+            ModificarSesion modificarSesion = new ModificarSesion();
+            modificarSesion.Show();
+            modificarSesion.FormClosed += new FormClosedEventHandler(modificarSesion_FormClosed);
+        }
+
+        private void bBorrar_Click(object sender, EventArgs e)
+        {
+            if (dgvSesion.SelectedRows.Count > 0)
+            {
+                string nombre = dgvSesion.SelectedRows[0].Cells[0].Value.ToString();
+                var consulta = new Consulta();
+                consulta.Delete("DELETE FROM SESION WHERE NOMBRE = '" + nombre + "'");
+
+                var sesion = new Sesion();
+                this.Hide();
+                sesion.Show();
+            }
+        }
+
+        private void dgvSesion_DoubleClick(object sender, EventArgs e)
+        {
+            if (dgvSesion.SelectedRows.Count > 0)
+            {
+                ModificarSesion modificarSesion = new ModificarSesion(
+                    dgvSesion.SelectedRows[0].Cells[0].Value.ToString(),
+                    int.Parse(dgvSesion.SelectedRows[0].Cells[1].Value.ToString()),
+                    int.Parse(dgvSesion.SelectedRows[0].Cells[2].Value.ToString())
+                    );
+                modificarSesion.Show();
+
+                modificarSesion.FormClosed += new FormClosedEventHandler(modificarSesion_FormClosed);
+            }
+        }
+
+        private void modificarSesion_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            var sesion = new Sesion();
+            this.Close();
+            sesion.Show();
         }
     }
 }

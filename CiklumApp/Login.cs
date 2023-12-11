@@ -16,6 +16,7 @@ namespace CiklumApp
         public Login()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private bool checklogin(string user, string pass)
@@ -26,7 +27,7 @@ namespace CiklumApp
             var list = consulta.Select("SELECT * FROM USUARIO WHERE username = '" + user + "' AND password_hash = '" + passHash + "'");
             if (list.Count > 0)
             {
-                ID = (int)list[0][0];
+                ID = Convert.ToInt32(list[0][0]);
                 return true;
             }
             else

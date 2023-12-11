@@ -159,6 +159,7 @@
             this.Controls.Add(this.lbSesiones);
             this.Name = "lCliente";
             this.Text = "Cliente";
+            this.Load += new System.EventHandler(this.lCliente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

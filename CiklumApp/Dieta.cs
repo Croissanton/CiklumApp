@@ -15,6 +15,7 @@ namespace CiklumApp
         public Dieta()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void bAñadir_Click(object sender, EventArgs e)
