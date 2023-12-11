@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Security.Cryptography;
 
 namespace CiklumApp
 {
@@ -21,7 +22,9 @@ namespace CiklumApp
         private bool checklogin(string user, string pass)
         {
             var consulta = new Consulta();
-            var list = consulta.Select("SELECT * FROM USUARIOS WHERE username = '" + user + "' AND password = '" + pass + "'");
+            string passHash = CalculateHash(pass);
+
+            var list = consulta.Select("SELECT * FROM USUARIOS WHERE username = '" + user + "' AND password_hash = '" + passHash + "'");
             if (list.Count > 0)
             {
                 return true;
@@ -44,6 +47,24 @@ namespace CiklumApp
             else
             {
                 MessageBox.Show("Wrong login or password", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        static string CalculateHash(string input)
+        {
+            using (SHA256 sha256 = SHA256.Create())
+            {
+                byte[] inputBytes = Encoding.UTF8.GetBytes(input);
+                byte[] hashBytes = sha256.ComputeHash(inputBytes);
+
+                // Convierte el hash a una representación hexadecimal
+                StringBuilder stringBuilder = new StringBuilder();
+                for (int i = 0; i < hashBytes.Length; i++)
+                {
+                    stringBuilder.Append(hashBytes[i].ToString("x2"));
+                }
+
+                return stringBuilder.ToString();
             }
         }
     }
