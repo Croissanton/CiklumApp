@@ -157,6 +157,7 @@
             this.dgvSesion.Name = "dgvSesion";
             this.dgvSesion.Size = new System.Drawing.Size(386, 315);
             this.dgvSesion.TabIndex = 50;
+            this.dgvSesion.Click += new System.EventHandler(this.dgvSesion_Click);
             // 
             // ID
             // 

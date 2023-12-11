@@ -14,6 +14,7 @@ namespace CiklumApp
     {
         int cliente_id = -1;
         int id_runita = -1;
+        int id_sesion = -1;
         public lCliente(int cliente_id)
         {
             this.cliente_id = cliente_id;
@@ -34,13 +35,19 @@ namespace CiklumApp
                 string nombre_rutina = "RUTINA: " + id_rutina.ToString();
                 this.dgvRutinas.Rows.Add(id_rutina, nombre_rutina);
             }
+            dgvRutinas.ClearSelection();
         }
 
         private void bSesion_Click(object sender, EventArgs e)
         {
-            var sesion = new Sesion();
+            if (dgvSesion.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Seleccione una sesion");
+                return;
+            }
+            var sesiones = new Sesion(id_sesion);
             this.Close();
-            sesion.Show();
+            sesiones.Show();
         }
 
         private void bClientes_Click(object sender, EventArgs e)
@@ -143,6 +150,17 @@ namespace CiklumApp
                 string nombre_sesion = (string)list2[0][0];
                 this.dgvSesion.Rows.Add(id_sesionDomingo, nombre_sesion);
             }
+            dgvSesion.ClearSelection();
+        }
+
+        private void dgvSesion_Click(object sender, EventArgs e)
+        {
+            if(dgvSesion.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Seleccione una sesion");
+                return;
+            }
+            id_sesion = Convert.ToInt32(dgvSesion.SelectedRows[0].Cells[0].Value);
         }
     }
 }
