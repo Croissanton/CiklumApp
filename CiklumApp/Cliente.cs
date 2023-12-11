@@ -12,9 +12,14 @@ namespace CiklumApp
 {
     public partial class lCliente : Form
     {
-        public lCliente()
+        public lCliente(int cliente_id)
         {
             InitializeComponent();
+        }
+
+        private void lCliente_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
