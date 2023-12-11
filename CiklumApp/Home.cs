@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Numerics;
 using System.Windows.Forms;
 
 
@@ -7,60 +8,28 @@ namespace CiklumApp
 {
     public partial class Home : Form
     {
-        /*private void loadCitas()
-        {
-
-            string path = Path.Combine(Directory.GetCurrentDirectory(), "..", "..", "..");
-            string connectionString = "Data Source=" + path + "\\ciklumdb.db;Version=3;";
-
-            using (SQLiteConnection conn = new SQLiteConnection(connectionString))
-            {
-                conn.Open();
-                using (SQLiteCommand cmd = new SQLiteCommand("SELECT * FROM cita", conn))
-                {
-                    using (SQLiteDataReader reader = cmd.ExecuteReader())
-                    {
-                        while (reader.Read())
-                        {
-                            citasGridView.Rows.Add(reader["id"], reader["entrenador"], reader["id_cliente"], reader["fecha"], reader["hora"]);
-                        }
-                    }
-                }
-                conn.Close();
-            }
-        }*/
-
-
-        //TODO: ninguna de las implementaciones de loadCitas() funciona <3
         private void loadCitas()
         {
-/*
-            string path = Path.Combine(Directory.GetCurrentDirectory(), "..", "..", "..");
-            string connectionString = "Data Source=" + path + "\\ciklumdb.db;Version=3;";
+            var consulta = new Consulta();
+            var list = consulta.Select("SELECT * FROM CITA WHERE id_entrenador = '" + Login.ID + "';");
 
-            citasGridView.AutoGenerateColumns = true;
-
-            
-            string query = "SELECT * FROM cita";
-            SQLiteConnection con = new SQLiteConnection(connectionString);
-            con.Open();
-            using (SQLiteCommand command = new SQLiteCommand(query, con))
+            foreach (var item in list)
             {
-                using (SQLiteDataAdapter adapter = new SQLiteDataAdapter(command))
-                {
-                    DataTable dataTable = new DataTable();
-                    adapter.Fill(dataTable);
+                DateTime fecha = (DateTime)item[1];
+                int duracion = (int)item[2];
+                int id_cliente = Convert.ToInt32(item[3]);
+                var list2 = consulta.Select("SELECT nombre, apellidos FROM CLIENTE WHERE id_usuario = '" + id_cliente + "';");
+                string nombre = (string)list2[0][0] + " " + (string)list2[0][1];
 
-                    // Bind the DataTable to the DataGridView
-                    citasGridView.DataSource = dataTable;
-                }
-            }*/
+                citasGridView.Rows.Add(fecha, duracion, nombre);
+            }
         }
 
         public Home()
         {
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
+            loadCitas();
         }
 
         private void bEjercicios_Click(object sender, EventArgs e)
