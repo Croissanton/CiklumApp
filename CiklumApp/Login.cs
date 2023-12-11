@@ -24,7 +24,7 @@ namespace CiklumApp
             var consulta = new Consulta();
             string passHash = CalculateHash(pass);
 
-            var list = consulta.Select("SELECT * FROM USUARIOS WHERE username = '" + user + "' AND password_hash = '" + passHash + "'");
+            var list = consulta.Select("SELECT * FROM USUARIO WHERE username = '" + user + "' AND password_hash = '" + passHash + "'");
             if (list.Count > 0)
             {
                 return true;
