@@ -142,9 +142,9 @@ namespace CiklumApp
 
         private void añadirSesion_FormClosed(object sender, FormClosedEventArgs e)
         {
-            var a = new AñadirSesion();
+            var s = new Sesion();
             this.Close();
-            a.Show();
+            s.Show();
         }
     }
 }
