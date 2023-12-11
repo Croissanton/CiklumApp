@@ -44,6 +44,7 @@
             this.lbClientes.Name = "lbClientes";
             this.lbClientes.Size = new System.Drawing.Size(431, 316);
             this.lbClientes.TabIndex = 0;
+            this.lbClientes.SelectedIndexChanged += new System.EventHandler(this.lbClientes_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -117,6 +118,7 @@
             this.Controls.Add(this.lbClientes);
             this.Name = "Clientes";
             this.Text = "Clientes";
+            this.Load += new System.EventHandler(this.Clientes_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
