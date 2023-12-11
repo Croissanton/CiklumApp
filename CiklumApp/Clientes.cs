@@ -15,6 +15,7 @@ namespace CiklumApp
         public Clientes()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void bHome_Click(object sender, EventArgs e)

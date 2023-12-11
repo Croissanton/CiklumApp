@@ -15,6 +15,7 @@ namespace CiklumApp
         public Rutina()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
         }
     }
 }

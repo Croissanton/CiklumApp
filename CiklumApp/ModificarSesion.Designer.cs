@@ -31,92 +31,103 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.tbNombre = new System.Windows.Forms.TextBox();
+            this.tbRepeticiones = new System.Windows.Forms.TextBox();
+            this.tbSeries = new System.Windows.Forms.TextBox();
+            this.bCancelar = new System.Windows.Forms.Button();
+            this.bAplicar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(135, 86);
+            this.label1.Location = new System.Drawing.Point(101, 70);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 16);
+            this.label1.Size = new System.Drawing.Size(103, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Nombre del ejercicio";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(69, 168);
+            this.label2.Location = new System.Drawing.Point(52, 136);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(198, 16);
+            this.label2.Size = new System.Drawing.Size(155, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Repeticiones o tiempo por serie";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(221, 250);
+            this.label3.Location = new System.Drawing.Point(166, 203);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 16);
+            this.label3.Size = new System.Drawing.Size(36, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Series";
             // 
-            // textBox1
+            // tbNombre
             // 
-            this.textBox1.Location = new System.Drawing.Point(352, 79);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(284, 22);
-            this.textBox1.TabIndex = 3;
+            this.tbNombre.Location = new System.Drawing.Point(264, 64);
+            this.tbNombre.Margin = new System.Windows.Forms.Padding(2);
+            this.tbNombre.Name = "tbNombre";
+            this.tbNombre.Size = new System.Drawing.Size(214, 20);
+            this.tbNombre.TabIndex = 3;
             // 
-            // textBox2
+            // tbRepeticiones
             // 
-            this.textBox2.Location = new System.Drawing.Point(352, 165);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(284, 22);
-            this.textBox2.TabIndex = 4;
+            this.tbRepeticiones.Location = new System.Drawing.Point(264, 134);
+            this.tbRepeticiones.Margin = new System.Windows.Forms.Padding(2);
+            this.tbRepeticiones.Name = "tbRepeticiones";
+            this.tbRepeticiones.Size = new System.Drawing.Size(214, 20);
+            this.tbRepeticiones.TabIndex = 4;
             // 
-            // textBox3
+            // tbSeries
             // 
-            this.textBox3.Location = new System.Drawing.Point(352, 244);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(284, 22);
-            this.textBox3.TabIndex = 5;
+            this.tbSeries.Location = new System.Drawing.Point(264, 198);
+            this.tbSeries.Margin = new System.Windows.Forms.Padding(2);
+            this.tbSeries.Name = "tbSeries";
+            this.tbSeries.Size = new System.Drawing.Size(214, 20);
+            this.tbSeries.TabIndex = 5;
             // 
-            // button2
+            // bCancelar
             // 
-            this.button2.Location = new System.Drawing.Point(561, 387);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.bCancelar.Location = new System.Drawing.Point(421, 301);
+            this.bCancelar.Margin = new System.Windows.Forms.Padding(2);
+            this.bCancelar.Name = "bCancelar";
+            this.bCancelar.Size = new System.Drawing.Size(71, 32);
+            this.bCancelar.TabIndex = 15;
+            this.bCancelar.Text = "Cancelar";
+            this.bCancelar.UseVisualStyleBackColor = true;
+            this.bCancelar.Click += new System.EventHandler(this.bCancelar_Click);
             // 
-            // button1
+            // bAplicar
             // 
-            this.button1.Location = new System.Drawing.Point(460, 387);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Aplicar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.bAplicar.Location = new System.Drawing.Point(345, 301);
+            this.bAplicar.Margin = new System.Windows.Forms.Padding(2);
+            this.bAplicar.Name = "bAplicar";
+            this.bAplicar.Size = new System.Drawing.Size(72, 32);
+            this.bAplicar.TabIndex = 14;
+            this.bAplicar.Text = "Aplicar";
+            this.bAplicar.UseVisualStyleBackColor = true;
+            this.bAplicar.Click += new System.EventHandler(this.bAplicar_Click);
             // 
             // ModificarSesion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.Controls.Add(this.bCancelar);
+            this.Controls.Add(this.bAplicar);
+            this.Controls.Add(this.tbSeries);
+            this.Controls.Add(this.tbRepeticiones);
+            this.Controls.Add(this.tbNombre);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ModificarSesion";
             this.Text = "ModificarSesion";
             this.ResumeLayout(false);
@@ -129,10 +140,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox tbNombre;
+        private System.Windows.Forms.TextBox tbRepeticiones;
+        private System.Windows.Forms.TextBox tbSeries;
+        private System.Windows.Forms.Button bCancelar;
+        private System.Windows.Forms.Button bAplicar;
     }
 }

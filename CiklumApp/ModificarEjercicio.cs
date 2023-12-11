@@ -42,7 +42,7 @@ namespace CiklumApp
         {
             if (tbNombre.Text == "" || tbTipo.Text == "" || tbDescripcion.Text == "" || tbEnlace.Text == "")
             {
-                MessageBox.Show("Rellene todos los campos");
+                MessageBox.Show("Rellene todos los campos.");
                 return;
             }
 
@@ -76,9 +76,6 @@ namespace CiklumApp
                     consulta.Insert("INSERT INTO EJERCICIO (NOMBRE, TIPO, DURACION, DESCRIPCION, VIDEO_URL, PRIVACIDAD) " +
                         "VALUES ('" + nombre + "', '" + tipo + "', " + duracion + ", '" + descripcion + "', '" + enlace + "', '" + privado + "')");
                 }
-
-
-                this.Close();
             }
             catch (Exception)
             {

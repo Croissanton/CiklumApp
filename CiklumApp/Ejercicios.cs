@@ -8,6 +8,7 @@ namespace CiklumApp
         public Ejercicios()
         {
             InitializeComponent();
+            this.WindowState = FormWindowState.Maximized;
         }
 
         private void bHome_Click(object sender, EventArgs e)
@@ -53,6 +54,7 @@ namespace CiklumApp
         {
             ModificarEjercicio modificarEjercicio = new ModificarEjercicio();
             modificarEjercicio.Show();
+            modificarEjercicio.FormClosed += new FormClosedEventHandler(modificarEjercicio_FormClosed);
         }
 
         private void bBorrar_Click(object sender, EventArgs e)
@@ -90,7 +92,7 @@ namespace CiklumApp
         private void modificarEjercicio_FormClosed(object sender, FormClosedEventArgs e)
         {
             var ejercicios = new Ejercicios();
-            this.Hide();
+            this.Close();
             ejercicios.Show();
         }
     }
