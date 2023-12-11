@@ -40,13 +40,14 @@
             this.dgvSesion = new System.Windows.Forms.DataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Sesion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvRutinas = new System.Windows.Forms.DataGridView();
             this.RutID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Rutina = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSesion)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRutinas)).BeginInit();
             this.SuspendLayout();
-
+            // 
+            // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
@@ -56,10 +57,6 @@
             this.label1.Size = new System.Drawing.Size(305, 31);
             this.label1.TabIndex = 40;
             this.label1.Text = "Sesiones con el Cliente:";
-            // 
-            // lbRutina
-            // 
-
             // 
             // label3
             // 
@@ -151,6 +148,7 @@
             // 
             // dgvSesion
             // 
+            this.dgvSesion.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgvSesion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvSesion.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
@@ -171,16 +169,17 @@
             this.Sesion.HeaderText = "Sesion";
             this.Sesion.Name = "Sesion";
             // 
-            // dataGridView1
+            // dgvRutinas
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvRutinas.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dgvRutinas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvRutinas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.RutID,
             this.Rutina});
-            this.dataGridView1.Location = new System.Drawing.Point(701, 223);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(398, 314);
-            this.dataGridView1.TabIndex = 51;
+            this.dgvRutinas.Location = new System.Drawing.Point(701, 223);
+            this.dgvRutinas.Name = "dgvRutinas";
+            this.dgvRutinas.Size = new System.Drawing.Size(398, 314);
+            this.dgvRutinas.TabIndex = 51;
             // 
             // RutID
             // 
@@ -198,7 +197,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1153, 683);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvRutinas);
             this.Controls.Add(this.dgvSesion);
             this.Controls.Add(this.bSesion);
             this.Controls.Add(this.bRutina);
@@ -213,7 +212,7 @@
             this.Text = "Cliente";
             this.Load += new System.EventHandler(this.lCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSesion)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRutinas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -232,7 +231,7 @@
         private System.Windows.Forms.DataGridView dgvSesion;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Sesion;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvRutinas;
         private System.Windows.Forms.DataGridViewTextBoxColumn RutID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Rutina;
     }
