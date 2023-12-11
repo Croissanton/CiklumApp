@@ -12,10 +12,12 @@ namespace CiklumApp
 {
     public partial class Dieta : Form
     {
-        public Dieta()
+        int id_dieta = -1;
+        public Dieta(int id_dieta)
         {
             InitializeComponent();
             this.WindowState = FormWindowState.Maximized;
+            this.id_dieta = id_dieta;
         }
 
         private void bAñadir_Click(object sender, EventArgs e)
@@ -33,9 +35,9 @@ namespace CiklumApp
                 var consulta = new Consulta();
                 consulta.Delete("DELETE FROM DIETA WHERE ID = '" + id + "'");
 
-                var dieta = new Dieta();
+                var home = new Home();
                 this.Hide();
-                dieta.Show();
+                home.Show();
             }
         }
 
@@ -74,13 +76,13 @@ namespace CiklumApp
                 string cena = (string)item[7];
                 string calorias = (string)item[8];
 
-                dgvDieta.Rows.Add(id, desayuno, mediamanana, almuerzo, merienda, cena, calorias);   
+                dgvDieta.Rows.Add(id, desayuno, mediamanana, almuerzo, merienda, cena, calorias);
             }
         }
 
         private void modificarDieta_FormClosed(object sender, FormClosedEventArgs e)
         {
-            var dieta = new Dieta();
+            var dieta = new Dieta(id_dieta);
             this.Close();
             dieta.Show();
         }
