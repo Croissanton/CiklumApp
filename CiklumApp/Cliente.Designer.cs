@@ -28,9 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbSesiones = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.lbRutina = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.bSesiones = new System.Windows.Forms.Button();
@@ -39,15 +37,15 @@
             this.bHome = new System.Windows.Forms.Button();
             this.bRutina = new System.Windows.Forms.Button();
             this.bSesion = new System.Windows.Forms.Button();
+            this.dgvSesion = new System.Windows.Forms.DataGridView();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sesion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.RutID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Rutina = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSesion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lbSesiones
-            // 
-            this.lbSesiones.FormattingEnabled = true;
-            this.lbSesiones.Location = new System.Drawing.Point(218, 223);
-            this.lbSesiones.Name = "lbSesiones";
-            this.lbSesiones.Size = new System.Drawing.Size(431, 316);
-            this.lbSesiones.TabIndex = 39;
             // 
             // label1
             // 
@@ -58,14 +56,6 @@
             this.label1.Size = new System.Drawing.Size(305, 31);
             this.label1.TabIndex = 40;
             this.label1.Text = "Sesiones con el Cliente:";
-            // 
-            // lbRutina
-            // 
-            this.lbRutina.FormattingEnabled = true;
-            this.lbRutina.Location = new System.Drawing.Point(677, 223);
-            this.lbRutina.Name = "lbRutina";
-            this.lbRutina.Size = new System.Drawing.Size(431, 316);
-            this.lbRutina.TabIndex = 41;
             // 
             // label3
             // 
@@ -146,11 +136,58 @@
             this.bSesion.UseVisualStyleBackColor = true;
             this.bSesion.Click += new System.EventHandler(this.bSesion_Click);
             // 
+            // dgvSesion
+            // 
+            this.dgvSesion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSesion.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
+            this.Sesion});
+            this.dgvSesion.Location = new System.Drawing.Point(243, 223);
+            this.dgvSesion.Name = "dgvSesion";
+            this.dgvSesion.Size = new System.Drawing.Size(386, 315);
+            this.dgvSesion.TabIndex = 50;
+            this.dgvSesion.Click += new System.EventHandler(this.dgvSesion_Click);
+            // 
+            // ID
+            // 
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            this.ID.Visible = false;
+            // 
+            // Sesion
+            // 
+            this.Sesion.HeaderText = "Sesion";
+            this.Sesion.Name = "Sesion";
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.RutID,
+            this.Rutina});
+            this.dataGridView1.Location = new System.Drawing.Point(701, 223);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(398, 314);
+            this.dataGridView1.TabIndex = 51;
+            // 
+            // RutID
+            // 
+            this.RutID.HeaderText = "ID";
+            this.RutID.Name = "RutID";
+            this.RutID.Visible = false;
+            // 
+            // Rutina
+            // 
+            this.Rutina.HeaderText = "Rutina";
+            this.Rutina.Name = "Rutina";
+            // 
             // lCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1153, 683);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvSesion);
             this.Controls.Add(this.bSesion);
             this.Controls.Add(this.bRutina);
             this.Controls.Add(this.bSesiones);
@@ -159,21 +196,19 @@
             this.Controls.Add(this.bHome);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.lbRutina);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.lbSesiones);
             this.Name = "lCliente";
             this.Text = "Cliente";
             this.Load += new System.EventHandler(this.lCliente_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSesion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.ListBox lbSesiones;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListBox lbRutina;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button bSesiones;
@@ -182,5 +217,11 @@
         private System.Windows.Forms.Button bHome;
         private System.Windows.Forms.Button bRutina;
         private System.Windows.Forms.Button bSesion;
+        private System.Windows.Forms.DataGridView dgvSesion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Sesion;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RutID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Rutina;
     }
 }
