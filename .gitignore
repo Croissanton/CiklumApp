@@ -4,3 +4,5 @@
 *.cache
 
 .vs
+bin
+obj
