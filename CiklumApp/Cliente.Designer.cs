@@ -95,6 +95,7 @@
             this.bSesiones.TabIndex = 47;
             this.bSesiones.Text = "SESIONES";
             this.bSesiones.UseVisualStyleBackColor = true;
+            this.bSesiones.Click += new System.EventHandler(this.bSesiones_Click);
             // 
             // bClientes
             // 
@@ -104,6 +105,7 @@
             this.bClientes.TabIndex = 46;
             this.bClientes.Text = "CLIENTES";
             this.bClientes.UseVisualStyleBackColor = true;
+            this.bClientes.Click += new System.EventHandler(this.bClientes_Click);
             // 
             // bEjercicios
             // 
@@ -113,6 +115,7 @@
             this.bEjercicios.TabIndex = 45;
             this.bEjercicios.Text = "EJERCICIOS";
             this.bEjercicios.UseVisualStyleBackColor = true;
+            this.bEjercicios.Click += new System.EventHandler(this.bEjercicios_Click);
             // 
             // bHome
             // 
@@ -122,6 +125,7 @@
             this.bHome.TabIndex = 44;
             this.bHome.Text = "HOME";
             this.bHome.UseVisualStyleBackColor = true;
+            this.bHome.Click += new System.EventHandler(this.bHome_Click);
             // 
             // bRutina
             // 
@@ -140,6 +144,7 @@
             this.bSesion.TabIndex = 49;
             this.bSesion.Text = "Ver Sesion";
             this.bSesion.UseVisualStyleBackColor = true;
+            this.bSesion.Click += new System.EventHandler(this.bSesion_Click);
             // 
             // lCliente
             // 

@@ -37,7 +37,7 @@
             this.bEjercicios = new System.Windows.Forms.Button();
             this.bHome = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.lbSesiones = new System.Windows.Forms.ListBox();
             this.bBorrar = new System.Windows.Forms.Button();
             this.bAñadir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSesion)).BeginInit();
@@ -127,18 +127,18 @@
             this.label1.TabIndex = 22;
             this.label1.Text = "SESION";
             // 
-            // listBox1
+            // lbSesiones
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Items.AddRange(new object[] {
+            this.lbSesiones.FormattingEnabled = true;
+            this.lbSesiones.Items.AddRange(new object[] {
             "Sesion1",
             "Sesion2",
             "Sesion3"});
-            this.listBox1.Location = new System.Drawing.Point(996, 215);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(187, 303);
-            this.listBox1.TabIndex = 23;
+            this.lbSesiones.Location = new System.Drawing.Point(996, 215);
+            this.lbSesiones.Margin = new System.Windows.Forms.Padding(2);
+            this.lbSesiones.Name = "lbSesiones";
+            this.lbSesiones.Size = new System.Drawing.Size(187, 303);
+            this.lbSesiones.TabIndex = 23;
             // 
             // bBorrar
             // 
@@ -169,7 +169,7 @@
             this.ClientSize = new System.Drawing.Size(1191, 684);
             this.Controls.Add(this.bBorrar);
             this.Controls.Add(this.bAñadir);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.lbSesiones);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvSesion);
             this.Controls.Add(this.bSesiones);
@@ -195,7 +195,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn Repeticiones;
         private System.Windows.Forms.DataGridViewTextBoxColumn Series;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox lbSesiones;
         private System.Windows.Forms.Button bBorrar;
         private System.Windows.Forms.Button bAñadir;
     }

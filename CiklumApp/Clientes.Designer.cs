@@ -28,23 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbClientes = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.bSesiones = new System.Windows.Forms.Button();
             this.bClientes = new System.Windows.Forms.Button();
             this.bEjercicios = new System.Windows.Forms.Button();
             this.bHome = new System.Windows.Forms.Button();
             this.bPerfil = new System.Windows.Forms.Button();
+            this.dgvClientes = new System.Windows.Forms.DataGridView();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Apellidos = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lbClientes
-            // 
-            this.lbClientes.FormattingEnabled = true;
-            this.lbClientes.Location = new System.Drawing.Point(356, 173);
-            this.lbClientes.Name = "lbClientes";
-            this.lbClientes.Size = new System.Drawing.Size(431, 316);
-            this.lbClientes.TabIndex = 0;
-            this.lbClientes.SelectedIndexChanged += new System.EventHandler(this.lbClientes_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -105,34 +100,65 @@
             this.bPerfil.UseVisualStyleBackColor = true;
             this.bPerfil.Click += new System.EventHandler(this.bPerfil_Click);
             // 
+            // dgvClientes
+            // 
+            this.dgvClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
+            this.Nombre,
+            this.Apellidos});
+            this.dgvClientes.Location = new System.Drawing.Point(358, 143);
+            this.dgvClientes.Name = "dgvClientes";
+            this.dgvClientes.Size = new System.Drawing.Size(394, 304);
+            this.dgvClientes.TabIndex = 41;
+            this.dgvClientes.Click += new System.EventHandler(this.dgvClientes_Click);
+            // 
+            // ID
+            // 
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            // 
+            // Nombre
+            // 
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            // 
+            // Apellidos
+            // 
+            this.Apellidos.HeaderText = "Apellidos";
+            this.Apellidos.Name = "Apellidos";
+            // 
             // Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1119, 673);
+            this.Controls.Add(this.dgvClientes);
             this.Controls.Add(this.bPerfil);
             this.Controls.Add(this.bSesiones);
             this.Controls.Add(this.bClientes);
             this.Controls.Add(this.bEjercicios);
             this.Controls.Add(this.bHome);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.lbClientes);
             this.Name = "Clientes";
             this.Text = "Clientes";
             this.Load += new System.EventHandler(this.Clientes_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvClientes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ListBox lbClientes;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button bSesiones;
         private System.Windows.Forms.Button bClientes;
         private System.Windows.Forms.Button bEjercicios;
         private System.Windows.Forms.Button bHome;
         private System.Windows.Forms.Button bPerfil;
+        private System.Windows.Forms.DataGridView dgvClientes;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Apellidos;
     }
 }
