@@ -46,20 +46,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvSesion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-<<<<<<< HEAD
-=======
-            // lbSesiones
-            // 
-            this.lbSesiones.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbSesiones.FormattingEnabled = true;
-            this.lbSesiones.Location = new System.Drawing.Point(218, 223);
-            this.lbSesiones.Name = "lbSesiones";
-            this.lbSesiones.Size = new System.Drawing.Size(431, 316);
-            this.lbSesiones.TabIndex = 39;
-            // 
->>>>>>> 8081244289039936ca1aa29e2715c2378806072e
-            // label1
+
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
@@ -70,18 +57,10 @@
             this.label1.TabIndex = 40;
             this.label1.Text = "Sesiones con el Cliente:";
             // 
-<<<<<<< HEAD
-=======
             // lbRutina
             // 
-            this.lbRutina.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lbRutina.FormattingEnabled = true;
-            this.lbRutina.Location = new System.Drawing.Point(677, 223);
-            this.lbRutina.Name = "lbRutina";
-            this.lbRutina.Size = new System.Drawing.Size(431, 316);
-            this.lbRutina.TabIndex = 41;
+
             // 
->>>>>>> 8081244289039936ca1aa29e2715c2378806072e
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -180,7 +159,6 @@
             this.dgvSesion.Name = "dgvSesion";
             this.dgvSesion.Size = new System.Drawing.Size(386, 315);
             this.dgvSesion.TabIndex = 50;
-            this.dgvSesion.Click += new System.EventHandler(this.dgvSesion_Click);
             // 
             // ID
             // 
