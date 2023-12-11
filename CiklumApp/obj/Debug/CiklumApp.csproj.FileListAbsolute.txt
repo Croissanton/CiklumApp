@@ -170,3 +170,8 @@ G:\My Drive\clase\año3\ir\GIT\CiklumApp\CiklumApp\obj\Debug\CiklumApp.Modificar
 G:\My Drive\clase\año3\ir\GIT\CiklumApp\CiklumApp\obj\Debug\CiklumApp.ModificarRutina.resources
 G:\My Drive\clase\año3\ir\GIT\CiklumApp\CiklumApp\obj\Debug\CiklumApp.ModificarSesion.resources
 G:\My Drive\clase\año3\ir\GIT\CiklumApp\CiklumApp\obj\Debug\CiklumApp.csproj.CopyComplete
+C:\Users\nuxte\OneDrive\Dokumenty\Ing Req GIT\CiklumApp\CiklumApp\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\nuxte\OneDrive\Dokumenty\Ing Req GIT\CiklumApp\CiklumApp\obj\Debug\CiklumApp.ModificarDieta.resources
+C:\Users\nuxte\OneDrive\Dokumenty\Ing Req GIT\CiklumApp\CiklumApp\obj\Debug\CiklumApp.ModificarEjercicio.resources
+C:\Users\nuxte\OneDrive\Dokumenty\Ing Req GIT\CiklumApp\CiklumApp\obj\Debug\CiklumApp.ModificarRutina.resources
+C:\Users\nuxte\OneDrive\Dokumenty\Ing Req GIT\CiklumApp\CiklumApp\obj\Debug\CiklumApp.ModificarSesion.resources
