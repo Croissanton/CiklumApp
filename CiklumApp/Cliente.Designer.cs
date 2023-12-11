@@ -180,6 +180,7 @@
             this.dgvRutinas.Name = "dgvRutinas";
             this.dgvRutinas.Size = new System.Drawing.Size(398, 314);
             this.dgvRutinas.TabIndex = 51;
+            this.dgvRutinas.Click += new System.EventHandler(this.dgvRutinas_Click);
             // 
             // RutID
             // 
