@@ -60,6 +60,11 @@ namespace CiklumApp
 
         private void bPerfil_Click(object sender, EventArgs e)
         {
+            if(cliente_id == -1)
+            {
+                MessageBox.Show("Seleccione un cliente.");
+                return;
+            }
             this.Hide();
             var perfil = new lCliente(cliente_id);
             perfil.Show();
@@ -70,7 +75,6 @@ namespace CiklumApp
 
                 //Get cliente id
                 cliente_id = Convert.ToInt32(dgvClientes.SelectedRows[0].Cells[0].Value);
-                Console.WriteLine("ESTA ES AAAAAAAAAAAAAAAAAAAAAAAAAA " + cliente_id);
         }
     }
 }
