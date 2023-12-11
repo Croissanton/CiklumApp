@@ -50,10 +50,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.label2.Location = new System.Drawing.Point(687, 138);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(515, 112);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(269, 39);
+            this.label2.Size = new System.Drawing.Size(215, 31);
             this.label2.TabIndex = 37;
             this.label2.Text = "Dieta del cliente:";
             // 
@@ -61,10 +60,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40.25F);
-            this.label1.Location = new System.Drawing.Point(707, 33);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(530, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(233, 78);
+            this.label1.Size = new System.Drawing.Size(186, 63);
             this.label1.TabIndex = 36;
             this.label1.Text = "DIETA";
             // 
@@ -78,11 +76,10 @@
             this.Merienda,
             this.Cena,
             this.Calorías});
-            this.dgvDieta.Location = new System.Drawing.Point(473, 240);
-            this.dgvDieta.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvDieta.Location = new System.Drawing.Point(355, 195);
             this.dgvDieta.Name = "dgvDieta";
             this.dgvDieta.RowHeadersWidth = 51;
-            this.dgvDieta.Size = new System.Drawing.Size(803, 409);
+            this.dgvDieta.Size = new System.Drawing.Size(602, 332);
             this.dgvDieta.TabIndex = 35;
             this.dgvDieta.DoubleClick += new System.EventHandler(this.dataGridView1_DoubleClick);
             // 
@@ -130,49 +127,46 @@
             // 
             // bSesiones
             // 
-            this.bSesiones.Location = new System.Drawing.Point(195, 682);
-            this.bSesiones.Margin = new System.Windows.Forms.Padding(4);
+            this.bSesiones.Location = new System.Drawing.Point(146, 554);
             this.bSesiones.Name = "bSesiones";
-            this.bSesiones.Size = new System.Drawing.Size(208, 53);
+            this.bSesiones.Size = new System.Drawing.Size(156, 43);
             this.bSesiones.TabIndex = 34;
             this.bSesiones.Text = "SESIONES";
             this.bSesiones.UseVisualStyleBackColor = true;
             // 
             // bClientes
             // 
-            this.bClientes.Location = new System.Drawing.Point(195, 539);
-            this.bClientes.Margin = new System.Windows.Forms.Padding(4);
+            this.bClientes.Location = new System.Drawing.Point(146, 438);
             this.bClientes.Name = "bClientes";
-            this.bClientes.Size = new System.Drawing.Size(208, 53);
+            this.bClientes.Size = new System.Drawing.Size(156, 43);
             this.bClientes.TabIndex = 33;
             this.bClientes.Text = "CLIENTES";
             this.bClientes.UseVisualStyleBackColor = true;
             // 
             // bEjercicios
             // 
-            this.bEjercicios.Location = new System.Drawing.Point(195, 391);
-            this.bEjercicios.Margin = new System.Windows.Forms.Padding(4);
+            this.bEjercicios.Location = new System.Drawing.Point(146, 318);
             this.bEjercicios.Name = "bEjercicios";
-            this.bEjercicios.Size = new System.Drawing.Size(208, 53);
+            this.bEjercicios.Size = new System.Drawing.Size(156, 43);
             this.bEjercicios.TabIndex = 32;
             this.bEjercicios.Text = "EJERCICIOS";
             this.bEjercicios.UseVisualStyleBackColor = true;
             // 
             // bHome
             // 
-            this.bHome.Location = new System.Drawing.Point(195, 261);
-            this.bHome.Margin = new System.Windows.Forms.Padding(4);
+            this.bHome.Location = new System.Drawing.Point(146, 212);
             this.bHome.Name = "bHome";
-            this.bHome.Size = new System.Drawing.Size(208, 53);
+            this.bHome.Size = new System.Drawing.Size(156, 43);
             this.bHome.TabIndex = 31;
             this.bHome.Text = "HOME";
             this.bHome.UseVisualStyleBackColor = true;
             // 
             // bBorrar
             // 
-            this.bBorrar.Location = new System.Drawing.Point(677, 681);
+            this.bBorrar.Location = new System.Drawing.Point(508, 553);
+            this.bBorrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bBorrar.Name = "bBorrar";
-            this.bBorrar.Size = new System.Drawing.Size(175, 53);
+            this.bBorrar.Size = new System.Drawing.Size(131, 43);
             this.bBorrar.TabIndex = 39;
             this.bBorrar.Text = "Borrar";
             this.bBorrar.UseVisualStyleBackColor = true;
@@ -180,9 +174,10 @@
             // 
             // bAñadir
             // 
-            this.bAñadir.Location = new System.Drawing.Point(473, 681);
+            this.bAñadir.Location = new System.Drawing.Point(355, 553);
+            this.bAñadir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bAñadir.Name = "bAñadir";
-            this.bAñadir.Size = new System.Drawing.Size(166, 54);
+            this.bAñadir.Size = new System.Drawing.Size(124, 44);
             this.bAñadir.TabIndex = 38;
             this.bAñadir.Text = "Añadir";
             this.bAñadir.UseVisualStyleBackColor = true;
@@ -190,9 +185,9 @@
             // 
             // Dieta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1525, 816);
+            this.ClientSize = new System.Drawing.Size(1144, 663);
             this.Controls.Add(this.bBorrar);
             this.Controls.Add(this.bAñadir);
             this.Controls.Add(this.label2);
@@ -202,9 +197,9 @@
             this.Controls.Add(this.bClientes);
             this.Controls.Add(this.bEjercicios);
             this.Controls.Add(this.bHome);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Dieta";
             this.Text = "Dieta";
+            this.Load += new System.EventHandler(this.Dieta_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDieta)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -58,14 +58,19 @@ namespace CiklumApp
 
                 if (update)
                 {
-                    consulta.Update("UPDATE EJERCICIO SET NOMBRE = '" + nombre + "', TIPO = '" + tipo + "', DURACION = " + duracion +
+                    consulta.Update("UPDATE DIETA SET DESAYUNO='" + desayuno + 
+                        "', MEDIAMANANA='" + media + "', COMIDA='" + almuerzo + 
+                        "',MERIENDA='" + merienda + "',CENA='" + cena + "',CALORIAS=" + calorias);
+                    /*consulta.Update("UPDATE EJERCICIO SET NOMBRE = '" + nombre + "', TIPO = '" + tipo + "', DURACION = " + duracion +
                         ", DESCRIPCION = '" + descripcion + "', VIDEO_URL = '" + enlace + "', PRIVACIDAD = '" + privado +
-                        "' WHERE NOMBRE = '" + nombre + "'");
+                        "' WHERE NOMBRE = '" + nombre + "'");*/
                 }
                 else
                 {
-                    consulta.Insert("INSERT INTO EJERCICIO (NOMBRE, TIPO, DURACION, DESCRIPCION, VIDEO_URL, PRIVACIDAD) " +
-                        "VALUES ('" + nombre + "', '" + tipo + "', " + duracion + ", '" + descripcion + "', '" + enlace + "', '" + privado + "')");
+                    consulta.Insert("INSERT INTO DIETA (DESAYUNO, MEDIAMANANA, COMIDA, MERIENDA, CENA, CALORIAS) " +
+                                               "VALUES ('" + desayuno + "', '" + media + "', '" + almuerzo + "', '" + merienda + "', '" + cena + "', " + calorias + ")");
+                    /*consulta.Insert("INSERT INTO EJERCICIO (NOMBRE, TIPO, DURACION, DESCRIPCION, VIDEO_URL, PRIVACIDAD) " +
+                        "VALUES ('" + nombre + "', '" + tipo + "', " + duracion + ", '" + descripcion + "', '" + enlace + "', '" + privado + "')");*/
                 }
 
 

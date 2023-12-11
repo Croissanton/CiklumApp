@@ -40,10 +40,22 @@ namespace CiklumApp
                     dgvDieta.SelectedRows[0].Cells[4].Value.ToString(),
                     dgvDieta.SelectedRows[0].Cells[5].Value.ToString()
                     );
-                modificarEjercicio.Show();
+                modificarDieta.Show();
 
-                modificarEjercicio.FormClosed += new FormClosedEventHandler(modificarEjercicio_FormClosed);
+                modificarDieta.FormClosed += new FormClosedEventHandler(modificarDieta_FormClosed);
             }
+        }
+
+        private void Dieta_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void modificarDieta_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            var dieta = new Dieta();
+            this.Close();
+            dieta.Show();
         }
     }
 }

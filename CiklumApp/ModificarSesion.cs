@@ -6,18 +6,21 @@ namespace CiklumApp
     public partial class ModificarSesion : Form
     {
         bool update = false;
+        int sesion_id = -1;
 
-        public ModificarSesion()
+        public ModificarSesion(int sesion_id)
         {
             InitializeComponent();
+            this.sesion_id = sesion_id;
         }
 
-        public ModificarSesion(string nombre, int repeticiones, int series)
+        public ModificarSesion(int sesion_id, string nombre, int repeticiones, int series)
         {
             InitializeComponent();
             tbNombre.Text = nombre;
             tbRepeticiones.Text = repeticiones.ToString();
             tbSeries.Text = series.ToString();
+            this.sesion_id = sesion_id;
 
             update = true;
         }
@@ -42,21 +45,28 @@ namespace CiklumApp
                 int series = int.Parse(tbSeries.Text);
 
                 var consulta = new Consulta();
+                var list = consulta.Select("SELECT * FROM EJERCICIO WHERE NOMBRE = '" + nombre + "'");
+                if(list.Count == 0)
+                {
+                    MessageBox.Show("No existe un ejercicio con ese nombre.");
+                    return;
+                }
+                int id_ejercicio = (int)list[0][0];
+                
 
                 if (update)
                 {
-                    consulta.Update("UPDATE SESION SET NOMBRE = '" + nombre + "', REPETICIONES = '" + repeticiones + "', SERIES = '" + series + 
-                        "' WHERE NOMBRE = '" + nombre + "'");
+                    consulta.Update("UPDATE EJERCICIO_SESION SET REPETICIONES = " + repeticiones + ", SERIES = " + series + 
+                        " WHERE ID_EJERCICIO = " + id_ejercicio + "");
                 }
                 else
                 {
-                    consulta.Insert("INSERT INTO SESION (NOMBRE, REPETICIONES, SERIES) " +
-                        "VALUES ('" + nombre + "','" + repeticiones + "','" + series + "')");
+                    consulta.Insert("INSERT INTO EJERCICIO_SESION (ID_SESION, ID_EJERCICIO, REPETICIONES, SERIES) VALUES (" + sesion_id + ", " + id_ejercicio + ", " + repeticiones + ", " + series + ")");
                 }
             }
             catch (Exception)
             {
-                MessageBox.Show("Número de repeticiones o sesiones incorrecta.");
+                MessageBox.Show("Número de repeticiones o sesiones incorrecto.");
                 return;
             }
 

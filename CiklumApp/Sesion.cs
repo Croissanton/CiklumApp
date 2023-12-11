@@ -5,6 +5,7 @@ namespace CiklumApp
 { 
     public partial class Sesion : Form
     {
+        int sesion_id = -1;
         public Sesion()
         {
             InitializeComponent();
@@ -39,16 +40,16 @@ namespace CiklumApp
             foreach (var item in list)
             {
                 string nombre = (string)item[1];
-                int repeticiones = (int)item[2];
-                int series = (int)item[3];
 
-                dgvSesion.Rows.Add(nombre, repeticiones, series);
+                dgvSesiones.Rows.Add(Convert.ToInt32(item[0]), nombre);
             }
+            dgvSesion.ClearSelection();
+            dgvSesiones.ClearSelection();
         }
 
         private void bAñadir_Click(object sender, EventArgs e)
         {
-            ModificarSesion modificarSesion = new ModificarSesion();
+            ModificarSesion modificarSesion = new ModificarSesion(sesion_id);
             modificarSesion.Show();
             modificarSesion.FormClosed += new FormClosedEventHandler(modificarSesion_FormClosed);
         }
@@ -71,7 +72,7 @@ namespace CiklumApp
         {
             if (dgvSesion.SelectedRows.Count > 0)
             {
-                ModificarSesion modificarSesion = new ModificarSesion(
+                ModificarSesion modificarSesion = new ModificarSesion(sesion_id,
                     dgvSesion.SelectedRows[0].Cells[0].Value.ToString(),
                     int.Parse(dgvSesion.SelectedRows[0].Cells[1].Value.ToString()),
                     int.Parse(dgvSesion.SelectedRows[0].Cells[2].Value.ToString())
@@ -87,6 +88,14 @@ namespace CiklumApp
             var sesion = new Sesion();
             this.Close();
             sesion.Show();
+        }
+
+        private void dgvSesiones_Click(object sender, EventArgs e)
+        {
+            if (dgvSesiones.SelectedRows.Count > 0)
+            {
+                this.sesion_id = Convert.ToInt32(dgvSesiones.SelectedRows[0].Cells[0].Value);
+            }
         }
     }
 }
