@@ -143,11 +143,8 @@ namespace CiklumApp
             // bBorrar
             // 
             this.bBorrar.Anchor = System.Windows.Forms.AnchorStyles.None;
-<<<<<<< HEAD
             this.bBorrar.Location = new System.Drawing.Point(563, 544);
-=======
             this.bBorrar.Location = new System.Drawing.Point(519, 544);
->>>>>>> 0d2a9039ddbf9f3798365caf1c9e4cf85613c79e
             this.bBorrar.Margin = new System.Windows.Forms.Padding(2);
             this.bBorrar.Name = "bBorrar";
             this.bBorrar.Size = new System.Drawing.Size(131, 43);
@@ -198,10 +195,7 @@ namespace CiklumApp
             // 
             // borrarSesion
             // 
-<<<<<<< HEAD
-=======
             this.borrarSesion.Anchor = System.Windows.Forms.AnchorStyles.None;
->>>>>>> 0d2a9039ddbf9f3798365caf1c9e4cf85613c79e
             this.borrarSesion.Location = new System.Drawing.Point(1029, 602);
             this.borrarSesion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.borrarSesion.Name = "borrarSesion";
@@ -213,10 +207,7 @@ namespace CiklumApp
             // 
             // añadirSesion
             // 
-<<<<<<< HEAD
-=======
             this.añadirSesion.Anchor = System.Windows.Forms.AnchorStyles.None;
->>>>>>> 0d2a9039ddbf9f3798365caf1c9e4cf85613c79e
             this.añadirSesion.Location = new System.Drawing.Point(1029, 544);
             this.añadirSesion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.añadirSesion.Name = "añadirSesion";

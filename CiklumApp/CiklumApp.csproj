@@ -247,6 +247,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Sesion.resx">
       <DependentUpon>Sesion.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
