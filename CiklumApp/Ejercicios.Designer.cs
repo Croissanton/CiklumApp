@@ -41,9 +41,8 @@
             this.Privacidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.bAñadir = new System.Windows.Forms.Button();
+            this.bBorrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEjercicios)).BeginInit();
             this.SuspendLayout();
             // 
@@ -101,6 +100,7 @@
             this.dgvEjercicios.RowHeadersWidth = 51;
             this.dgvEjercicios.Size = new System.Drawing.Size(644, 245);
             this.dgvEjercicios.TabIndex = 12;
+            this.dgvEjercicios.DoubleClick += new System.EventHandler(this.dgvEjercicios_DoubleClick);
             // 
             // Nombre
             // 
@@ -164,44 +164,35 @@
             this.label2.TabIndex = 16;
             this.label2.Text = "Lista de ejercicios disponibles:";
             // 
-            // button1
+            // bAñadir
             // 
-            this.button1.Location = new System.Drawing.Point(332, 464);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 44);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "Añadir";
-            this.button1.UseVisualStyleBackColor = true;
+            this.bAñadir.Location = new System.Drawing.Point(332, 464);
+            this.bAñadir.Margin = new System.Windows.Forms.Padding(2);
+            this.bAñadir.Name = "bAñadir";
+            this.bAñadir.Size = new System.Drawing.Size(124, 44);
+            this.bAñadir.TabIndex = 17;
+            this.bAñadir.Text = "Añadir";
+            this.bAñadir.UseVisualStyleBackColor = true;
+            this.bAñadir.Click += new System.EventHandler(this.bAñadir_Click);
             // 
-            // button2
+            // bBorrar
             // 
-            this.button2.Location = new System.Drawing.Point(485, 464);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(131, 43);
-            this.button2.TabIndex = 18;
-            this.button2.Text = "Borrar";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(638, 465);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(131, 43);
-            this.button3.TabIndex = 19;
-            this.button3.Text = "Modificar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.bBorrar.Location = new System.Drawing.Point(485, 464);
+            this.bBorrar.Margin = new System.Windows.Forms.Padding(2);
+            this.bBorrar.Name = "bBorrar";
+            this.bBorrar.Size = new System.Drawing.Size(131, 43);
+            this.bBorrar.TabIndex = 18;
+            this.bBorrar.Text = "Borrar";
+            this.bBorrar.UseVisualStyleBackColor = true;
+            this.bBorrar.Click += new System.EventHandler(this.bBorrar_Click);
             // 
             // Ejercicios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1140, 643);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.bBorrar);
+            this.Controls.Add(this.bAñadir);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvEjercicios);
@@ -233,8 +224,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Descripción;
         private System.Windows.Forms.DataGridViewTextBoxColumn Vídeo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Privacidad;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button bAñadir;
+        private System.Windows.Forms.Button bBorrar;
     }
 }

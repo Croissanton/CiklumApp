@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvSesion = new System.Windows.Forms.DataGridView();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Repeticiones = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Series = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -38,25 +38,24 @@
             this.bHome = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.bModificar = new System.Windows.Forms.Button();
+            this.bBorrar = new System.Windows.Forms.Button();
+            this.bAñadir = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSesion)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvSesion
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvSesion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvSesion.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Nombre,
             this.Repeticiones,
             this.Series});
-            this.dataGridView1.Location = new System.Drawing.Point(489, 265);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(768, 370);
-            this.dataGridView1.TabIndex = 19;
+            this.dgvSesion.Location = new System.Drawing.Point(367, 215);
+            this.dgvSesion.Name = "dgvSesion";
+            this.dgvSesion.RowHeadersWidth = 51;
+            this.dgvSesion.Size = new System.Drawing.Size(576, 301);
+            this.dgvSesion.TabIndex = 19;
             // 
             // Nombre
             // 
@@ -81,20 +80,18 @@
             // 
             // bSesiones
             // 
-            this.bSesiones.Location = new System.Drawing.Point(149, 703);
-            this.bSesiones.Margin = new System.Windows.Forms.Padding(4);
+            this.bSesiones.Location = new System.Drawing.Point(112, 571);
             this.bSesiones.Name = "bSesiones";
-            this.bSesiones.Size = new System.Drawing.Size(208, 53);
+            this.bSesiones.Size = new System.Drawing.Size(156, 43);
             this.bSesiones.TabIndex = 18;
             this.bSesiones.Text = "SESIONES";
             this.bSesiones.UseVisualStyleBackColor = true;
             // 
             // bClientes
             // 
-            this.bClientes.Location = new System.Drawing.Point(149, 560);
-            this.bClientes.Margin = new System.Windows.Forms.Padding(4);
+            this.bClientes.Location = new System.Drawing.Point(112, 455);
             this.bClientes.Name = "bClientes";
-            this.bClientes.Size = new System.Drawing.Size(208, 53);
+            this.bClientes.Size = new System.Drawing.Size(156, 43);
             this.bClientes.TabIndex = 17;
             this.bClientes.Text = "CLIENTES";
             this.bClientes.UseVisualStyleBackColor = true;
@@ -102,10 +99,9 @@
             // 
             // bEjercicios
             // 
-            this.bEjercicios.Location = new System.Drawing.Point(149, 412);
-            this.bEjercicios.Margin = new System.Windows.Forms.Padding(4);
+            this.bEjercicios.Location = new System.Drawing.Point(112, 335);
             this.bEjercicios.Name = "bEjercicios";
-            this.bEjercicios.Size = new System.Drawing.Size(208, 53);
+            this.bEjercicios.Size = new System.Drawing.Size(156, 43);
             this.bEjercicios.TabIndex = 16;
             this.bEjercicios.Text = "EJERCICIOS";
             this.bEjercicios.UseVisualStyleBackColor = true;
@@ -113,10 +109,9 @@
             // 
             // bHome
             // 
-            this.bHome.Location = new System.Drawing.Point(149, 282);
-            this.bHome.Margin = new System.Windows.Forms.Padding(4);
+            this.bHome.Location = new System.Drawing.Point(112, 229);
             this.bHome.Name = "bHome";
-            this.bHome.Size = new System.Drawing.Size(208, 53);
+            this.bHome.Size = new System.Drawing.Size(156, 43);
             this.bHome.TabIndex = 15;
             this.bHome.Text = "HOME";
             this.bHome.UseVisualStyleBackColor = true;
@@ -126,79 +121,80 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40.25F);
-            this.label1.Location = new System.Drawing.Point(617, 49);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(463, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(289, 78);
+            this.label1.Size = new System.Drawing.Size(231, 63);
             this.label1.TabIndex = 22;
             this.label1.Text = "SESION";
             // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
             this.listBox1.Items.AddRange(new object[] {
             "Sesion1",
             "Sesion2",
             "Sesion3"});
-            this.listBox1.Location = new System.Drawing.Point(1328, 265);
+            this.listBox1.Location = new System.Drawing.Point(996, 215);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(248, 372);
+            this.listBox1.Size = new System.Drawing.Size(187, 303);
             this.listBox1.TabIndex = 23;
             // 
-            // button4
+            // bModificar
             // 
-            this.button4.Location = new System.Drawing.Point(897, 671);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(175, 53);
-            this.button4.TabIndex = 29;
-            this.button4.Text = "Modificar";
-            this.button4.UseVisualStyleBackColor = true;
+            this.bModificar.Location = new System.Drawing.Point(673, 545);
+            this.bModificar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bModificar.Name = "bModificar";
+            this.bModificar.Size = new System.Drawing.Size(131, 43);
+            this.bModificar.TabIndex = 29;
+            this.bModificar.Text = "Modificar";
+            this.bModificar.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // bBorrar
             // 
-            this.button5.Location = new System.Drawing.Point(693, 670);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(175, 53);
-            this.button5.TabIndex = 28;
-            this.button5.Text = "Borrar";
-            this.button5.UseVisualStyleBackColor = true;
+            this.bBorrar.Location = new System.Drawing.Point(520, 544);
+            this.bBorrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bBorrar.Name = "bBorrar";
+            this.bBorrar.Size = new System.Drawing.Size(131, 43);
+            this.bBorrar.TabIndex = 28;
+            this.bBorrar.Text = "Borrar";
+            this.bBorrar.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // bAñadir
             // 
-            this.button6.Location = new System.Drawing.Point(489, 670);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(166, 54);
-            this.button6.TabIndex = 27;
-            this.button6.Text = "Añadir";
-            this.button6.UseVisualStyleBackColor = true;
+            this.bAñadir.Location = new System.Drawing.Point(367, 544);
+            this.bAñadir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bAñadir.Name = "bAñadir";
+            this.bAñadir.Size = new System.Drawing.Size(124, 44);
+            this.bAñadir.TabIndex = 27;
+            this.bAñadir.Text = "Añadir";
+            this.bAñadir.UseVisualStyleBackColor = true;
             // 
             // Sesion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1588, 842);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button6);
+            this.ClientSize = new System.Drawing.Size(1191, 684);
+            this.Controls.Add(this.bModificar);
+            this.Controls.Add(this.bBorrar);
+            this.Controls.Add(this.bAñadir);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvSesion);
             this.Controls.Add(this.bSesiones);
             this.Controls.Add(this.bClientes);
             this.Controls.Add(this.bEjercicios);
             this.Controls.Add(this.bHome);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Sesion";
             this.Text = "z";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSesion)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvSesion;
         private System.Windows.Forms.Button bSesiones;
         private System.Windows.Forms.Button bClientes;
         private System.Windows.Forms.Button bEjercicios;
@@ -208,8 +204,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Repeticiones;
         private System.Windows.Forms.DataGridViewTextBoxColumn Series;
         private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button bModificar;
+        private System.Windows.Forms.Button bBorrar;
+        private System.Windows.Forms.Button bAñadir;
     }
 }

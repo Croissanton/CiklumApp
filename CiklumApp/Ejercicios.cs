@@ -48,5 +48,50 @@ namespace CiklumApp
                 dgvEjercicios.Rows.Add(nombre, tipo, duracion, descripcion, video, privacidad);
             }
         }
+
+        private void bAñadir_Click(object sender, EventArgs e)
+        {
+            ModificarEjercicio modificarEjercicio = new ModificarEjercicio();
+            modificarEjercicio.Show();
+        }
+
+        private void bBorrar_Click(object sender, EventArgs e)
+        {
+            if (dgvEjercicios.SelectedRows.Count > 0)
+            {
+                string nombre = dgvEjercicios.SelectedRows[0].Cells[0].Value.ToString();
+                var consulta = new Consulta();
+                consulta.Delete("DELETE FROM EJERCICIO WHERE NOMBRE = '" + nombre + "'");
+
+                var ejercicios = new Ejercicios();
+                this.Hide();
+                ejercicios.Show();
+            }
+        }
+
+        private void dgvEjercicios_DoubleClick(object sender, EventArgs e)
+        {
+            if (dgvEjercicios.SelectedRows.Count > 0)
+            {
+                ModificarEjercicio modificarEjercicio = new ModificarEjercicio(
+                    dgvEjercicios.SelectedRows[0].Cells[0].Value.ToString(),
+                    dgvEjercicios.SelectedRows[0].Cells[1].Value.ToString(),
+                    int.Parse(dgvEjercicios.SelectedRows[0].Cells[2].Value.ToString()),
+                    dgvEjercicios.SelectedRows[0].Cells[3].Value.ToString(),
+                    dgvEjercicios.SelectedRows[0].Cells[4].Value.ToString(),
+                    dgvEjercicios.SelectedRows[0].Cells[5].Value.ToString()
+                    );
+                modificarEjercicio.Show();
+
+                modificarEjercicio.FormClosed += new FormClosedEventHandler(modificarEjercicio_FormClosed);
+            }
+        }
+
+        private void modificarEjercicio_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            var ejercicios = new Ejercicios();
+            this.Hide();
+            ejercicios.Show();
+        }
     }
 }
