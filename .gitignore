@@ -4,5 +4,7 @@
 *.cache
 
 .vs
+bin
+obj
 
 *.pdb
