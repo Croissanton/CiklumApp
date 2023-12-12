@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CiklumApp
@@ -13,16 +6,18 @@ namespace CiklumApp
     public partial class ModificarRutina : Form
     {
         bool update = false;
+        int id = -1;
         public ModificarRutina()
         {
             InitializeComponent();
         }
 
-        public ModificarRutina(int sesionLunes, int dietaLunes, int sesionMartes, int dietaMartes, int sesionMiercoles,
+        public ModificarRutina(int id, int sesionLunes, int dietaLunes, int sesionMartes, int dietaMartes, int sesionMiercoles,
             int dietaMiercoles, int sesionJueves, int dietaJueves, int sesionViernes, int dietaViernes, int sesionSabado,
             int dietaSabado, int sesionDomingo, int dietaDomingo)
         {
             InitializeComponent();
+            this.id = id;
             tbSesionLunes.Text = sesionLunes.ToString();
             tbDietaLunes.Text = dietaLunes.ToString();
             tbSesionMartes.Text = sesionMartes.ToString();
@@ -82,7 +77,7 @@ namespace CiklumApp
                         + sesionMiercoles + "', MIERCOLESDIETA = '" + dietaMiercoles + "', JUEVESSESION = '" + sesionJueves 
                         + "', JUEVESDIETA = '" + dietaJueves + "', VIERNESSESION = '" + sesionViernes + "', VIERNESDIETA = '" 
                         + dietaViernes + "', SABADOSESION = '" + sesionSabado + "', SABADODIETA = '" + dietaSabado + "', DOMINGOSESION = '" 
-                        + sesionDomingo + "', DOMINGODIETA = '" + dietaDomingo + "';");
+                        + sesionDomingo + "', DOMINGODIETA = '" + dietaDomingo + "' WHERE ID = " + id);
                     MessageBox.Show("Rutina modificada correctamente.");
                 } else
                 {

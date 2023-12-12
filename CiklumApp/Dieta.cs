@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CiklumApp
@@ -51,7 +44,8 @@ namespace CiklumApp
                     dgvDieta.SelectedRows[0].Cells[2].Value.ToString(),
                     dgvDieta.SelectedRows[0].Cells[3].Value.ToString(),
                     dgvDieta.SelectedRows[0].Cells[4].Value.ToString(),
-                    dgvDieta.SelectedRows[0].Cells[5].Value.ToString()
+                    dgvDieta.SelectedRows[0].Cells[5].Value.ToString(),
+                    dgvDieta.SelectedRows[0].Cells[6].Value.ToString()
                     );
                 modificarDieta.Show();
 
@@ -75,7 +69,7 @@ namespace CiklumApp
                 string cena = (string)item[6];
                 int calorias = Convert.ToInt32(item[7]);
 
-                dgvDieta.Rows.Add(id, desayuno, mediamanana, almuerzo, merienda, cena, calorias);
+                dgvDieta.Rows.Add(nombre, desayuno, mediamanana, almuerzo, merienda, cena, calorias);
             }
         }
 
