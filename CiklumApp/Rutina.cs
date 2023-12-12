@@ -153,7 +153,7 @@ namespace CiklumApp
 
         private void bModificar_Click(object sender, EventArgs e)
         {
-            ModificarRutina modificarRutina = new ModificarRutina(id_SesionLunes, id_DietaLunes, id_SesionMartes, id_DietaMartes, 
+            ModificarRutina modificarRutina = new ModificarRutina(id_rutina, id_SesionLunes, id_DietaLunes, id_SesionMartes, id_DietaMartes, 
                 id_SesionMiercoles, id_DietaMiercoles, id_SesionJueves, id_DietaJueves, id_SesionViernes, id_DietaViernes, 
                 id_SesionSabado, id_DietaSabado, id_SesionDomingo, id_DietaDomingo);
             modificarRutina.Show();
