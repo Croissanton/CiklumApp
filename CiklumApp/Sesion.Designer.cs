@@ -86,7 +86,7 @@ namespace CiklumApp
             // 
             this.bSesiones.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bSesiones.Location = new System.Drawing.Point(84, 464);
-            this.bSesiones.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bSesiones.Margin = new System.Windows.Forms.Padding(2);
             this.bSesiones.Name = "bSesiones";
             this.bSesiones.Size = new System.Drawing.Size(156, 43);
             this.bSesiones.TabIndex = 18;
@@ -97,7 +97,7 @@ namespace CiklumApp
             // 
             this.bClientes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bClientes.Location = new System.Drawing.Point(84, 370);
-            this.bClientes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bClientes.Margin = new System.Windows.Forms.Padding(2);
             this.bClientes.Name = "bClientes";
             this.bClientes.Size = new System.Drawing.Size(156, 43);
             this.bClientes.TabIndex = 17;
@@ -109,7 +109,7 @@ namespace CiklumApp
             // 
             this.bEjercicios.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bEjercicios.Location = new System.Drawing.Point(84, 272);
-            this.bEjercicios.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bEjercicios.Margin = new System.Windows.Forms.Padding(2);
             this.bEjercicios.Name = "bEjercicios";
             this.bEjercicios.Size = new System.Drawing.Size(156, 43);
             this.bEjercicios.TabIndex = 16;
@@ -121,7 +121,7 @@ namespace CiklumApp
             // 
             this.bHome.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bHome.Location = new System.Drawing.Point(84, 186);
-            this.bHome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bHome.Margin = new System.Windows.Forms.Padding(2);
             this.bHome.Name = "bHome";
             this.bHome.Size = new System.Drawing.Size(156, 43);
             this.bHome.TabIndex = 15;
@@ -143,8 +143,7 @@ namespace CiklumApp
             // bBorrar
             // 
             this.bBorrar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bBorrar.Location = new System.Drawing.Point(563, 544);
-            this.bBorrar.Location = new System.Drawing.Point(519, 544);
+            this.bBorrar.Location = new System.Drawing.Point(554, 544);
             this.bBorrar.Margin = new System.Windows.Forms.Padding(2);
             this.bBorrar.Name = "bBorrar";
             this.bBorrar.Size = new System.Drawing.Size(131, 43);
@@ -197,7 +196,7 @@ namespace CiklumApp
             // 
             this.borrarSesion.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.borrarSesion.Location = new System.Drawing.Point(1029, 602);
-            this.borrarSesion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.borrarSesion.Margin = new System.Windows.Forms.Padding(2);
             this.borrarSesion.Name = "borrarSesion";
             this.borrarSesion.Size = new System.Drawing.Size(124, 43);
             this.borrarSesion.TabIndex = 31;
@@ -209,7 +208,7 @@ namespace CiklumApp
             // 
             this.añadirSesion.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.añadirSesion.Location = new System.Drawing.Point(1029, 544);
-            this.añadirSesion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.añadirSesion.Margin = new System.Windows.Forms.Padding(2);
             this.añadirSesion.Name = "añadirSesion";
             this.añadirSesion.Size = new System.Drawing.Size(124, 44);
             this.añadirSesion.TabIndex = 30;

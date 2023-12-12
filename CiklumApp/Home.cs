@@ -15,13 +15,14 @@ namespace CiklumApp
 
             foreach (var item in list)
             {
+                int id = Convert.ToInt32(item[0]);
                 DateTime fecha = (DateTime)item[1];
                 int duracion = (int)item[2];
                 int id_cliente = Convert.ToInt32(item[3]);
                 var list2 = consulta.Select("SELECT nombre, apellidos FROM CLIENTE WHERE id_usuario = '" + id_cliente + "';");
                 string nombre = (string)list2[0][0] + " " + (string)list2[0][1];
 
-                citasGridView.Rows.Add(fecha, duracion, nombre);
+                citasGridView.Rows.Add(id, fecha, duracion, nombre);
             }
         }
 
@@ -61,6 +62,19 @@ namespace CiklumApp
             {
                 Application.Exit();
             }
+        }
+
+        private void bModificar_Click(object sender, EventArgs e)
+        {
+            if (citasGridView.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Seleccion la cita.");
+                return;
+            }
+            int id_cita = Convert.ToInt32(citasGridView.SelectedRows[0].Cells[0].Value);
+
+            ModificarCita modificarCita = new ModificarCita(id_cita);
+            modificarCita.Show();
         }
     }
 }

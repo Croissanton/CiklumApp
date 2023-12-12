@@ -31,15 +31,17 @@ namespace CiklumApp
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.citasGridView = new System.Windows.Forms.DataGridView();
-            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Duracion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bHome = new System.Windows.Forms.Button();
             this.bEjercicios = new System.Windows.Forms.Button();
             this.bClientes = new System.Windows.Forms.Button();
             this.bSesiones = new System.Windows.Forms.Button();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.bSalir = new System.Windows.Forms.Button();
+            this.bModificar = new System.Windows.Forms.Button();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Duracion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.citasGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,6 +72,7 @@ namespace CiklumApp
             this.citasGridView.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.citasGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.citasGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Id,
             this.Fecha,
             this.Duracion,
             this.Nombre});
@@ -78,21 +81,6 @@ namespace CiklumApp
             this.citasGridView.RowHeadersWidth = 51;
             this.citasGridView.Size = new System.Drawing.Size(353, 242);
             this.citasGridView.TabIndex = 2;
-            // 
-            // Fecha
-            // 
-            this.Fecha.HeaderText = "Fecha";
-            this.Fecha.Name = "Fecha";
-            // 
-            // Duracion
-            // 
-            this.Duracion.HeaderText = "Duracion";
-            this.Duracion.Name = "Duracion";
-            // 
-            // Nombre
-            // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
             // 
             // bHome
             // 
@@ -155,11 +143,45 @@ namespace CiklumApp
             this.bSalir.UseVisualStyleBackColor = true;
             this.bSalir.Click += new System.EventHandler(this.bSalir_Click);
             // 
+            // bModificar
+            // 
+            this.bModificar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bModificar.Location = new System.Drawing.Point(448, 472);
+            this.bModificar.Margin = new System.Windows.Forms.Padding(2);
+            this.bModificar.Name = "bModificar";
+            this.bModificar.Size = new System.Drawing.Size(124, 44);
+            this.bModificar.TabIndex = 39;
+            this.bModificar.Text = "Modificar";
+            this.bModificar.UseVisualStyleBackColor = true;
+            this.bModificar.Click += new System.EventHandler(this.bModificar_Click);
+            // 
+            // Id
+            // 
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.Visible = false;
+            // 
+            // Fecha
+            // 
+            this.Fecha.HeaderText = "Fecha";
+            this.Fecha.Name = "Fecha";
+            // 
+            // Duracion
+            // 
+            this.Duracion.HeaderText = "Duracion";
+            this.Duracion.Name = "Duracion";
+            // 
+            // Nombre
+            // 
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1390, 741);
+            this.Controls.Add(this.bModificar);
             this.Controls.Add(this.bSalir);
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.bSesiones);
@@ -188,6 +210,8 @@ namespace CiklumApp
         private System.Windows.Forms.Button bSesiones;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.Button bSalir;
+        private System.Windows.Forms.Button bModificar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
         private System.Windows.Forms.DataGridViewTextBoxColumn Duracion;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
