@@ -1,4 +1,3 @@
-
 *.exe
 
 *.cache
@@ -8,3 +7,6 @@ bin
 obj
 
 *.pdb
+
+CiklumApp/bin
+CiklumApp/obj
