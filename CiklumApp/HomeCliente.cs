@@ -112,5 +112,18 @@ namespace CiklumApp
             ModificarCita modificarCita = new ModificarCita(id_cita);
             modificarCita.Show();
         }
+
+        private void bAñadir_Click(object sender, EventArgs e)
+        {
+            GenerarCita generarCita = new GenerarCita(Login.user.ID()); ;
+            generarCita.Show();
+        }
+
+        private void generarCita_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Close();
+            HomeCliente home = new HomeCliente();
+            home.Show();
+        }
     }
 }
