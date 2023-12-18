@@ -166,6 +166,12 @@
     <Compile Include="Entrenadores.Designer.cs">
       <DependentUpon>Entrenadores.cs</DependentUpon>
     </Compile>
+    <Compile Include="FeedbackEntrenador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeedbackEntrenador.Designer.cs">
+      <DependentUpon>FeedbackEntrenador.cs</DependentUpon>
+    </Compile>
     <Compile Include="FeedbackSesion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -291,6 +297,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Entrenadores.resx">
       <DependentUpon>Entrenadores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeedbackEntrenador.resx">
+      <DependentUpon>FeedbackEntrenador.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FeedbackSesion.resx">
       <DependentUpon>FeedbackSesion.cs</DependentUpon>

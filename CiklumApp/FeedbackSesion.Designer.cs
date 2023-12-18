@@ -85,6 +85,7 @@
             // 
             this.lbValoracion.FormattingEnabled = true;
             this.lbValoracion.Items.AddRange(new object[] {
+            "0",
             "1",
             "2",
             "3",
