@@ -12,10 +12,12 @@ namespace CiklumApp
 {
     public partial class PerfilEntrenador : Form
     {
-        public PerfilEntrenador()
+        public static int entrenador_id = -1;
+        public PerfilEntrenador(int id)
         {
             InitializeComponent();
             initMenu();
+            entrenador_id = id;
         }
 
         private void initMenu()
