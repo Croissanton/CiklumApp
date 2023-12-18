@@ -63,5 +63,17 @@ namespace CiklumApp
                     break;
             }
         }
+
+        private void PerfilEntrenador_Load(object sender, EventArgs e)
+        {
+            var consulta = new Consulta();
+            var datosEntrenador = consulta.Select($"SELECT NOMBRE, APELLIDOS, CORREO, ESPECIALIDAD, HORAINICIAL, HORAFINAL FROM ENTRENADOR WHERE ID_USUARIO = {entrenador_id}")[0];
+            tbNombre.Text = (string)datosEntrenador[0];
+            tbApellidos.Text = (string)datosEntrenador[1];
+            lNombreEntrenador.Text = tbNombre.Text + " " + tbApellidos.Text;
+            tbCorreo.Text = (string)datosEntrenador[2];
+            tbEspecialidad.Text = (string)datosEntrenador[3];
+            tbHorario.Text = "UNAVAILABLE"; //datosEntrenador[4].ToString("HH:mm:ss") + " - " + datosEntrenador[5].ToString("HH:mm:ss");
+        }
     }
 }
