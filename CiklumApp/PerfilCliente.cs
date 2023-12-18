@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -16,6 +17,8 @@ namespace CiklumApp
         {
             InitializeComponent();
             initMenu();
+
+            setData();
         }
 
         private void initMenu()
@@ -35,6 +38,24 @@ namespace CiklumApp
 
             cbMenu.SelectedIndex = 1;
         }
+
+
+
+        private void setData()
+        {
+            var consulta = new Consulta();
+            var datosCliente = consulta.Select($"SELECT * FROM CLIENTE WHERE ID_USUARIO = {Login.user.ID()}")[0];
+            tbNombre.Text = (string) datosCliente[1];
+            tbApellidos.Text = (string) datosCliente[2];
+            lNombreCliente.Text = tbNombre.Text + " " + tbApellidos.Text;
+            tbAltura.Text = Math.Round((Convert.ToDouble(datosCliente[6])), 2).ToString();
+            tbPeso.Text = Math.Round((Convert.ToDouble(datosCliente[5])), 2).ToString();
+
+            var IMC = Math.Round(Convert.ToDouble(tbPeso.Text) / (Convert.ToDouble(tbAltura.Text) / 100 * Convert.ToDouble(tbAltura.Text) / 100), 2);
+            tbIMC.Text = IMC.ToString();
+        }
+
+
 
         private void cbMenu_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -61,6 +82,24 @@ namespace CiklumApp
                 default:
                     break;
             }
+        }
+
+
+
+        private void bGuardar_Click(object sender, EventArgs e)
+        {
+            Confirmacion confirmacion = new Confirmacion(tbAltura.Text, tbPeso.Text);
+            confirmacion.FormClosed += new FormClosedEventHandler(Confirmacion_FormClosed);
+            confirmacion.ShowDialog();
+        }
+
+
+
+        private void Confirmacion_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Close();
+            PerfilCliente perfilCliente = new PerfilCliente();
+            perfilCliente.Show();
         }
     }
 }

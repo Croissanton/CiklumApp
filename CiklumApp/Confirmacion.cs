@@ -12,9 +12,14 @@ namespace CiklumApp
 {
     public partial class Confirmacion : Form
     {
-        public Confirmacion()
+        double altura;
+        double peso;
+
+        public Confirmacion(string altura, string peso)
         {
             InitializeComponent();
+            this.altura = Convert.ToDouble(altura);
+            this.peso = Convert.ToDouble(peso);
         }
 
         private void bCancelar_Click(object sender, EventArgs e)
@@ -24,6 +29,8 @@ namespace CiklumApp
 
         private void bAceptar_Click(object sender, EventArgs e)
         {
+            var consulta = new Consulta();
+            consulta.Update($"UPDATE CLIENTE SET ALTURA = {this.altura}, PESO = {this.peso} WHERE ID_USUARIO = {Login.user.ID()}");
             this.Close();
         }
     }
