@@ -31,6 +31,10 @@ namespace CiklumApp
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.citasGridView = new System.Windows.Forms.DataGridView();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Duracion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bHome = new System.Windows.Forms.Button();
             this.bEjercicios = new System.Windows.Forms.Button();
             this.bClientes = new System.Windows.Forms.Button();
@@ -38,10 +42,6 @@ namespace CiklumApp
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.bSalir = new System.Windows.Forms.Button();
             this.bModificar = new System.Windows.Forms.Button();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Duracion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.citasGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,6 +81,27 @@ namespace CiklumApp
             this.citasGridView.RowHeadersWidth = 51;
             this.citasGridView.Size = new System.Drawing.Size(353, 242);
             this.citasGridView.TabIndex = 2;
+            // 
+            // Id
+            // 
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.Visible = false;
+            // 
+            // Fecha
+            // 
+            this.Fecha.HeaderText = "Fecha";
+            this.Fecha.Name = "Fecha";
+            // 
+            // Duracion
+            // 
+            this.Duracion.HeaderText = "Duracion";
+            this.Duracion.Name = "Duracion";
+            // 
+            // Nombre
+            // 
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
             // 
             // bHome
             // 
@@ -155,27 +176,6 @@ namespace CiklumApp
             this.bModificar.UseVisualStyleBackColor = true;
             this.bModificar.Click += new System.EventHandler(this.bModificar_Click);
             // 
-            // Id
-            // 
-            this.Id.HeaderText = "Id";
-            this.Id.Name = "Id";
-            this.Id.Visible = false;
-            // 
-            // Fecha
-            // 
-            this.Fecha.HeaderText = "Fecha";
-            this.Fecha.Name = "Fecha";
-            // 
-            // Duracion
-            // 
-            this.Duracion.HeaderText = "Duracion";
-            this.Duracion.Name = "Duracion";
-            // 
-            // Nombre
-            // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -192,7 +192,7 @@ namespace CiklumApp
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Home";
-            this.Text = "Form1";
+            this.Text = "Home";
             ((System.ComponentModel.ISupportInitialize)(this.citasGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

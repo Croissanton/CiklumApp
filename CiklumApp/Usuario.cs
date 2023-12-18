@@ -6,19 +6,30 @@ using System.Threading.Tasks;
 
 namespace CiklumApp
 {
-    internal class Usuario
+    public partial class Usuario
     {
+        private int id;
         private string username;
-        public int id_rol;
+        private int id_rol;
 
-        public Usuario(string username)
+        public Usuario(int id, string username, int id_rol)
         {
-            this.username = username;
-            string consultaText = "SELECT * FROM USUARIOS WHERE username='" + username + "';";
-            Consulta consulta = new Consulta();
-            var res = consulta.Select(consultaText);
-            
+            this.id = id;
+            this.username = username ?? throw new ArgumentNullException(nameof(username));
+            this.id_rol = id_rol;
+        }
+
+        public int ID()
+        {
+            return id;
+        } 
+        public string Username()
+        {
+            return username;
+        }
+        public int ID_rol()
+        {
+            return id_rol;
         }
     }
 }
- 

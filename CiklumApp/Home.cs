@@ -11,7 +11,7 @@ namespace CiklumApp
         private void loadCitas()
         {
             var consulta = new Consulta();
-            var list = consulta.Select("SELECT * FROM CITA WHERE id_entrenador = '" + Login.ID + "';");
+            var list = consulta.Select("SELECT * FROM CITA WHERE id_entrenador = '" + Login.user.ID() + "';");
 
             foreach (var item in list)
             {

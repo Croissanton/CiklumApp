@@ -10,5 +10,7 @@ obj
 
 *.bak*
 
-CiklumApp/bin
-CiklumApp/obj
+*.suo
+
+CiklumApp/bin/*
+CiklumApp/obj/*

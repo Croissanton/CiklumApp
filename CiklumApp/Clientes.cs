@@ -48,7 +48,7 @@ namespace CiklumApp
             var consulta = new Consulta();
             var list = consulta.Select("SELECT DISTINCT C.ID_USUARIO, C.NOMBRE, C.APELLIDOS FROM CLIENTE C " +
                 "JOIN CLIENTE_ENTRENADOR C_E ON C.ID_USUARIO = C_E.ID_CLIENTE " +
-                "WHERE C_E.ID_ENTRENADOR = " + Login.ID + ";");
+                "WHERE C_E.ID_ENTRENADOR = " + Login.user.ID() + ";");
             //Create an array for storing numbers
             Console.WriteLine(list.Count);
             foreach (var item in list)
