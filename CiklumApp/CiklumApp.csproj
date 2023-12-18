@@ -214,6 +214,12 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Notificaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notificaciones.Designer.cs">
+      <DependentUpon>Notificaciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="PerfilCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -303,6 +309,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ModificarSesion.resx">
       <DependentUpon>ModificarSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notificaciones.resx">
+      <DependentUpon>Notificaciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PerfilCliente.resx">
       <DependentUpon>PerfilCliente.cs</DependentUpon>

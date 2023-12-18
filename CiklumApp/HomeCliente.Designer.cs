@@ -33,13 +33,14 @@
             this.mySqlCommand1 = new MySql.Data.MySqlClient.MySqlCommand();
             this.bNotificaciones = new System.Windows.Forms.Button();
             this.citasGridView = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
+            this.bModificar = new System.Windows.Forms.Button();
+            this.cbMenu = new System.Windows.Forms.ComboBox();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Duracion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label2 = new System.Windows.Forms.Label();
-            this.bModificar = new System.Windows.Forms.Button();
-            this.cbMenu = new System.Windows.Forms.ComboBox();
+            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.citasGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,38 +82,19 @@
             // citasGridView
             // 
             this.citasGridView.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.citasGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.citasGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.citasGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
             this.Fecha,
             this.Duracion,
-            this.Nombre});
+            this.Nombre,
+            this.Tipo});
             this.citasGridView.Location = new System.Drawing.Point(228, 434);
             this.citasGridView.Name = "citasGridView";
             this.citasGridView.RowHeadersWidth = 51;
             this.citasGridView.Size = new System.Drawing.Size(349, 242);
             this.citasGridView.TabIndex = 13;
-            // 
-            // Id
-            // 
-            this.Id.HeaderText = "Id";
-            this.Id.Name = "Id";
-            this.Id.Visible = false;
-            // 
-            // Fecha
-            // 
-            this.Fecha.HeaderText = "Fecha";
-            this.Fecha.Name = "Fecha";
-            // 
-            // Duracion
-            // 
-            this.Duracion.HeaderText = "Duracion";
-            this.Duracion.Name = "Duracion";
-            // 
-            // Nombre
-            // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
             // 
             // label2
             // 
@@ -148,6 +130,32 @@
             this.cbMenu.TabIndex = 41;
             this.cbMenu.SelectedIndexChanged += new System.EventHandler(this.cbMenu_SelectedIndexChanged);
             // 
+            // Id
+            // 
+            this.Id.HeaderText = "Id";
+            this.Id.Name = "Id";
+            this.Id.Visible = false;
+            // 
+            // Fecha
+            // 
+            this.Fecha.HeaderText = "Fecha";
+            this.Fecha.Name = "Fecha";
+            // 
+            // Duracion
+            // 
+            this.Duracion.HeaderText = "Duracion";
+            this.Duracion.Name = "Duracion";
+            // 
+            // Nombre
+            // 
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            // 
+            // Tipo
+            // 
+            this.Tipo.HeaderText = "Tipo";
+            this.Tipo.Name = "Tipo";
+            // 
             // HomeCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -176,12 +184,13 @@
         private MySql.Data.MySqlClient.MySqlCommand mySqlCommand1;
         private System.Windows.Forms.Button bNotificaciones;
         private System.Windows.Forms.DataGridView citasGridView;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button bModificar;
+        private System.Windows.Forms.ComboBox cbMenu;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
         private System.Windows.Forms.DataGridViewTextBoxColumn Duracion;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button bModificar;
-        private System.Windows.Forms.ComboBox cbMenu;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;
     }
 }
