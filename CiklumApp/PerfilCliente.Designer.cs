@@ -42,12 +42,13 @@
             this.tbPeso = new System.Windows.Forms.TextBox();
             this.tbIMC = new System.Windows.Forms.TextBox();
             this.bGuardar = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvEntrenadores = new System.Windows.Forms.DataGridView();
             this.Apellidos = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lEntrenadoresAsignados = new System.Windows.Forms.Label();
+            this.Especialidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pbFotoCliente)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEntrenadores)).BeginInit();
             this.SuspendLayout();
             // 
             // cbMenu
@@ -188,19 +189,20 @@
             this.bGuardar.UseVisualStyleBackColor = true;
             this.bGuardar.Click += new System.EventHandler(this.bGuardar_Click);
             // 
-            // dataGridView1
+            // dgvEntrenadores
             // 
-            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvEntrenadores.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dgvEntrenadores.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvEntrenadores.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
+            this.dgvEntrenadores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvEntrenadores.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Apellidos,
-            this.Nombre});
-            this.dataGridView1.Location = new System.Drawing.Point(533, 289);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(368, 168);
-            this.dataGridView1.TabIndex = 56;
+            this.Nombre,
+            this.Especialidad});
+            this.dgvEntrenadores.Location = new System.Drawing.Point(533, 289);
+            this.dgvEntrenadores.Name = "dgvEntrenadores";
+            this.dgvEntrenadores.Size = new System.Drawing.Size(368, 168);
+            this.dgvEntrenadores.TabIndex = 56;
             // 
             // Apellidos
             // 
@@ -223,13 +225,18 @@
             this.lEntrenadoresAsignados.TabIndex = 57;
             this.lEntrenadoresAsignados.Text = "Entrenadores Asignados:";
             // 
+            // Especialidad
+            // 
+            this.Especialidad.HeaderText = "Especialidad";
+            this.Especialidad.Name = "Especialidad";
+            // 
             // PerfilCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1031, 578);
             this.Controls.Add(this.lEntrenadoresAsignados);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvEntrenadores);
             this.Controls.Add(this.bGuardar);
             this.Controls.Add(this.tbIMC);
             this.Controls.Add(this.tbPeso);
@@ -247,8 +254,9 @@
             this.Name = "PerfilCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PerfilCliente";
+            this.Load += new System.EventHandler(this.PerfilCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbFotoCliente)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEntrenadores)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -270,9 +278,10 @@
         private System.Windows.Forms.TextBox tbPeso;
         private System.Windows.Forms.TextBox tbIMC;
         private System.Windows.Forms.Button bGuardar;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvEntrenadores;
         private System.Windows.Forms.DataGridViewTextBoxColumn Apellidos;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
         private System.Windows.Forms.Label lEntrenadoresAsignados;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Especialidad;
     }
 }
