@@ -12,7 +12,7 @@ namespace CiklumApp
 {
     public partial class FeedbackSesion : Form
     {
-        public FeedbackSesion()
+        public FeedbackSesion(int idSesion)
         {
             InitializeComponent();
         }
