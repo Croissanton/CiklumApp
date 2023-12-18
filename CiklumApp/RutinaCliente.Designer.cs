@@ -72,6 +72,7 @@
             this.bFeedbackViernes = new System.Windows.Forms.Button();
             this.bFeedbackSabado = new System.Windows.Forms.Button();
             this.bFeedbackDomingo = new System.Windows.Forms.Button();
+            this.bGuardar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // cbMenu
@@ -316,6 +317,7 @@
             this.cbSesionLunes.TabIndex = 77;
             this.cbSesionLunes.Text = "Sesión";
             this.cbSesionLunes.UseVisualStyleBackColor = true;
+            this.cbSesionLunes.CheckedChanged += new System.EventHandler(this.cbSesionLunes_CheckedChanged);
             // 
             // cbDietaLunes
             // 
@@ -336,6 +338,7 @@
             this.cbSesionMartes.TabIndex = 79;
             this.cbSesionMartes.Text = "Sesión";
             this.cbSesionMartes.UseVisualStyleBackColor = true;
+            this.cbSesionMartes.CheckedChanged += new System.EventHandler(this.cbSesionMartes_CheckedChanged);
             // 
             // cbDietaMartes
             // 
@@ -356,6 +359,7 @@
             this.cbSesionMiercoles.TabIndex = 81;
             this.cbSesionMiercoles.Text = "Sesión";
             this.cbSesionMiercoles.UseVisualStyleBackColor = true;
+            this.cbSesionMiercoles.CheckedChanged += new System.EventHandler(this.cbSesionMiercoles_CheckedChanged);
             // 
             // cbDietaMiercoles
             // 
@@ -376,6 +380,7 @@
             this.cbSesionJueves.TabIndex = 83;
             this.cbSesionJueves.Text = "Sesión";
             this.cbSesionJueves.UseVisualStyleBackColor = true;
+            this.cbSesionJueves.CheckedChanged += new System.EventHandler(this.cbSesionJueves_CheckedChanged);
             // 
             // cbDietaJueves
             // 
@@ -396,6 +401,7 @@
             this.cbSesionViernes.TabIndex = 85;
             this.cbSesionViernes.Text = "Sesión";
             this.cbSesionViernes.UseVisualStyleBackColor = true;
+            this.cbSesionViernes.CheckedChanged += new System.EventHandler(this.cbSesionViernes_CheckedChanged);
             // 
             // cbDietaViernes
             // 
@@ -416,6 +422,7 @@
             this.cbSesionSabado.TabIndex = 87;
             this.cbSesionSabado.Text = "Sesión";
             this.cbSesionSabado.UseVisualStyleBackColor = true;
+            this.cbSesionSabado.CheckedChanged += new System.EventHandler(this.cbSesionSabado_CheckedChanged);
             // 
             // cbDietaSabado
             // 
@@ -436,6 +443,7 @@
             this.cbSesionDomingo.TabIndex = 89;
             this.cbSesionDomingo.Text = "Sesión";
             this.cbSesionDomingo.UseVisualStyleBackColor = true;
+            this.cbSesionDomingo.CheckedChanged += new System.EventHandler(this.cbSesionDomingo_CheckedChanged);
             // 
             // cbDietaDomingo
             // 
@@ -517,11 +525,22 @@
             this.bFeedbackDomingo.UseVisualStyleBackColor = true;
             this.bFeedbackDomingo.Click += new System.EventHandler(this.bFeedbackDomingo_Click);
             // 
+            // bGuardar
+            // 
+            this.bGuardar.Location = new System.Drawing.Point(590, 431);
+            this.bGuardar.Name = "bGuardar";
+            this.bGuardar.Size = new System.Drawing.Size(129, 56);
+            this.bGuardar.TabIndex = 98;
+            this.bGuardar.Text = "Guardar";
+            this.bGuardar.UseVisualStyleBackColor = true;
+            this.bGuardar.Click += new System.EventHandler(this.bGuardar_Click);
+            // 
             // RutinaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1357, 592);
+            this.Controls.Add(this.bGuardar);
             this.Controls.Add(this.bFeedbackDomingo);
             this.Controls.Add(this.bFeedbackSabado);
             this.Controls.Add(this.bFeedbackViernes);
@@ -621,5 +640,6 @@
         private System.Windows.Forms.Button bFeedbackViernes;
         private System.Windows.Forms.Button bFeedbackSabado;
         private System.Windows.Forms.Button bFeedbackDomingo;
+        private System.Windows.Forms.Button bGuardar;
     }
 }

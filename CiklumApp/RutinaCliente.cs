@@ -274,5 +274,131 @@ namespace CiklumApp
             FeedbackSesion feedback = new FeedbackSesion(id_SesionDomingo);
             feedback.Show();
         }
+
+        private void cbSesionLunes_CheckedChanged(object sender, EventArgs e)
+        {
+            Consulta consulta = new Consulta();
+            if (cbSesionLunes.Checked)
+            {
+                consulta.Update($"UPDATE CLIENTE SET LUNES = 1 WHERE ID_USUARIO = {Login.user.ID()}");
+                cbDietaLunes.Enabled = true;
+                bFeedbackLunes.Enabled = true;
+            }
+            else
+            {
+                consulta.Update($"UPDATE CLIENTE SET LUNES = 0 WHERE ID_USUARIO = {Login.user.ID()}");
+                cbDietaLunes.Enabled = false;
+                bFeedbackLunes.Enabled = false;
+            }
+        }
+
+        private void cbSesionMartes_CheckedChanged(object sender, EventArgs e)
+        {
+            Consulta consulta = new Consulta();
+            if (cbSesionMartes.Checked)
+            {
+                consulta.Update($"UPDATE CLIENTE SET MARTES = 1 WHERE ID_USUARIO = {Login.user.ID()}");
+                cbDietaMartes.Enabled = true;
+                bFeedbackMartes.Enabled = true;
+            }
+            else
+            {
+                consulta.Update($"UPDATE CLIENTE SET MARTES = 0 WHERE ID_USUARIO = {Login.user.ID()}");
+                cbDietaMartes.Enabled = false;
+                bFeedbackMartes.Enabled = false;
+            }
+        }
+
+        private void cbSesionMiercoles_CheckedChanged(object sender, EventArgs e)
+        {
+            Consulta consulta = new Consulta();
+            if (cbSesionMiercoles.Checked)
+            {
+                consulta.Update($"UPDATE CLIENTE SET MIERCOLES = 1 WHERE ID_USUARIO = {Login.user.ID()}");
+                cbDietaMiercoles.Enabled = true;
+                bFeedbackMiercoles.Enabled = true;
+            }
+            else
+            {
+                consulta.Update($"UPDATE CLIENTE SET MIERCOLES = 0 WHERE ID_USUARIO = {Login.user.ID()}");
+                cbDietaMiercoles.Enabled = false;
+                bFeedbackMiercoles.Enabled = false;
+            }
+        }
+
+        private void cbSesionJueves_CheckedChanged(object sender, EventArgs e)
+        {
+            Consulta consulta = new Consulta();
+            if (cbSesionJueves.Checked)
+            {
+                consulta.Update($"UPDATE CLIENTE SET JUEVES = 1 WHERE ID_USUARIO = {Login.user.ID()}");
+                cbDietaJueves.Enabled = true;
+                bFeedbackJueves.Enabled = true;
+            }
+            else
+            {
+                consulta.Update($"UPDATE CLIENTE SET JUEVES = 0 WHERE ID_USUARIO = {Login.user.ID()}");
+                cbDietaJueves.Enabled = false;
+                bFeedbackJueves.Enabled = false;
+            }
+        }
+
+        private void cbSesionViernes_CheckedChanged(object sender, EventArgs e)
+        {
+            Consulta consulta = new Consulta();
+            if (cbSesionViernes.Checked)
+            {
+                consulta.Update($"UPDATE CLIENTE SET VIERNES = 1 WHERE ID_USUARIO = {Login.user.ID()}");
+                cbDietaViernes.Enabled = true;
+                bFeedbackViernes.Enabled = true;
+            }
+            else
+            {
+                consulta.Update($"UPDATE CLIENTE SET VIERNES = 0 WHERE ID_USUARIO = {Login.user.ID()}");
+                cbDietaViernes.Enabled = false;
+                bFeedbackViernes.Enabled = false;
+            }
+        }
+
+        private void cbSesionSabado_CheckedChanged(object sender, EventArgs e)
+        {
+            Consulta consulta = new Consulta();
+            if (cbSesionSabado.Checked)
+            {
+                consulta.Update($"UPDATE CLIENTE SET SABADO = 1 WHERE ID_USUARIO = {Login.user.ID()}");
+                cbDietaSabado.Enabled = true;
+                bFeedbackSabado.Enabled = true;
+            }
+            else
+            {
+                consulta.Update($"UPDATE CLIENTE SET SABADO = 0 WHERE ID_USUARIO = {Login.user.ID()}");
+                cbDietaSabado.Enabled = false;
+                bFeedbackSabado.Enabled = false;
+            }
+        }
+
+        private void cbSesionDomingo_CheckedChanged(object sender, EventArgs e)
+        {
+            Consulta consulta = new Consulta();
+            if (cbSesionDomingo.Checked)
+            {
+                consulta.Update($"UPDATE CLIENTE SET DOMINGO = 1 WHERE ID_USUARIO = {Login.user.ID()}");
+                cbDietaDomingo.Enabled = true;
+                bFeedbackDomingo.Enabled = true;
+            }
+            else
+            {
+                consulta.Update($"UPDATE CLIENTE SET DOMINGO = 0 WHERE ID_USUARIO = {Login.user.ID()}");
+                cbDietaDomingo.Enabled = false;
+                bFeedbackDomingo.Enabled = false;
+            }
+        }
+
+        private void bGuardar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            var rutinaCliente = new RutinaCliente();
+            rutinaCliente.Show();
+        }
     }
 }
