@@ -76,10 +76,10 @@
             this.Merienda,
             this.Cena,
             this.Calorías});
-            this.dgvDieta.Location = new System.Drawing.Point(357, 176);
+            this.dgvDieta.Location = new System.Drawing.Point(167, 178);
             this.dgvDieta.Name = "dgvDieta";
             this.dgvDieta.RowHeadersWidth = 51;
-            this.dgvDieta.Size = new System.Drawing.Size(602, 332);
+            this.dgvDieta.Size = new System.Drawing.Size(906, 332);
             this.dgvDieta.TabIndex = 45;
             // 
             // Nombre
@@ -140,6 +140,7 @@
             this.Name = "DietaCliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DietaCliente";
+            this.Load += new System.EventHandler(this.DietaCliente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDieta)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

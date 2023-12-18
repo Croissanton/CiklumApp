@@ -12,10 +12,12 @@ namespace CiklumApp
 {
     public partial class DietaCliente : Form
     {
+        public static int dieta_id = -1;
         public DietaCliente(int idDieta)
         {
             InitializeComponent();
             initMenu();
+            dieta_id = idDieta;
         }
         private void initMenu()
         {
@@ -59,6 +61,25 @@ namespace CiklumApp
                     break;
                 default:
                     break;
+            }
+        }
+
+        private void DietaCliente_Load(object sender, EventArgs e)
+        {
+            var consulta = new Consulta();
+            var list = consulta.Select("SELECT * FROM DIETA WHERE ID = " + dieta_id);
+
+            foreach (var item in list)
+            {
+                string nombre = (string)item[1];
+                string desayuno = (string)item[2];
+                string mediamanana = (string)item[3];
+                string almuerzo = (string)item[4];
+                string merienda = (string)item[5];
+                string cena = (string)item[6];
+                int calorias = Convert.ToInt32(item[7]);
+
+                dgvDieta.Rows.Add(nombre, desayuno, mediamanana, almuerzo, merienda, cena, calorias);
             }
         }
     }
