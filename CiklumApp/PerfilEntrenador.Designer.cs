@@ -41,7 +41,15 @@
             this.pbFotoEntrenador = new System.Windows.Forms.PictureBox();
             this.lIMC = new System.Windows.Forms.Label();
             this.tbHorario = new System.Windows.Forms.TextBox();
+            this.bGenerarCita = new System.Windows.Forms.Button();
+            this.bEnviarFeedback = new System.Windows.Forms.Button();
+            this.dgvResenas = new System.Windows.Forms.DataGridView();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Opinion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Valoracion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lValoracion = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbFotoEntrenador)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResenas)).BeginInit();
             this.SuspendLayout();
             // 
             // cbMenu
@@ -173,11 +181,73 @@
             this.tbHorario.Size = new System.Drawing.Size(175, 20);
             this.tbHorario.TabIndex = 67;
             // 
+            // bGenerarCita
+            // 
+            this.bGenerarCita.Location = new System.Drawing.Point(183, 559);
+            this.bGenerarCita.Name = "bGenerarCita";
+            this.bGenerarCita.Size = new System.Drawing.Size(229, 83);
+            this.bGenerarCita.TabIndex = 68;
+            this.bGenerarCita.Text = "Generar Cita";
+            this.bGenerarCita.UseVisualStyleBackColor = true;
+            // 
+            // bEnviarFeedback
+            // 
+            this.bEnviarFeedback.Location = new System.Drawing.Point(675, 553);
+            this.bEnviarFeedback.Name = "bEnviarFeedback";
+            this.bEnviarFeedback.Size = new System.Drawing.Size(222, 94);
+            this.bEnviarFeedback.TabIndex = 69;
+            this.bEnviarFeedback.Text = "Enviar Feedback";
+            this.bEnviarFeedback.UseVisualStyleBackColor = true;
+            this.bEnviarFeedback.Click += new System.EventHandler(this.bEnviarFeedback_Click);
+            // 
+            // dgvResenas
+            // 
+            this.dgvResenas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvResenas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
+            this.Opinion,
+            this.Valoracion});
+            this.dgvResenas.Location = new System.Drawing.Point(610, 186);
+            this.dgvResenas.Name = "dgvResenas";
+            this.dgvResenas.Size = new System.Drawing.Size(389, 340);
+            this.dgvResenas.TabIndex = 70;
+            // 
+            // ID
+            // 
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            this.ID.Visible = false;
+            // 
+            // Opinion
+            // 
+            this.Opinion.HeaderText = "Opinion";
+            this.Opinion.Name = "Opinion";
+            // 
+            // Valoracion
+            // 
+            this.Valoracion.HeaderText = "Valoracion";
+            this.Valoracion.Name = "Valoracion";
+            // 
+            // lValoracion
+            // 
+            this.lValoracion.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lValoracion.AutoSize = true;
+            this.lValoracion.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.lValoracion.Location = new System.Drawing.Point(691, 114);
+            this.lValoracion.Name = "lValoracion";
+            this.lValoracion.Size = new System.Drawing.Size(155, 25);
+            this.lValoracion.TabIndex = 71;
+            this.lValoracion.Text = "VALORACIÓN: ";
+            // 
             // PerfilEntrenador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1084, 861);
+            this.Controls.Add(this.lValoracion);
+            this.Controls.Add(this.dgvResenas);
+            this.Controls.Add(this.bEnviarFeedback);
+            this.Controls.Add(this.bGenerarCita);
             this.Controls.Add(this.tbHorario);
             this.Controls.Add(this.tbEspecialidad);
             this.Controls.Add(this.tbCorreo);
@@ -196,6 +266,7 @@
             this.Text = "PerfilEntrenador";
             this.Load += new System.EventHandler(this.PerfilEntrenador_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbFotoEntrenador)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResenas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -216,5 +287,12 @@
         private System.Windows.Forms.PictureBox pbFotoEntrenador;
         private System.Windows.Forms.Label lIMC;
         private System.Windows.Forms.TextBox tbHorario;
+        private System.Windows.Forms.Button bGenerarCita;
+        private System.Windows.Forms.Button bEnviarFeedback;
+        private System.Windows.Forms.DataGridView dgvResenas;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Opinion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Valoracion;
+        private System.Windows.Forms.Label lValoracion;
     }
 }
