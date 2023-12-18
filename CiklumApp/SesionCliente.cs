@@ -12,11 +12,12 @@ namespace CiklumApp
 {
     public partial class SesionCliente : Form
     {
+        public static int id = -1;
         public SesionCliente(int idSesion)
         {
             InitializeComponent();
+            id = idSesion;
             initMenu();
-            this.WindowState = FormWindowState.Maximized;
 
         }
         private void initMenu()
@@ -71,6 +72,21 @@ namespace CiklumApp
             rutina.Show();
         }
 
+        private void SesionCliente_Load(object sender, EventArgs e)
+        {
+            var consulta = new Consulta();
+            var list = consulta.Select("SELECT E.NOMBRE, ES.REPETICIONES, ES.SERIES FROM EJERCICIO E " +
+                                   "JOIN EJERCICIO_SESION ES ON E.ID = ES.ID_EJERCICIO " +
+                                                      "WHERE ES.ID_SESION = " + id + ";");
+            foreach (var item in list)
+            {
+                string nombre = (string)item[0];
+                int repeticiones = Convert.ToInt32(item[1]);
+                int series = Convert.ToInt32(item[2]);
 
+                dgvSesiones.Rows.Add(nombre, repeticiones, series);
+            };
+            dgvSesiones.ClearSelection();
+        }
     }
 }
