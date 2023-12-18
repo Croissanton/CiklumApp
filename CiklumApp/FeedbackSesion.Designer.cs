@@ -118,6 +118,7 @@
             this.bEnviar.TabIndex = 7;
             this.bEnviar.Text = "Enviar";
             this.bEnviar.UseVisualStyleBackColor = true;
+            this.bEnviar.Click += new System.EventHandler(this.bEnviar_Click);
             // 
             // bCancelar
             // 
@@ -145,6 +146,7 @@
             this.Controls.Add(this.lFeedback);
             this.Name = "FeedbackSesion";
             this.Text = "FeedbackSesion";
+            this.Load += new System.EventHandler(this.FeedbackSesion_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
