@@ -287,7 +287,6 @@ namespace CiklumApp
 
         private void bFeedbackLunes_Click(object sender, EventArgs e)
         {
-            Fe
         }
 
         private void bFeedbackMartes_Click(object sender, EventArgs e)
