@@ -166,6 +166,12 @@
     <Compile Include="Entrenadores.Designer.cs">
       <DependentUpon>Entrenadores.cs</DependentUpon>
     </Compile>
+    <Compile Include="GenerarCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarCita.Designer.cs">
+      <DependentUpon>GenerarCita.cs</DependentUpon>
+    </Compile>
     <Compile Include="HomeCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -285,6 +291,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Entrenadores.resx">
       <DependentUpon>Entrenadores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarCita.resx">
+      <DependentUpon>GenerarCita.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HomeCliente.resx">
       <DependentUpon>HomeCliente.cs</DependentUpon>
