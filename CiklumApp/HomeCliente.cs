@@ -99,5 +99,18 @@ namespace CiklumApp
             HomeCliente home = new HomeCliente();
             home.Show();
         }
+
+        private void bModificar_Click(object sender, EventArgs e)
+        {
+            if (citasGridView.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Seleccion la cita.");
+                return;
+            }
+            int id_cita = Convert.ToInt32(citasGridView.SelectedRows[0].Cells[0].Value);
+
+            ModificarCita modificarCita = new ModificarCita(id_cita);
+            modificarCita.Show();
+        }
     }
 }

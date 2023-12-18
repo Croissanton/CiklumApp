@@ -33,14 +33,14 @@
             this.mySqlCommand1 = new MySql.Data.MySqlClient.MySqlCommand();
             this.bNotificaciones = new System.Windows.Forms.Button();
             this.citasGridView = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.bModificar = new System.Windows.Forms.Button();
-            this.cbMenu = new System.Windows.Forms.ComboBox();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Duracion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label2 = new System.Windows.Forms.Label();
+            this.bModificar = new System.Windows.Forms.Button();
+            this.cbMenu = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.citasGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -96,40 +96,6 @@
             this.citasGridView.Size = new System.Drawing.Size(349, 242);
             this.citasGridView.TabIndex = 13;
             // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
-            this.label2.Location = new System.Drawing.Point(334, 344);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(132, 31);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "Tus citas:";
-            // 
-            // bModificar
-            // 
-            this.bModificar.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bModificar.Location = new System.Drawing.Point(340, 699);
-            this.bModificar.Margin = new System.Windows.Forms.Padding(2);
-            this.bModificar.Name = "bModificar";
-            this.bModificar.Size = new System.Drawing.Size(124, 44);
-            this.bModificar.TabIndex = 40;
-            this.bModificar.Text = "Modificar";
-            this.bModificar.UseVisualStyleBackColor = true;
-            // 
-            // cbMenu
-            // 
-            this.cbMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.cbMenu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.cbMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbMenu.FormattingEnabled = true;
-            this.cbMenu.Location = new System.Drawing.Point(0, 0);
-            this.cbMenu.Name = "cbMenu";
-            this.cbMenu.Size = new System.Drawing.Size(784, 37);
-            this.cbMenu.TabIndex = 41;
-            this.cbMenu.SelectedIndexChanged += new System.EventHandler(this.cbMenu_SelectedIndexChanged);
-            // 
             // Id
             // 
             this.Id.HeaderText = "Id";
@@ -155,6 +121,41 @@
             // 
             this.Tipo.HeaderText = "Tipo";
             this.Tipo.Name = "Tipo";
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F);
+            this.label2.Location = new System.Drawing.Point(334, 344);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(132, 31);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Tus citas:";
+            // 
+            // bModificar
+            // 
+            this.bModificar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bModificar.Location = new System.Drawing.Point(340, 699);
+            this.bModificar.Margin = new System.Windows.Forms.Padding(2);
+            this.bModificar.Name = "bModificar";
+            this.bModificar.Size = new System.Drawing.Size(124, 44);
+            this.bModificar.TabIndex = 40;
+            this.bModificar.Text = "Modificar";
+            this.bModificar.UseVisualStyleBackColor = true;
+            this.bModificar.Click += new System.EventHandler(this.bModificar_Click);
+            // 
+            // cbMenu
+            // 
+            this.cbMenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.cbMenu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cbMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbMenu.FormattingEnabled = true;
+            this.cbMenu.Location = new System.Drawing.Point(0, 0);
+            this.cbMenu.Name = "cbMenu";
+            this.cbMenu.Size = new System.Drawing.Size(784, 37);
+            this.cbMenu.TabIndex = 41;
+            this.cbMenu.SelectedIndexChanged += new System.EventHandler(this.cbMenu_SelectedIndexChanged);
             // 
             // HomeCliente
             // 
