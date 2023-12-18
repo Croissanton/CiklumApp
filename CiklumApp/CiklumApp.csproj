@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -172,6 +172,18 @@
     <Compile Include="GenerarCita.Designer.cs">
       <DependentUpon>GenerarCita.cs</DependentUpon>
     </Compile>
+    <Compile Include="FeedbackEntrenador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeedbackEntrenador.Designer.cs">
+      <DependentUpon>FeedbackEntrenador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FeedbackSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeedbackSesion.Designer.cs">
+      <DependentUpon>FeedbackSesion.cs</DependentUpon>
+    </Compile>
     <Compile Include="HomeCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -294,6 +306,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GenerarCita.resx">
       <DependentUpon>GenerarCita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeedbackEntrenador.resx">
+      <DependentUpon>FeedbackEntrenador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeedbackSesion.resx">
+      <DependentUpon>FeedbackSesion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HomeCliente.resx">
       <DependentUpon>HomeCliente.cs</DependentUpon>

@@ -12,7 +12,7 @@ namespace CiklumApp
 {
     public partial class SesionCliente : Form
     {
-        public SesionCliente()
+        public SesionCliente(int idSesion)
         {
             InitializeComponent();
             initMenu();
