@@ -35,5 +35,32 @@ namespace CiklumApp
 
             cbMenu.SelectedIndex = 1;
         }
+
+        private void cbMenu_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int selected = cbMenu.SelectedIndex;
+            switch (selected)
+            {
+                case 0:
+                    var homeCliente = new HomeCliente();
+                    this.Hide();
+                    homeCliente.Show();
+                    break;
+                case 1:
+                    break;
+                case 2:
+                    var entrenadoers = new Entrenadores();
+                    this.Hide();
+                    entrenadoers.Show();
+                    break;
+                case 3:
+                    var rutina = new RutinaCliente();
+                    this.Hide();
+                    rutina.Show();
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }

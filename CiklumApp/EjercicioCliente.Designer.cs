@@ -41,6 +41,7 @@
             this.cbMenu.Name = "cbMenu";
             this.cbMenu.Size = new System.Drawing.Size(784, 37);
             this.cbMenu.TabIndex = 44;
+            this.cbMenu.SelectedIndexChanged += new System.EventHandler(this.cbMenu_SelectedIndexChanged);
             // 
             // EjercicioCliente
             // 

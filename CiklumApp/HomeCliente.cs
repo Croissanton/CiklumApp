@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -38,7 +39,29 @@ namespace CiklumApp
 
         private void cbMenu_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            int selected = cbMenu.SelectedIndex;
+            switch (selected)
+            {
+                case 0:
+                    break;
+                case 1:
+                    var perfil = new PerfilCliente();
+                    this.Hide();
+                    perfil.Show();
+                    break;
+                case 2:
+                    var entrenadoers = new Entrenadores();
+                    this.Hide();
+                    entrenadoers.Show();
+                    break;
+                case 3:
+                    var rutina = new RutinaCliente();
+                    this.Hide();
+                    rutina.Show();
+                    break;
+                default:
+                    break;
+            }
         }
 
         private void bNotificaciones_Click(object sender, EventArgs e)
