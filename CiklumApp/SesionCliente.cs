@@ -16,6 +16,8 @@ namespace CiklumApp
         {
             InitializeComponent();
             initMenu();
+            this.WindowState = FormWindowState.Maximized;
+
         }
         private void initMenu()
         {
@@ -61,5 +63,14 @@ namespace CiklumApp
                     break;
             }
         }
+
+        private void bRutina_Click(object sender, EventArgs e)
+        {
+            var rutina = new RutinaCliente();
+            this.Hide();
+            rutina.Show();
+        }
+
+
     }
 }
