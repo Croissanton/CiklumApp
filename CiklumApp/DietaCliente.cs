@@ -12,7 +12,7 @@ namespace CiklumApp
 {
     public partial class DietaCliente : Form
     {
-        public DietaCliente()
+        public DietaCliente(int idDieta)
         {
             InitializeComponent();
             initMenu();
