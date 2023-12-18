@@ -132,6 +132,7 @@
             this.Controls.Add(this.label2);
             this.Name = "ModificarCita";
             this.Text = "ModificarCita";
+            this.Load += new System.EventHandler(this.ModificarCita_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

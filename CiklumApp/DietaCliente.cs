@@ -82,5 +82,12 @@ namespace CiklumApp
                 dgvDieta.Rows.Add(nombre, desayuno, mediamanana, almuerzo, merienda, cena, calorias);
             }
         }
+
+        private void bCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            RutinaCliente rutinaCliente = new RutinaCliente();
+            rutinaCliente.Show();
+        }
     }
 }

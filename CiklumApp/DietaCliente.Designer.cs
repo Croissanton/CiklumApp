@@ -38,6 +38,7 @@
             this.Merienda = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cena = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Calorías = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bCerrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDieta)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,7 +59,7 @@
             this.lDieta.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lDieta.AutoSize = true;
             this.lDieta.Font = new System.Drawing.Font("Microsoft Sans Serif", 40.25F);
-            this.lDieta.Location = new System.Drawing.Point(550, 72);
+            this.lDieta.Location = new System.Drawing.Point(550, 64);
             this.lDieta.Name = "lDieta";
             this.lDieta.Size = new System.Drawing.Size(186, 63);
             this.lDieta.TabIndex = 44;
@@ -76,7 +77,7 @@
             this.Merienda,
             this.Cena,
             this.Calorías});
-            this.dgvDieta.Location = new System.Drawing.Point(167, 178);
+            this.dgvDieta.Location = new System.Drawing.Point(213, 156);
             this.dgvDieta.Name = "dgvDieta";
             this.dgvDieta.RowHeadersWidth = 51;
             this.dgvDieta.Size = new System.Drawing.Size(906, 332);
@@ -129,11 +130,22 @@
             this.Calorías.Name = "Calorías";
             this.Calorías.Width = 125;
             // 
+            // bCerrar
+            // 
+            this.bCerrar.Location = new System.Drawing.Point(613, 528);
+            this.bCerrar.Name = "bCerrar";
+            this.bCerrar.Size = new System.Drawing.Size(105, 44);
+            this.bCerrar.TabIndex = 46;
+            this.bCerrar.Text = "Cerrar";
+            this.bCerrar.UseVisualStyleBackColor = true;
+            this.bCerrar.Click += new System.EventHandler(this.bCerrar_Click);
+            // 
             // DietaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1321, 578);
+            this.ClientSize = new System.Drawing.Size(1321, 605);
+            this.Controls.Add(this.bCerrar);
             this.Controls.Add(this.dgvDieta);
             this.Controls.Add(this.lDieta);
             this.Controls.Add(this.cbMenu);
@@ -159,5 +171,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Merienda;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cena;
         private System.Windows.Forms.DataGridViewTextBoxColumn Calorías;
+        private System.Windows.Forms.Button bCerrar;
     }
 }

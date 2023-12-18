@@ -90,14 +90,7 @@ namespace CiklumApp
         {
             var notificaciones = new Notificaciones();
             notificaciones.FormClosed += new FormClosedEventHandler(Notificaciones_FormClosed);
-            notificaciones.ShowDialog();
-        }
-
-        private void Notificaciones_FormClosed(object sender, EventArgs e)
-        {
-            this.Close();
-            HomeCliente home = new HomeCliente();
-            home.Show();
+            notificaciones.Show();
         }
 
         private void bModificar_Click(object sender, EventArgs e)
@@ -109,21 +102,38 @@ namespace CiklumApp
             }
             int id_cita = Convert.ToInt32(citasGridView.SelectedRows[0].Cells[0].Value);
 
-            ModificarCita modificarCita = new ModificarCita(id_cita);
+            ModificarCita modificarCita = new ModificarCita(id_cita, citasGridView.SelectedRows[0].Cells[2].Value.ToString(), 
+                citasGridView.SelectedRows[0].Cells[4].Value.ToString());
+            modificarCita.FormClosed += new FormClosedEventHandler(modificarCita_FormClosed);
             modificarCita.Show();
         }
 
         private void bAñadir_Click(object sender, EventArgs e)
         {
-            GenerarCita generarCita = new GenerarCita(Login.user.ID()); ;
+            GenerarCita generarCita = new GenerarCita(Login.user.ID());
+            generarCita.FormClosed += new FormClosedEventHandler(generarCita_FormClosed);
             generarCita.Show();
+        }
+
+        private void Notificaciones_FormClosed(object sender, EventArgs e)
+        {
+            HomeCliente home = new HomeCliente();
+            home.Show();
+            this.Close();
         }
 
         private void generarCita_FormClosed(object sender, FormClosedEventArgs e)
         {
-            this.Close();
             HomeCliente home = new HomeCliente();
             home.Show();
+            this.Close();
+        }
+
+        private void modificarCita_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            HomeCliente home = new HomeCliente();
+            home.Show();
+            this.Close();
         }
     }
 }

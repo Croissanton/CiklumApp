@@ -66,9 +66,9 @@
             this.bAcceptar.Name = "bAcceptar";
             this.bAcceptar.Size = new System.Drawing.Size(97, 45);
             this.bAcceptar.TabIndex = 1;
-            this.bAcceptar.Text = "Acceptar";
+            this.bAcceptar.Text = "Aceptar";
             this.bAcceptar.UseVisualStyleBackColor = true;
-            this.bAcceptar.Click += new System.EventHandler(this.bAcceptar_Click);
+            this.bAcceptar.Click += new System.EventHandler(this.bAceptar_Click);
             // 
             // panel1
             // 

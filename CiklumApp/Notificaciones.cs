@@ -50,7 +50,7 @@ namespace CiklumApp
             loadCitas();
         }
 
-        private void bAcceptar_Click(object sender, EventArgs e)
+        private void bAceptar_Click(object sender, EventArgs e)
         {
             var consulta = new Consulta();
             consulta.Update($"UPDATE CITA SET estado = 1 WHERE id = {selected_id}");

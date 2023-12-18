@@ -400,5 +400,103 @@ namespace CiklumApp
             var rutinaCliente = new RutinaCliente();
             rutinaCliente.Show();
         }
+
+        private void bDietaLunes_Click_1(object sender, EventArgs e)
+        {
+            var dietaCliente = new DietaCliente(id_DietaLunes);
+            this.Close();
+            dietaCliente.Show();
+        }
+
+        private void bDietaMartes_Click_1(object sender, EventArgs e)
+        {
+            var dietaCliente = new DietaCliente(id_DietaMartes);
+            this.Close();
+            dietaCliente.Show();
+        }
+
+        private void bDietaMiercoles_Click_1(object sender, EventArgs e)
+        {
+            var dietaCliente = new DietaCliente(id_DietaMiercoles);
+            this.Close();
+            dietaCliente.Show();
+        }
+
+        private void bDietaJueves_Click_1(object sender, EventArgs e)
+        {
+            var dietaCliente = new DietaCliente(id_DietaJueves);
+            this.Close();
+            dietaCliente.Show();
+        }
+
+        private void bDietaViernes_Click_1(object sender, EventArgs e)
+        {
+            var dietaCliente = new DietaCliente(id_DietaViernes);
+            this.Close();
+            dietaCliente.Show();
+        }
+
+        private void bDietaSabado_Click_1(object sender, EventArgs e)
+        {
+            var dietaCliente = new DietaCliente(id_DietaSabado);
+            this.Close();
+            dietaCliente.Show();
+        }
+
+        private void bDietaDomingo_Click_1(object sender, EventArgs e)
+        {
+            var dietaCliente = new DietaCliente(id_DietaDomingo);
+            this.Close();
+            dietaCliente.Show();
+        }
+
+        private void bSesionLunes_Click_1(object sender, EventArgs e)
+        {
+            var sesionCliente = new SesionCliente(id_SesionLunes);
+            this.Close();
+            sesionCliente.Show();
+        }
+
+        private void bSesionMartes_Click_1(object sender, EventArgs e)
+        {
+            var sesionCliente = new SesionCliente(id_SesionMartes);
+            this.Close();
+            sesionCliente.Show();
+        }
+
+        private void bSesionMiercoles_Click_1(object sender, EventArgs e)
+        {
+            var sesionCliente = new SesionCliente(id_SesionMiercoles);
+            this.Close();
+            sesionCliente.Show();
+        }
+
+        private void bSesionJueves_Click_1(object sender, EventArgs e)
+        {
+            var sesionCliente = new SesionCliente(id_SesionJueves);
+            this.Close();
+            sesionCliente.Show();
+        }
+
+        private void bSesionViernes_Click_1(object sender, EventArgs e)
+        {
+            var sesionCliente = new SesionCliente(id_SesionViernes);
+            this.Close();
+            sesionCliente.Show();
+        }
+
+        private void bSesionSabado_Click_1(object sender, EventArgs e)
+        {
+            var sesionCliente = new SesionCliente(id_SesionSabado);
+            this.Close();
+            sesionCliente.Show();
+        }
+
+        private void bSesionDomingo_Click_1(object sender, EventArgs e)
+        {
+            var sesionCliente = new SesionCliente(id_SesionDomingo);
+            this.Close();
+            sesionCliente.Show();
+        }
     }
 }
